@@ -1,16 +1,231 @@
 body {
-    font-family: 'Roboto', Arial, sans-serif;
-    background: #111119;
-    color: #fff;
-
-
+    background-color: #0d0d15;
+    background-image: radial-gradient(700px 300px at 0% 0%, rgba(2, 101, 220, 0.5) 10%, rgba(2, 101, 220, 0) 100%);
 }
 
-header {
-    font-size: 15px;
-    font-weight: bold;
-    color: #fff;
+h1 {
+    font-family: 'Bakbak One', Arial, sans-serif;
+    font-size: 52px;
+    line-height: 62px;
+    letter-spacing: -0.5px;
+    font-weight: 400;
+    color: rgba(248, 247, 255, 1);
+}
 
+h2 {
+    font-family: 'Bakbak One', Arial, sans-serif;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    font-weight: 400;
+    color: rgba(248, 247, 255, 1);
+}
+
+h3 {
+    font-family: 'Bakbak One', Arial, sans-serif;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -0.5px;
+    font-weight: 400;
+    color: rgba(248, 247, 255, 1);
+}
+
+h4 {
+    font-family: 'Bakbak One', Arial, sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    color: rgba(248, 247, 255, 1);
+}
+
+h5 {
+    font-family: 'Bakbak One', Arial, sans-serif;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    color: rgba(248, 247, 255, 1);
+}
+
+.s1 {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 52px;
+    line-height: 62px;
+    letter-spacing: -0.5px;
+    font-weight: 500;
+    color: rgba(248, 247, 255, 1);
+}
+
+.s2 {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    font-weight: 500;
+    color: rgba(248, 247, 255, 1);
+}
+
+.s3 {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 0px;
+    font-weight: 500;
+    color: rgba(248, 247, 255, 1);
+}
+
+.s4 {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    font-weight: 500;
+    color: rgba(248, 247, 255, 1);
+}
+
+.s5 {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    font-weight: 500;
+    color: rgba(248, 247, 255, 1);
+}
+
+.p1-regular {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    color: rgba(248, 247, 255, 1);
+}
+
+.p2-regular {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: rgba(248, 247, 255, 1);
+}
+
+.p3-regular {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: rgba(248, 247, 255, 1);
+}
+
+.p4-regular {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: rgba(248, 247, 255, 1);
+}
+
+.p5-regular {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: rgba(248, 247, 255, 1);
+}
+
+.p1-medium {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    color: rgba(248, 247, 255, 1);
+}
+
+.p2-medium {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: rgba(248, 247, 255, 1);
+}
+
+.p3-medium {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: rgba(248, 247, 255, 1);
+}
+
+.p4-medium {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: rgba(248, 247, 255, 1);
+}
+
+.p5-medium {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: rgba(248, 247, 255, 1);
+}
+
+.l1 {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    color: rgba(248, 247, 255, 1);
+}
+
+.l2 {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: rgba(248, 247, 255, 1);
+}
+
+.l3 {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: rgba(248, 247, 255, 1);
+}
+
+.l4 {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: rgba(248, 247, 255, 1);
+}
+
+.l5 {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: rgba(248, 247, 255, 1);
 }
 
 ul {
@@ -19,49 +234,112 @@ ul {
 
 a {
     text-decoration: none;
-    color: #fff;
-}
-
-h1 {
-    letter-spacing: 2px;
-    max-width: 800px;
-    width: 100%;
-    font-size: 3em;
-    white-space: nowrap;
+    color: rgba(248, 247, 255, 1);
 }
 
 .lnk {
-    border: 1px solid #fff;
-    border-radius: 0;
-    font-weight: lighter;
-    padding: 1px 5px;
-    display: inline-block;
-    font-size: 15px;
-    box-sizing: border-box;
+    border: 1px solid;
+    border-radius: 0px;
+    text-align: center;
+    padding: 10px 16px;
+    border-color: rgba(208, 215, 251, 0.17);
 }
 
 .btn {
-    background: rgb(5, 101, 255);
-    border: 1px solid transparent;
-    border-radius: 0;
-    padding: 1px 5px;
-    color: #fff;
-    font-weight: lighter;
-    font-size: 15px;
-    display: inline-block;
-    box-sizing: border-box;
+    border: 1px solid;
+    text-align: center;
+    border-color: rgba(2, 101, 220, 1);
+    background-color: rgba(2, 101, 220, 1);
+    padding: 10px 16px;
 }
 
 .highlight {
-    color: rgb(5, 101, 255);
+    color: rgba(2, 101, 220, 1);
 }
 
-dd {
-    opacity: 75%;
+.white-label {
+    border: 1px solid;
+    background-color: rgba(245, 248, 251, 1);
+    padding: 8px 10px;
+    color: rgba(2, 101, 220, 1);
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 600;
+    line-height: 20px;
+    font-size: 14px;
 }
 
-dt {
-    text-shadow: #fff 1px 0px 10px;
-    font-weight: bold;
-    font-size: 30px;
+.orange-label {
+    border: 1px solid;
+    background-color: rgba(234, 56, 41, 1);
+    padding: 8px 10px;
+    color: rgba(245, 248, 251, 1);
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 600;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+article {
+    background-color: rgba(29, 28, 40, 1);
+    margin-bottom: 24px;
+    padding: 16px;
+}
+
+.separator {
+    display: inline-block;
+    width: 2px;
+    height: 30px;
+    background: rgba(208, 215, 251, 0.17);
+    vertical-align: middle;
+    margin: 0 8px;
+    border-radius: 2px;
+}
+
+input[type="search"] {
+    background-color: rgba(13, 13, 21, 1);
+    padding: 10px 16px;
+    border: 1px solid rgba(208, 215, 251, 0.17);
+    color: rgba(248, 247, 255, 1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(13, 13, 21, 1);
+}
+
+.nav-header ul {
+    display: flex;
+    gap: 24px;
+}
+
+.nav-header ul li a.active {
+    border-bottom: 2px solid rgba(2, 101, 220, 1);
+}
+
+.cursor {
+    background-color: transparent;
+    border: 1px solid rgba(208, 215, 251, 0.17);
+    color: rgba(248, 247, 255, 1);
+    padding: 10px 16px;
+    text-align: center;
+}
+
+details {
+    background-color: rgba(29, 28, 40, 1);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.totals {
+    text-shadow: 0 2px 8px rgba(255, 255, 255, 0.568);
+    font-family: 'Bakbak One', Arial, sans-serif;
+    font-size: 52px;
+    line-height: 62px;
+    letter-spacing: -0.5px;
+    font-weight: 400;
+    color: rgba(248, 247, 255, 1);
 }
