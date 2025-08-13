@@ -9,316 +9,361 @@
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:wght@400;500;600&display=swap"
     rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <a href="#home">
-      <img src="#" alt="Binabox logo">
+  <header class="header">
+    <a href="#home" class="header__logo-link">
+      <img src="#" alt="Binabox logo" class="header__logo">
     </a>
-    <nav class="nav-header">
-      <ul>
-        <li class="l2"><a href="index.html" class="active">Home</a></li>
-        <li class="l2"><a href="blog.html">Blog</a></li>
-        <li class="l2"><a href="#catalog">Catalog</a></li>
-        <li class="l2"><a href="#contact-us">Contact Us</a></li>
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item"><a href="index.html" class="header__nav-link header__nav-link--active">Home</a>
+        </li>
+        <li class="header__nav-item"><a href="blog.html" class="header__nav-link">Blog</a></li>
+        <li class="header__nav-item"><a href="#catalog" class="header__nav-link">Catalog</a></li>
+        <li class="header__nav-item"><a href="#contact-us" class="header__nav-link">Contact Us</a></li>
       </ul>
     </nav>
-    <div>
-      <input type="search" placeholder="Search" class="p3-regular">
-      <span class="separator"></span>
-      <a href="#" class="l1 lnk">Discord</a>
-      <button type="button" class="l1 btn">Login</button>
+    <div class="header__actions">
+      <input type="search" placeholder="Search" class="header__search">
+      <span class="header__separator"></span>
+      <a href="#" class="header__link">Discord</a>
+      <button type="button" class="header__button">Login</button>
     </div>
   </header>
-  <main>
-    <section>
-      <h1>WITH <span class="highlight">BINABOX</span> EXPLORE NFT COLLECTION</h1>
-      <p class="s5">We are the best way to check the rarity of NFT collection</p>
-      <dl>
-        <dt class="totals">2240+</dt>
-        <dd class="p2-regular">Total it earn</dd>
-        <dt class="totals">1000+</dt>
-        <dd class="p2-regular">Profiles whitelisted</dd>
+  <main class="main">
+    <section class="hero">
+      <h1 class="hero__title title">WITH <span class="hero__highlight">BINABOX</span> EXPLORE NFT COLLECTION</h1>
+      <p class="hero__description">We are the best way to check the rarity of NFT collection</p>
+      <dl class="hero__stats">
+        <dt class="hero__stats-number">2240+</dt>
+        <dd class="hero__stats-label">Total it earn</dd>
+        <dt class="hero__stats-number">1000+</dt>
+        <dd class="hero__stats-label">Profiles whitelisted</dd>
       </dl>
-      <button type="button" class="l1 btn">Connect Wallet</button>
-      <a href="#" class="l1 lnk">Whitelist now</a>
-      <img src="#" alt="NFT box">
+      <button type="button" class="hero__button">Connect Wallet</button>
+      <a href="#" class="hero__link">Whitelist now</a>
+      <img src="#" alt="NFT box" class="hero__image">
     </section>
-    <section>
-      <img src="#" alt="catalog icon">
-      <h2>Catalog</h2>
-      <a href="#" class="l1 lnk">See all</a>
-      <span class="separator"></span>
-      <button type="button" aria-label="Previous catalog item" class="cursor">&lt;</button>
-      <button type="button" aria-label="Next catalog item" class="cursor">&gt;</button>
-      <ul>
-        <li>
-          <img src="#" alt="Echo of Bones picture">
-          <span class="white-label">New</span>
-          <span class="s2">$1990</span>
-          <span class="s5">Echo of Bones</span>
+    <section class="catalog">
+      <img src="#" alt="catalog icon" class="catalog__icon">
+      <h4 class="catalog__title title">Catalog</h4>
+      <a href="#" class="catalog__see-all">See all</a>
+      <span class="catalog__separator"></span>
+      <button type="button" aria-label="Previous catalog item" class="catalog__nav-button">&lt;</button>
+      <button type="button" aria-label="Next catalog item"
+        class="catalog__nav-button catalog__nav-button--active">&gt;</button>
+      <ul class="catalog__list">
+        <li class="catalog__item">
+          <img src="#" alt="Echo of Bones picture" class="catalog__image">
+          <span class="catalog__label catalog__label--new">New</span>
+          <span class="catalog__price">$1990</span>
+          <span class="catalog__name">Echo of Bones</span>
         </li>
-        <li>
-          <img src="#" alt="Nyx the Watcher picture">
-          <span class="white-label">New</span>
-          <span class="s2">$299.99</span>
-          <span class="s5">Nyx the Watcher</span>
+        <li class="catalog__item">
+          <img src="#" alt="Nyx the Watcher picture" class="catalog__image">
+          <span class="catalog__label catalog__label--new">New</span>
+          <span class="catalog__price">$299.99</span>
+          <span class="catalog__name">Nyx the Watcher</span>
         </li>
-        <li>
-          <img src="#" alt="Blade of Silence picture">
-          <span class="orange-label">Sold out</span>
-          <span class="s2">$20</span>
-          <span class="s5">Blade of Silence</span>
+        <li class="catalog__item">
+          <img src="#" alt="Blade of Silence picture" class="catalog__image">
+          <span class="catalog__label catalog__label--sold-out">Sold out</span>
+          <span class="catalog__price">$20</span>
+          <span class="catalog__name">Blade of Silence</span>
         </li>
-        <li>
-          <img src="#" alt="Data Core: Alpha picture">
-          <span class="s2">$1.000.000</span>
-          <span class="s5">Data Core: Alpha</span>
+        <li class="catalog__item">
+          <img src="#" alt="Data Core: Alpha picture" class="catalog__image">
+          <span class="catalog__price">$1.000.000</span>
+          <span class="catalog__name">Data Core: Alpha</span>
         </li>
-        <li>
-          <img src="#" alt="Phantom Console picture">
-          <span class="s2">$199.5</span>
-          <span class="s5">Phantom Console</span>
+        <li class="catalog__item">
+          <img src="#" alt="Phantom Console picture" class="catalog__image">
+          <span class="catalog__price">$199.5</span>
+          <span class="catalog__name">Phantom Console</span>
         </li>
       </ul>
     </section>
-    <section>
-      <h2>Our Blog</h2>
-      <div>
-        <article>
-          <span class="white-label">NFT</span>
-          <img src="#" alt="Neural Drift image">
-          <h3>Neural Drift</h3>
-          <p class="p2-regular">I woke up inside the void. My body stayed in the past - only thoughts were allowed
-            throug...</p>
-          <span class="p3-medium">NOVA RIVEN</span>
-          <span class="separator"></span>
-          <time class="p3-medium" datetime="2022-12-04">04 Dec 2022</time>
-          <a href="#" class="l2 lnk">Read more &gt;</a>
-        </article>
-        <article>
-          <span class="white-label">DROP</span>
-          <img src="#" alt="Deadframe image">
-          <h3>Deadframe</h3>
-          <p class="p2-regular">He just stood there, waiting. Not for a person - for a signal. Like the memory of the
-            network...</p>
-          <span class="p3-medium">Kairo Null</span>
-          <span class="separator"></span>
-          <time class="p3-medium" datetime="2022-12-06">06 Dec 2022</time>
-          <a href="#" class="l2 lnk">Read more &gt;</a>
-        </article>
-        <article>
-          <span class="white-label">NFT</span>
-          <img src="#" alt="Glitch Panther image">
-          <h3>Glitch Panther</h3>
-          <p class="p2-regular">Cats always knew more than they showed. Especially the ones that vanish into the code.
-          </p>
-          <span class="p3-medium">Synthya Void</span>
-          <span class="separator"></span>
-          <time class="p3-medium" datetime="2022-12-07">07 Dec 2022</time>
-          <a href="#" class="l2 lnk">Read more &gt;</a>
-        </article>
-        <article>
-          <span class="white-label">RARE</span>
-          <img src="#" alt="Primal.exe image">
-          <h3>Primal.exe</h3>
-          <p class="p2-regular">We tried to resurrect the past. What we got was rage compressed into an algorithm.</p>
-          <span class="p3-medium">Dr. Wex Omega</span>
-          <span class="separator"></span>
-          <time class="p3-medium" datetime="2022-12-08">08 Dec 2022</time>
-          <a href="#" class="l2 lnk">Read more &gt;</a>
-        </article>
-        <article>
-          <span class="white-label">ARTIFACT</span>
-          <img src="#" alt="Retrocore image">
-          <h3>Retrocore</h3>
-          <p class="p2-regular">This console comes from a game no one remembers how to play. But it's still powered on.
-          </p>
-          <span class="p3-medium">Echo Zero</span>
-          <span class="separator"></span>
-          <time class="p3-medium" datetime="2022-12-09">09 Dec 2022</time>
-          <a href="#" class="l2 lnk">Read more &gt;</a>
-        </article>
-        <article>
-          <span class="white-label">NFT</span>
-          <img src="#" alt="White Protocol image">
-          <h3>White Protocol</h3>
-          <p class="p2-regular">At first it was a signal - clean, white, hypnotic. We didn't know it was alive.</p>
-          <span class="p3-medium">Tony Nguyen</span>
-          <span class="separator"></span>
-          <time class="p3-medium" datetime="2022-06-20">20 Jun 2022</time>
-          <a href="#" class="l2 lnk">Read more &gt;</a>
-        </article>
-      </div>
-      <a href="#" class="l2 lnk">Read more</a>
+    <section class="blog">
+      <h2 class="blog__title title">Our blog</h2>
+      <article class="blog__card">
+        <span class="blog__label">NFT</span>
+        <img src="#" alt="Neural Drift image" class="blog__image">
+        <h2 class="blog__card-title title">Neural Drift</h2>
+        <p class="blog__excerpt">I woke up inside the void. My body stayed in the past - only thoughts were allowed
+          throug...</p>
+        <img src="#" alt="Author icon" class="blog__author-icon">
+        <span class="blog__author blog__author--uppercase">Nova Riven</span>
+        <span class="blog__separator"></span>
+        <time class="blog__date" datetime="2022-12-04">04 Dec 2022</time>
+        <a href="#" class="blog__read-more">Read more &gt;</a>
+      </article>
+      <article class="blog__card">
+        <span class="blog__label">DROP</span>
+        <img src="#" alt="Deadframe image" class="blog__image">
+        <h2 class="blog__card-title title">Deadframe</h2>
+        <p class="blog__excerpt">He just stood there, waiting. Not for a person - for a signal. Like the memory of the
+          network...</p>
+        <img src="#" alt="Author icon" class="blog__author-icon">
+        <span class="blog__author">Kairo Null</span>
+        <span class="blog__separator"></span>
+        <time class="blog__date" datetime="2022-12-06">06 Dec 2022</time>
+        <a href="#" class="blog__read-more">Read more &gt;</a>
+      </article>
+      <article class="blog__card">
+        <span class="blog__label">NFT</span>
+        <img src="#" alt="Glitch Panther image" class="blog__image">
+        <h2 class="blog__card-title title">Glitch Panther</h2>
+        <p class="blog__excerpt">Cats always knew more than they showed. Especially the ones that vanish into the
+          code.
+        </p>
+        <img src="#" alt="Author icon" class="blog__author-icon">
+        <span class="blog__author">Synthya Void</span>
+        <span class="blog__separator"></span>
+        <time class="blog__date" datetime="2022-12-07">07 Dec 2022</time>
+        <a href="#" class="blog__read-more">Read more &gt;</a>
+      </article>
+      <article class="blog__card">
+        <span class="blog__label">RARE</span>
+        <img src="#" alt="Primal.exe image" class="blog__image">
+        <h2 class="blog__card-title title">Primal.exe</h2>
+        <p class="blog__excerpt">We tried to resurrect the past. What we got was rage compressed into an algorithm.
+        </p>
+        <img src="#" alt="Author icon" class="blog__author-icon">
+        <span class="blog__author">Dr. Wex Omega</span>
+        <span class="blog__separator"></span>
+        <time class="blog__date" datetime="2022-12-08">08 Dec 2022</time>
+        <a href="#" class="blog__read-more">Read more &gt;</a>
+      </article>
+      <article class="blog__card">
+        <span class="blog__label">ARTIFACT</span>
+        <img src="#" alt="Retrocore image" class="blog__image">
+        <h2 class="blog__card-title title">Retrocore</h2>
+        <p class="blog__excerpt">This console comes from a game no one remembers how to play. But it's still powered
+          on.
+        </p>
+        <img src="#" alt="Author icon" class="blog__author-icon">
+        <span class="blog__author">Echo Zero</span>
+        <span class="blog__separator"></span>
+        <time class="blog__date" datetime="2022-12-09">09 Dec 2022</time>
+        <a href="#" class="blog__read-more">Read more &gt;</a>
+      </article>
+      <article class="blog__card">
+        <span class="blog__label">NFT</span>
+        <img src="#" alt="White Protocol image" class="blog__image">
+        <h2 class="blog__card-title title">White Protocol</h2>
+        <p class="blog__excerpt">At first it was a signal - clean, white, hypnotic. We didn't know it was alive.</p>
+        <img src="#" alt="Author icon" class="blog__author-icon">
+        <span class="blog__author">Tony Nguyen</span>
+        <span class="blog__separator"></span>
+        <time class="blog__date" datetime="2022-06-20">20 Jun 2022</time>
+        <a href="#" class="blog__read-more">Read more &gt;</a>
+      </article>
+      <a href="#" class="blog__read-more-main read-more">Read more</a>
     </section>
-    <section>
-      <h2>About Us</h2>
-      <p class="s5">We craft digital artifacts for those who live between worlds. Our space is built for creators,
+    <section class="about">
+      <h2 class="about__title title">About us</h2>
+      <p class="about__description">We craft digital artifacts for those who live between worlds. Our space is built for
+        creators,
         collectors
         and the quietly obsessed.</p>
-      <ol>
-        <li>
-          <h3>Crystal Clear Quality</h3>
-          <p class="p1-regular">Every NFT we drop is razor-sharp, high res, and glitch free. Art that hits hard and
+      <ol class="about__features">
+        <li class="about__feature">
+          <h4 class="about__feature-title">Crystal Clear Quality</h4>
+          <p class="about__feature-description">Every NFT we drop is razor-sharp, high res, and glitch free. Art that
+            hits hard and
             stays clean.</p>
         </li>
-        <li>
-          <h3>Curated Depth</h3>
-          <p class="p1-regular">Not just big - meaningful. Each piece tells a story, every collection builds a universe.
+        <li class="about__feature">
+          <h4 class="about__feature-title">Curated Depth</h4>
+          <p class="about__feature-description">Not just big - meaningful. Each piece tells a story, every collection
+            builds a universe.
           </p>
         </li>
-        <li>
-          <h3>Rare Source Access</h3>
-          <p class="p1-regular">Early drops. Backstage peeks. Our members don't scroll - they unlock.</p>
+        <li class="about__feature">
+          <h4 class="about__feature-title">Rare Source Access</h4>
+          <p class="about__feature-description">Early drops. Backstage peeks. Our members don't scroll - they unlock.
+          </p>
         </li>
-        <li>
-          <h3>Living Network</h3>
-          <p class="p1-regular">Our community isn't a list - it's a force. Artists, labels, dreamers.</p>
+        <li class="about__feature">
+          <h4 class="about__feature-title">Living Network</h4>
+          <p class="about__feature-description">Our community isn't a list - it's a force. Artists, labels, dreamers.
+          </p>
         </li>
       </ol>
-      <a href="#" class="l2 lnk">Read more</a>
+      <a href="#" class="about__read-more read-more">Read more</a>
     </section>
-    <section>
-      <h2>Our Team</h2>
-      <ul>
-        <li>
-          <img src="#" alt="Nova Riven">
-          <h3>Nova Riven</h3>
-          <span class="p1-regular">Creative Architect</span>
-          <div>
-            <a href="#" aria-label="Facebook"><img src="#" alt="Facebook icon"></a>
-            <a href="#" aria-label="Telegram"><img src="#" alt="Telegram icon"></a>
-            <a href="#" aria-label="LinkedIn"><img src="#" alt="LinkedIn icon"></a>
-            <a href="#" aria-label="Instagram"><img src="#" alt="Instagram icon"></a>
+    <section class="team">
+      <h2 class="team__title title">Our team</h2>
+      <ul class="team__list">
+        <li class="team__member">
+          <img src="#" alt="Nova Riven" class="team__member-photo">
+          <h4 class="team__member-name">Nova Riven</h4>
+          <span class="team__member-role">Creative Architect</span>
+          <div class="team__member-socials">
+            <a href="#" aria-label="Facebook" class="team__social-link"><img src="#" alt="Facebook icon"
+                class="team__social-icon"></a>
+            <a href="#" aria-label="Telegram" class="team__social-link"><img src="#" alt="Telegram icon"
+                class="team__social-icon"></a>
+            <a href="#" aria-label="LinkedIn" class="team__social-link"><img src="#" alt="LinkedIn icon"
+                class="team__social-icon"></a>
+            <a href="#" aria-label="Instagram" class="team__social-link"><img src="#" alt="Instagram icon"
+                class="team__social-icon"></a>
           </div>
         </li>
-        <li>
-          <img src="#" alt="Echo Zero">
-          <h3>Echo Zero</h3>
-          <span class="p1-regular">Tech Whisperer</span>
-          <div>
-            <a href="#" aria-label="Twitter"><img src="#" alt="Twitter icon"></a>
-            <a href="#" aria-label="Telegram"><img src="#" alt="Telegram icon"></a>
-            <a href="#" aria-label="LinkedIn"><img src="#" alt="LinkedIn icon"></a>
-            <a href="#" aria-label="Instagram"><img src="#" alt="Instagram icon"></a>
+        <li class="team__member">
+          <img src="#" alt="Echo Zero" class="team__member-photo">
+          <h4 class="team__member-name">Echo Zero</h4>
+          <span class="team__member-role">Tech Whisperer</span>
+          <div class="team__member-socials">
+            <a href="#" aria-label="Twitter" class="team__social-link"><img src="#" alt="Twitter icon"
+                class="team__social-icon"></a>
+            <a href="#" aria-label="Telegram" class="team__social-link"><img src="#" alt="Telegram icon"
+                class="team__social-icon"></a>
+            <a href="#" aria-label="LinkedIn" class="team__social-link"><img src="#" alt="LinkedIn icon"
+                class="team__social-icon"></a>
+            <a href="#" aria-label="Instagram" class="team__social-link"><img src="#" alt="Instagram icon"
+                class="team__social-icon"></a>
           </div>
         </li>
-        <li>
-          <img src="#" alt="Kairo Null">
-          <h3>Kairo Null</h3>
-          <span class="p1-regular">Lore Engineer</span>
-          <div>
-            <a href="#" aria-label="Twitter"><img src="#" alt="Twitter icon"></a>
-            <a href="#" aria-label="Facebook"><img src="#" alt="Facebook icon"></a>
-            <a href="#" aria-label="Telegram"><img src="#" alt="Telegram icon"></a>
-            <a href="#" aria-label="LinkedIn"><img src="#" alt="LinkedIn icon"></a>
+        <li class="team__member">
+          <img src="#" alt="Kairo Null" class="team__member-photo">
+          <h4 class="team__member-name">Kairo Null</h4>
+          <span class="team__member-role">Lore Engineer</span>
+          <div class="team__member-socials">
+            <a href="#" aria-label="Twitter" class="team__social-link"><img src="#" alt="Twitter icon"
+                class="team__social-icon"></a>
+            <a href="#" aria-label="Facebook" class="team__social-link"><img src="#" alt="Facebook icon"
+                class="team__social-icon"></a>
+            <a href="#" aria-label="Telegram" class="team__social-link"><img src="#" alt="Telegram icon"
+                class="team__social-icon"></a>
+            <a href="#" aria-label="LinkedIn" class="team__social-link"><img src="#" alt="LinkedIn icon"
+                class="team__social-icon"></a>
           </div>
         </li>
-        <li>
-          <img src="#" alt="Dr. Wex Omega">
-          <h3>Dr. Wex Omega</h3>
-          <span class="p1-regular">Visual Disruptor</span>
-          <div>
-            <a href="#" aria-label="Twitter"><img src="#" alt="Twitter icon"></a>
-            <a href="#" aria-label="Facebook"><img src="#" alt="Facebook icon"></a>
-            <a href="#" aria-label="Telegram"><img src="#" alt="Telegram icon"></a>
-            <a href="#" aria-label="LinkedIn"><img src="#" alt="LinkedIn icon"></a>
-            <a href="#" aria-label="Instagram"><img src="#" alt="Instagram icon"></a>
+        <li class="team__member">
+          <img src="#" alt="Dr. Wex Omega" class="team__member-photo">
+          <h4 class="team__member-name">Dr. Wex Omega</h4>
+          <span class="team__member-role">Visual Disruptor</span>
+          <div class="team__member-socials">
+            <a href="#" aria-label="Twitter" class="team__social-link"><img src="#" alt="Twitter icon"
+                class="team__social-icon"></a>
+            <a href="#" aria-label="Facebook" class="team__social-link"><img src="#" alt="Facebook icon"
+                class="team__social-icon"></a>
+            <a href="#" aria-label="Telegram" class="team__social-link"><img src="#" alt="Telegram icon"
+                class="team__social-icon"></a>
+            <a href="#" aria-label="LinkedIn" class="team__social-link"><img src="#" alt="LinkedIn icon"
+                class="team__social-icon"></a>
+            <a href="#" aria-label="Instagram" class="team__social-link"><img src="#" alt="Instagram icon"
+                class="team__social-icon"></a>
           </div>
         </li>
-        <li>
-          <img src="#" alt="Synthya Void">
-          <h3>Synthya Void</h3>
-          <span class="p1-regular">UX Seer</span>
-          <div>
-            <a href="#" aria-label="Twitter"><img src="#" alt="Twitter icon"></a>
+        <li class="team__member">
+          <img src="#" alt="Synthya Void" class="team__member-photo">
+          <h4 class="team__member-name">Synthya Void</h4>
+          <span class="team__member-role">UX Seer</span>
+          <div class="team__member-socials">
+            <a href="#" aria-label="Twitter" class="team__social-link"><img src="#" alt="Twitter icon"
+                class="team__social-icon"></a>
           </div>
         </li>
-        <li>
-          <img src="#" alt="Mirlo Drift">
-          <h3>Mirlo Drift</h3>
-          <span class="p1-regular">Community Catalyst</span>
-          <div>
-            <a href="#" aria-label="Twitter"><img src="#" alt="Twitter icon"></a>
-            <a href="#" aria-label="Facebook"><img src="#" alt="Facebook icon"></a>
-            <a href="#" aria-label="Telegram"><img src="#" alt="Telegram icon"></a>
-            <a href="#" aria-label="LinkedIn"><img src="#" alt="LinkedIn icon"></a>
-            <a href="#" aria-label="Instagram"><img src="#" alt="Instagram icon"></a>
+        <li class="team__member">
+          <img src="#" alt="Mirlo Drift" class="team__member-photo">
+          <h4 class="team__member-name">Mirlo Drift</h4>
+          <span class="team__member-role">Community Catalyst</span>
+          <div class="team__member-socials">
+            <a href="#" aria-label="Twitter" class="team__social-link"><img src="#" alt="Twitter icon"
+                class="team__social-icon"></a>
+            <a href="#" aria-label="Facebook" class="team__social-link"><img src="#" alt="Facebook icon"
+                class="team__social-icon"></a>
+            <a href="#" aria-label="Telegram" class="team__social-link"><img src="#" alt="Telegram icon"
+                class="team__social-icon"></a>
+            <a href="#" aria-label="LinkedIn" class="team__social-link"><img src="#" alt="LinkedIn icon"
+                class="team__social-icon"></a>
+            <a href="#" aria-label="Instagram" class="team__social-link"><img src="#" alt="Instagram icon"
+                class="team__social-icon"></a>
           </div>
         </li>
-        <li>
-          <img src="#" alt="Axon Rune">
-          <h3>Axon Rune</h3>
-          <span class="p1-regular">Security Ghost</span>
-          <div>
-            <a href="#" aria-label="Twitter"><img src="#" alt="Twitter icon"></a>
-            <a href="#" aria-label="Facebook"><img src="#" alt="Facebook icon"></a>
-            <a href="#" aria-label="Telegram"><img src="#" alt="Telegram icon"></a>
-            <a href="#" aria-label="LinkedIn"><img src="#" alt="LinkedIn icon"></a>
-            <a href="#" aria-label="Instagram"><img src="#" alt="Instagram icon"></a>
+        <li class="team__member">
+          <img src="#" alt="Axon Rune" class="team__member-photo">
+          <h4 class="team__member-name">Axon Rune</h4>
+          <span class="team__member-role">Security Ghost</span>
+          <div class="team__member-socials">
+            <a href="#" aria-label="Twitter" class="team__social-link"><img src="#" alt="Twitter icon"
+                class="team__social-icon"></a>
+            <a href="#" aria-label="Facebook" class="team__social-link"><img src="#" alt="Facebook icon"
+                class="team__social-icon"></a>
+            <a href="#" aria-label="Telegram" class="team__social-link"><img src="#" alt="Telegram icon"
+                class="team__social-icon"></a>
+            <a href="#" aria-label="LinkedIn" class="team__social-link"><img src="#" alt="LinkedIn icon"
+                class="team__social-icon"></a>
+            <a href="#" aria-label="Instagram" class="team__social-link"><img src="#" alt="Instagram icon"
+                class="team__social-icon"></a>
           </div>
         </li>
       </ul>
     </section>
-    <section>
-      <h2>FAQs</h2>
-      <details>
-        <summary class="p2-regular">What are the NFTs</summary>
-        <p class="p2-medium"><a href="#" class="highlight">NFTs (non-fungible tokens)</a> are unique digital objects
+    <section class="faq">
+      <h2 class="faq__title title">FAQs</h2>
+      <details class="faq__item">
+        <summary class="faq__question">What are the NFTs</summary>
+        <p class="faq__answer"><a href="#" class="faq__link">NFTs (non-fungible tokens)</a> are unique digital objects
           stored on the
           blockchain. They can be
           art, music, code, memes, memories - anything that can be owned and verified. No copies. No fakes. Just you
           and
           the chain.</p>
       </details>
-      <details>
-        <summary class="p2-regular">How do I get NFTs?</summary>
-        <p class="p2-medium">To be determined</p>
+      <details class="faq__item">
+        <summary class="faq__question">How do I get NFTs?</summary>
+        <p class="faq__answer">To be determined</p>
       </details>
-      <details>
-        <summary class="p2-regular">How can we buy your NFTs?</summary>
-        <p class="p2-medium">To be determined</p>
+      <details class="faq__item">
+        <summary class="faq__question">How can we buy your NFTs?</summary>
+        <p class="faq__answer">To be determined</p>
       </details>
-      <details>
-        <summary class="p2-regular">Who are the team behind the project?</summary>
-        <p class="p2-medium">To be determined</p>
+      <details class="faq__item">
+        <summary class="faq__question">Who are the team behind the project?</summary>
+        <p class="faq__answer">To be determined</p>
       </details>
     </section>
   </main>
-  <footer>
-    <section>
-      <a href="#"><img src="#" alt="Binabox logo"></a>
-      <p class="p3-regular">We are the best way to check the rarity of NFT collection.</p>
+  <footer class="footer">
+    <section class="footer__brand">
+      <a href="#" class="footer__logo-link"><img src="#" alt="Binabox logo" class="footer__logo"></a>
+      <p class="footer__description">We are the best way to check the rarity of NFT collection.</p>
     </section>
-    <nav>
-      <span class="s5">Navigation</span>
-      <ul>
-        <li class="l4"><a href="#home">Home</a></li>
-        <li class="l4"><a href="/blog.html">Blog</a></li>
-        <li class="l4"><a href="#catalog">Catalog</a></li>
-        <li class="l4"><a href="#contact-us">Contact Us</a></li>
-        <li class="l4"><a href="#terms-conditions">Terms Conditions</a></li>
-        <li class="l4"><a href="#privacy-policy">Privacy Policy</a></li>
-        <li class="l4"><a href="#whitepaper">Whitepaper</a></li>
-        <li class="l4"><a href="#help-center">Help Center</a></li>
+    <nav class="footer__nav">
+      <span class="footer__nav-title">Navigation</span>
+      <ul class="footer__nav-list">
+        <li class="footer__nav-item"><a href="#home" class="footer__nav-link">Home</a></li>
+        <li class="footer__nav-item"><a href="/blog.html" class="footer__nav-link">Blog</a></li>
+        <li class="footer__nav-item"><a href="#catalog" class="footer__nav-link">Catalog</a></li>
+        <li class="footer__nav-item"><a href="#contact-us" class="footer__nav-link">Contact Us</a></li>
+        <li class="footer__nav-item"><a href="#terms-conditions" class="footer__nav-link">Terms Conditions</a></li>
+        <li class="footer__nav-item"><a href="#privacy-policy" class="footer__nav-link">Privacy Policy</a></li>
+        <li class="footer__nav-item"><a href="#whitepaper" class="footer__nav-link">Whitepaper</a></li>
+        <li class="footer__nav-item"><a href="#help-center" class="footer__nav-link">Help Center</a></li>
       </ul>
     </nav>
-    <p class="p3-regular">BINABOX 2025 - All rights reserved</p>
-    <address>
-      <a href="#" aria-label="Twitter"><img src="#" alt="Twitter icon"></a>
-      <a href="#" aria-label="Facebook"><img src="#" alt="Facebook icon"></a>
-      <a href="#" aria-label="Telegram"><img src="#" alt="Telegram icon"></a>
-      <a href="#" aria-label="YouTube"><img src="#" alt="YouTube icon"></a>
-      <a href="#" aria-label="TikTok"><img src="#" alt="TikTok icon"></a>
-      <a href="#" aria-label="Discord"><img src="#" alt="Discord icon"></a>
+    <p class="footer__copyright">BINABOX 2025 - ALL rights reserved</p>
+    <address class="footer__socials">
+      <a href="#" aria-label="Twitter" class="footer__social-link"><img src="#" alt="Twitter icon"
+          class="footer__social-icon"></a>
+      <a href="#" aria-label="Facebook" class="footer__social-link"><img src="#" alt="Facebook icon"
+          class="footer__social-icon"></a>
+      <a href="#" aria-label="Telegram" class="footer__social-link"><img src="#" alt="Telegram icon"
+          class="footer__social-icon"></a>
+      <a href="#" aria-label="YouTube" class="footer__social-link"><img src="#" alt="YouTube icon"
+          class="footer__social-icon"></a>
+      <a href="#" aria-label="TikTok" class="footer__social-link"><img src="#" alt="TikTok icon"
+          class="footer__social-icon"></a>
+      <a href="#" aria-label="Discord" class="footer__social-link"><img src="#" alt="Discord icon"
+          class="footer__social-icon"></a>
     </address>
   </footer>
 </body>
