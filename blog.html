@@ -16,44 +16,41 @@
 
 <body>
     <header class="header">
-        <a href="#home" class="header__logo-link">
-            <img src="#" alt="Binabox logo" class="header__logo">
+        <a href="#home" class="logo header__logo">
+            <img src="#" alt="Binabox logo" class="logo__image">
         </a>
-        <nav class="header__nav">
-            <ul class="header__nav-list">
-                <li class="header__nav-item"><a href="index.html" class="header__nav-link">Home</a></li>
-                <li class="header__nav-item"><a href="blog.html"
-                        class="header__nav-link header__nav-link--active">Blog</a></li>
-                <li class="header__nav-item"><a href="#catalog" class="header__nav-link">Catalog</a></li>
-                <li class="header__nav-item"><a href="#contact-us" class="header__nav-link">Contact Us</a></li>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="blog.html" class="nav__link nav__link--active">Blog</a></li>
+                <li class="nav__item"><a href="#catalog" class="nav__link">Catalog</a></li>
+                <li class="nav__item"><a href="#contact-us" class="nav__link">Contact Us</a></li>
             </ul>
         </nav>
         <div class="header__actions">
             <input type="search" placeholder="Search" class="header__search">
             <span class="header__separator separator"></span>
-            <a href="#" class="header__discord-link"><img src="#" alt="Discord icon"
-                    class="header__discord-icon">Discord</a>
-            <button type="button" class="header__login-button"><img src="#" alt="Login icon"
-                    class="header__login-icon">Login</button>
+            <a href="#" class="button button--secondary button--large header__discord-link"><img src="#"
+                    alt="Discord icon" class="header__discord-icon">Discord</a>
+            <button type="button" class="button button--primary button--large header__login-button"><img src="#"
+                    alt="Login icon" class="header__login-icon">Login</button>
         </div>
     </header>
     <main class="main">
         <section class="page-header">
             <h1 class="page-header__title title">Our blog</h1>
-            <nav class="page-header__breadcrumb">
-                <ul class="page-header__breadcrumb-list">
-                    <li class="page-header__breadcrumb-item"><a href="index.html"
-                            class="page-header__breadcrumb-link">Home</a></li>
-                    <li class="page-header__breadcrumb-item"><a href="#our-blog"
-                            class="page-header__breadcrumb-link">Our Blog</a></li>
-                    <li class="page-header__breadcrumb-item"><a href="#basilisks-nft"
-                            class="page-header__breadcrumb-link--secondary">The Basilisks NFT</a></li>
+            <nav class="breadcrumb">
+                <ul class="breadcrumb__list">
+                    <li class="breadcrumb__item"><a href="index.html" class="breadcrumb__link">Home</a></li>
+                    <li class="breadcrumb__item"><a href="#our-blog" class="breadcrumb__link">Our Blog</a></li>
+                    <li class="breadcrumb__item"><a href="#basilisks-nft"
+                            class="breadcrumb__link breadcrumb__link--secondary">The Basilisks NFT</a></li>
                 </ul>
             </nav>
         </section>
         <aside class="sidebar">
             <section class="sidebar__categories">
-                <h4 class="sidebar__title">Categories</h4>
+                <h4 class="sidebar__title title">Categories</h4>
                 <ul class="sidebar__list">
                     <li class="sidebar__item"><a href="#" class="sidebar__link">Our Blog (12)</a></li>
                     <li class="sidebar__item"><a href="#" class="sidebar__link">Metaverse (24)</a></li>
@@ -65,28 +62,34 @@
                 </ul>
             </section>
             <section class="sidebar__tags">
-                <h3 class="sidebar__title">Tag</h3>
+                <h3 class="sidebar__title title">Tag</h3>
                 <ul class="sidebar__list">
-                    <li class="sidebar__item"><a href="#" class="sidebar__tag">NFT</a></li>
-                    <li class="sidebar__item"><a href="#" class="sidebar__tag">ICO</a></li>
-                    <li class="sidebar__item"><a href="#" class="sidebar__tag">Robot</a></li>
-                    <li class="sidebar__item"><a href="#" class="sidebar__tag">Crypto</a></li>
-                    <li class="sidebar__item"><a href="#" class="sidebar__tag">Launchpad</a></li>
-                    <li class="sidebar__item"><a href="#" class="sidebar__tag">Metaverse</a></li>
+                    <li class="sidebar__item"><a href="#"
+                            class="button button--secondary button--small sidebar__tag">NFT</a></li>
+                    <li class="sidebar__item"><a href="#"
+                            class="button button--secondary button--small sidebar__tag">ICO</a></li>
+                    <li class="sidebar__item"><a href="#"
+                            class="button button--secondary button--small sidebar__tag">Robot</a></li>
+                    <li class="sidebar__item"><a href="#"
+                            class="button button--secondary button--small sidebar__tag">Crypto</a></li>
+                    <li class="sidebar__item"><a href="#"
+                            class="button button--secondary button--small sidebar__tag">Launchpad</a></li>
+                    <li class="sidebar__item"><a href="#"
+                            class="button button--secondary button--small sidebar__tag">Metaverse</a></li>
                 </ul>
             </section>
         </aside>
         <article class="article">
-            <figure class="article__hero-figure">
+            <figure class="article__hero">
                 <img src="#" alt="Basilisk image" class="article__hero-image">
                 <figcaption class="article__hero-caption">A Basilisk enters the arena - its emerald scales shimmer with
                     encoded rage.</figcaption>
             </figure>
             <header class="article__header">
                 <h2 class="article__title title">The Basilisks NFT</h2>
-                <span class="article__category">Gaming</span>
+                <span class="button button--primary button--large article__category">Gaming</span>
                 <span class="article__author">
-                    <img src="#" alt="Author profile picture" class="article__author-avatar">
+                    <img src="#" alt="Author profile picture" class="article__avatar">
                     <a href="#" class="article__author-link">Tony Nguyen</a>
                 </span>
                 <img src="#" alt="Date icon" class="article__date-icon">
@@ -145,7 +148,7 @@
                 <figcaption class="article__caption">A bonded Basilisk with its summoner. Loyalty is minted — not
                     earned.</figcaption>
             </figure>
-            <h3 class="article__subtitle">NFTs are digital assets that represent real-world objects</h3>
+            <h3 class="article__subtitle title">NFTs are digital assets that represent real-world objects</h3>
             <p class="article__text">Setting up your avatar and personalizing your nickname on Binance is quick and
                 easy. Users can go to
                 binance.com under Dashboard > Settings > My Profile > Avatar and Nickname. For those of you who own NFT
@@ -157,7 +160,7 @@
                 Nickname, and you'll be redirected to the main site. Binance NFT Creators have the option of setting
                 their Avatars on nft.binance.com. Once you set your new unique nickname, it will be standardized and
                 used across the Binance ecosystem.</p>
-            <h3 class="article__subtitle">NFT Avatar Generators</h3>
+            <h3 class="article__subtitle title">NFT Avatar Generators</h3>
             <p class="article__text">Looking to join the pack?</p>
             <p class="article__text">Use the <a href="#" class="article__link">NFT Avatar Generator</a> to craft your
                 own beast — or grab a rare egg on the
@@ -166,38 +169,41 @@
 
             <section class="article__tags">
                 <span class="article__tags-title">Tags:</span>
-                <a href="#" class="article__tag">NFT</a>
-                <a href="#" class="article__tag">Metaverse</a>
-                <a href="#" class="article__tag">Crypto</a>
+                <a href="#" class="button button--secondary button--small article__tag">NFT</a>
+                <a href="#" class="button button--secondary button--small article__tag">Metaverse</a>
+                <a href="#" class="button button--secondary button--small article__tag">Crypto</a>
             </section>
             <section class="article__share">
                 <span class="article__share-title">Share:</span>
-                <a href="#" class="article__share-link"><img src="#" alt="Twitter icon" class="article__share-icon"></a>
-                <a href="#" class="article__share-link"><img src="#" alt="Facebook icon"
+                <a href="#" class="button button--secondary article__share-link"><img src="#" alt="Twitter icon"
                         class="article__share-icon"></a>
-                <a href="#" class="article__share-link"><img src="#" alt="Instagram icon"
+                <a href="#" class="button button--secondary article__share-link"><img src="#" alt="Facebook icon"
+                        class="article__share-icon"></a>
+                <a href="#" class="button button--secondary article__share-link"><img src="#" alt="Instagram icon"
                         class="article__share-icon"></a>
             </section>
         </article>
     </main>
     <footer class="footer">
         <section class="footer__brand">
-            <a href="#" class="footer__logo-link"><img src="#" alt="Binabox logo" class="footer__logo"></a>
-            <h2 class="footer__brand-title">BINABOX</h2>
+            <a href="#" class="logo footer__logo"><img src="#" alt="Binabox logo" class="logo__image"></a>
+            <h2 class="footer__brand-title title">BINABOX</h2>
             <p class="footer__description">We are the best way to check the rarity of NFT collection.</p>
         </section>
-        <nav class="footer__nav">
+        <nav class="nav footer__nav">
             <span class="footer__nav-title">Navigation</span>
-            <ul class="footer__nav-list">
-                <li class="footer__nav-item"><a href="index.html" class="footer__nav-link">Home</a></li>
-                <li class="footer__nav-item"><a href="blog.html" class="footer__nav-link">Blog</a></li>
-                <li class="footer__nav-item"><a href="#catalog" class="footer__nav-link">Catalog</a></li>
-                <li class="footer__nav-item"><a href="#contact-us" class="footer__nav-link">Contact Us</a></li>
-                <li class="footer__nav-item"><a href="#terms-conditions" class="footer__nav-link">Terms Conditions</a>
+            <ul class="nav__list footer__nav-list">
+                <li class="nav__item"><a href="index.html" class="nav__link footer__nav-link">Home</a></li>
+                <li class="nav__item"><a href="blog.html" class="nav__link footer__nav-link">Blog</a></li>
+                <li class="nav__item"><a href="#catalog" class="nav__link footer__nav-link">Catalog</a></li>
+                <li class="nav__item"><a href="#contact-us" class="nav__link footer__nav-link">Contact Us</a></li>
+                <li class="nav__item"><a href="#terms-conditions" class="nav__link footer__nav-link">Terms
+                        Conditions</a>
                 </li>
-                <li class="footer__nav-item"><a href="#privacy-policy" class="footer__nav-link">Privacy Policy</a></li>
-                <li class="footer__nav-item"><a href="#whitepaper" class="footer__nav-link">Whitepaper</a></li>
-                <li class="footer__nav-item"><a href="#help-center" class="footer__nav-link">Help Center</a></li>
+                <li class="nav__item"><a href="#privacy-policy" class="nav__link footer__nav-link">Privacy Policy</a>
+                </li>
+                <li class="nav__item"><a href="#whitepaper" class="nav__link footer__nav-link">Whitepaper</a></li>
+                <li class="nav__item"><a href="#help-center" class="nav__link footer__nav-link">Help Center</a></li>
             </ul>
         </nav>
         <p class="footer__copyright">BINABOX 2025 - All rights reserved</p>
