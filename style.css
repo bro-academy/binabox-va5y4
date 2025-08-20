@@ -290,7 +290,7 @@ a {
     color: rgba(239, 245, 250, 0.82);
 }
 
-.card--blog .card__separator {
+.card--blog {
     display: inline-block;
     width: 2px;
     height: 24px;
@@ -370,7 +370,6 @@ a {
     line-height: 24px;
 }
 
-.team__member-role,
 .card--team .card__role {
     font-size: 18px;
     color: rgba(239, 245, 250, 0.82);
