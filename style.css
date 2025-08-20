@@ -69,7 +69,6 @@ a {
 
 .button--secondary {
     border: 2px solid rgba(208, 215, 251, 0.17);
-    background-color: transparent;
 }
 
 .button--large {
@@ -192,7 +191,6 @@ a {
 .catalog__nav-button--active {
     background-color: #0265DC;
     color: #0D0D15;
-    border: none;
 }
 
 .catalog__price {
@@ -206,6 +204,118 @@ a {
     font-size: 20px;
     line-height: 28px;
     font-weight: 500;
+}
+
+.card {
+    display: block;
+}
+
+.card__image {
+    display: block;
+    width: 100%;
+}
+
+.card__title {
+    font-family: 'Bakbak One', Arial, sans-serif;
+    color: #F8F7FF;
+}
+
+.card__label {
+    font-weight: 600;
+    line-height: 20px;
+    padding: 8px 10px;
+}
+
+.card__label--new {
+    border: 1px solid;
+    background-color: #F5F8FB;
+    color: #0265DC;
+}
+
+.card__label--sold-out {
+    background-color: #EA3829;
+    color: #F5F8FB;
+}
+
+.card--catalog .card__price {
+    font-family: 'Bakbak One', Arial, sans-serif;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+}
+
+.card--catalog .card__title {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
+}
+
+.card--blog {
+    background-color: rgba(29, 28, 40, 1);
+    margin-bottom: 24px;
+    padding: 16px;
+}
+
+.card--blog .card__label {
+    border: none;
+    background-color: rgba(245, 248, 251, 1);
+    color: rgba(2, 101, 220, 1);
+}
+
+.card--blog .card__excerpt {
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(239, 245, 250, 0.82);
+}
+
+.card--blog .card__meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.card--blog .card__author {
+    font-weight: 600;
+    line-height: 20px;
+    color: rgba(239, 245, 250, 0.82);
+}
+
+.card--blog .card__author--uppercase {
+    text-transform: uppercase;
+}
+
+.card--blog .card__date {
+    font-weight: 600;
+    line-height: 20px;
+    color: rgba(239, 245, 250, 0.82);
+}
+
+.card--blog .card__separator {
+    display: inline-block;
+    width: 2px;
+    height: 24px;
+    background: rgba(208, 215, 251, 0.17);
+    vertical-align: middle;
+    border-radius: 1px;
+}
+
+.card--team .card__role {
+    font-size: 18px;
+    color: rgba(239, 245, 250, 0.82);
+}
+
+.card--team .card__socials {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.card--team .card__social-link {
+    display: inline-block;
+}
+
+.card--team .card__social-icon {
+    display: block;
 }
 
 .catalog__label {
@@ -223,7 +333,6 @@ a {
 .catalog__label--sold-out {
     background-color: #EA3829;
     color: #F5F8FB;
-    border: none;
 }
 
 .title {
@@ -231,14 +340,16 @@ a {
     color: #F8F7FF;
 }
 
-.blog__card {
+.blog__card,
+.card--blog {
     background-color: rgba(29, 28, 40, 1);
     margin-bottom: 24px;
     padding: 16px;
 }
 
 
-.blog__label {
+.blog__label,
+.card--blog .card__label {
     border: none;
     background-color: rgba(245, 248, 251, 1);
     padding: 8px 10px;
@@ -247,23 +358,27 @@ a {
     line-height: 20px;
 }
 
-.blog__excerpt {
+.blog__excerpt,
+.card--blog .card__excerpt {
     font-size: 16px;
     line-height: 24px;
     color: rgba(239, 245, 250, 0.82);
 }
 
-.blog__author {
+.blog__author,
+.card--blog .card__author {
     font-weight: 600;
     line-height: 20px;
     color: rgba(239, 245, 250, 0.82);
 }
 
-.blog__author--uppercase {
+.blog__author--uppercase,
+.card--blog .card__author--uppercase {
     text-transform: uppercase;
 }
 
-.blog__date {
+.blog__date,
+.card--blog .card__date {
     font-weight: 600;
     line-height: 20px;
     color: rgba(239, 245, 250, 0.82);
@@ -299,7 +414,8 @@ a {
     line-height: 24px;
 }
 
-.team__member-role {
+.team__member-role,
+.card--team .card__role {
     font-size: 18px;
     color: rgba(239, 245, 250, 0.82);
 }

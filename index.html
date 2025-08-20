@@ -63,109 +63,131 @@
         class="button button--secondary button--square catalog__nav-button catalog__nav-button--active">&gt;</button>
       <ul class="catalog__list">
         <li class="catalog__item">
-          <img src="#" alt="Echo of Bones picture" class="catalog__image">
-          <span class="catalog__label catalog__label--new">New</span>
-          <span class="catalog__price">$1990</span>
-          <span class="catalog__name">Echo of Bones</span>
+          <article class="card card--catalog">
+            <img src="#" alt="Echo of Bones picture" class="card__image">
+            <span class="card__label card__label--new">New</span>
+            <span class="card__price">$1990</span>
+            <h3 class="card__title">Echo of Bones</h3>
+          </article>
         </li>
         <li class="catalog__item">
-          <img src="#" alt="Nyx the Watcher picture" class="catalog__image">
-          <span class="catalog__label catalog__label--new">New</span>
-          <span class="catalog__price">$299.99</span>
-          <span class="catalog__name">Nyx the Watcher</span>
+          <article class="card card--catalog">
+            <img src="#" alt="Nyx the Watcher picture" class="card__image">
+            <span class="card__label card__label--new">New</span>
+            <span class="card__price">$299.99</span>
+            <h3 class="card__title">Nyx the Watcher</h3>
+          </article>
         </li>
         <li class="catalog__item">
-          <img src="#" alt="Blade of Silence picture" class="catalog__image">
-          <span class="catalog__label catalog__label--sold-out">Sold out</span>
-          <span class="catalog__price">$20</span>
-          <span class="catalog__name">Blade of Silence</span>
+          <article class="card card--catalog">
+            <img src="#" alt="Blade of Silence picture" class="card__image">
+            <span class="card__label card__label--sold-out">Sold out</span>
+            <span class="card__price">$20</span>
+            <h3 class="card__title">Blade of Silence</h3>
+          </article>
         </li>
         <li class="catalog__item">
-          <img src="#" alt="Data Core: Alpha picture" class="catalog__image">
-          <span class="catalog__price">$1.000.000</span>
-          <span class="catalog__name">Data Core: Alpha</span>
+          <article class="card card--catalog">
+            <img src="#" alt="Data Core: Alpha picture" class="card__image">
+            <span class="card__price">$1.000.000</span>
+            <h3 class="card__title">Data Core: Alpha</h3>
+          </article>
         </li>
         <li class="catalog__item">
-          <img src="#" alt="Phantom Console picture" class="catalog__image">
-          <span class="catalog__price">$199.5</span>
-          <span class="catalog__name">Phantom Console</span>
+          <article class="card card--catalog">
+            <img src="#" alt="Phantom Console picture" class="card__image">
+            <span class="card__price">$199.5</span>
+            <h3 class="card__title">Phantom Console</h3>
+          </article>
         </li>
       </ul>
     </section>
     <section class="blog">
       <h2 class="blog__title title">Our blog</h2>
-      <article class="blog__card">
-        <span class="blog__label">NFT</span>
-        <img src="#" alt="Neural Drift image" class="blog__image">
-        <h2 class="blog__card-title title">Neural Drift</h2>
-        <p class="blog__excerpt">I woke up inside the void. My body stayed in the past - only thoughts were allowed
+      <article class="card card--blog">
+        <span class="card__label">NFT</span>
+        <img src="#" alt="Neural Drift image" class="card__image">
+        <h2 class="card__title title">Neural Drift</h2>
+        <p class="card__excerpt">I woke up inside the void. My body stayed in the past - only thoughts were allowed
           throug...</p>
-        <img src="#" alt="Author icon" class="blog__author-icon">
-        <span class="blog__author blog__author--uppercase">Nova Riven</span>
-        <span class="blog__separator separator"></span>
-        <time class="blog__date" datetime="2022-12-04">04 Dec 2022</time>
-        <a href="#" class="button button--secondary button--medium blog__read-more">Read more &gt;</a>
+        <div class="card__meta">
+          <img src="#" alt="Author icon" class="card__author-icon">
+          <span class="card__author card__author--uppercase">Nova Riven</span>
+          <span class="card__separator separator"></span>
+          <time class="card__date" datetime="2022-12-04">04 Dec 2022</time>
+        </div>
+        <a href="#" class="button button--secondary button--medium card__button">Read more &gt;</a>
       </article>
-      <article class="blog__card">
-        <span class="blog__label">DROP</span>
-        <img src="#" alt="Deadframe image" class="blog__image">
-        <h2 class="blog__card-title title">Deadframe</h2>
-        <p class="blog__excerpt">He just stood there, waiting. Not for a person - for a signal. Like the memory of the
+      <article class="card card--blog">
+        <span class="card__label">DROP</span>
+        <img src="#" alt="Deadframe image" class="card__image">
+        <h2 class="card__title title">Deadframe</h2>
+        <p class="card__excerpt">He just stood there, waiting. Not for a person - for a signal. Like the memory of the
           network...</p>
-        <img src="#" alt="Author icon" class="blog__author-icon">
-        <span class="blog__author">Kairo Null</span>
-        <span class="blog__separator separator"></span>
-        <time class="blog__date" datetime="2022-12-06">06 Dec 2022</time>
-        <a href="#" class="button button--secondary button--medium blog__read-more">Read more &gt;</a>
+        <div class="card__meta">
+          <img src="#" alt="Author icon" class="card__author-icon">
+          <span class="card__author">Kairo Null</span>
+          <span class="card__separator separator"></span>
+          <time class="card__date" datetime="2022-12-06">06 Dec 2022</time>
+        </div>
+        <a href="#" class="button button--secondary button--medium card__button">Read more &gt;</a>
       </article>
-      <article class="blog__card">
-        <span class="blog__label">NFT</span>
-        <img src="#" alt="Glitch Panther image" class="blog__image">
-        <h2 class="blog__card-title title">Glitch Panther</h2>
-        <p class="blog__excerpt">Cats always knew more than they showed. Especially the ones that vanish into the
+      <article class="card card--blog">
+        <span class="card__label">NFT</span>
+        <img src="#" alt="Glitch Panther image" class="card__image">
+        <h2 class="card__title title">Glitch Panther</h2>
+        <p class="card__excerpt">Cats always knew more than they showed. Especially the ones that vanish into the
           code.
         </p>
-        <img src="#" alt="Author icon" class="blog__author-icon">
-        <span class="blog__author">Synthya Void</span>
-        <span class="blog__separator separator"></span>
-        <time class="blog__date" datetime="2022-12-07">07 Dec 2022</time>
-        <a href="#" class="button button--secondary button--medium blog__read-more">Read more &gt;</a>
+        <div class="card__meta">
+          <img src="#" alt="Author icon" class="card__author-icon">
+          <span class="card__author">Synthya Void</span>
+          <span class="card__separator separator"></span>
+          <time class="card__date" datetime="2022-12-07">07 Dec 2022</time>
+        </div>
+        <a href="#" class="button button--secondary button--medium card__button">Read more &gt;</a>
       </article>
-      <article class="blog__card">
-        <span class="blog__label">RARE</span>
-        <img src="#" alt="Primal.exe image" class="blog__image">
-        <h2 class="blog__card-title title">Primal.exe</h2>
-        <p class="blog__excerpt">We tried to resurrect the past. What we got was rage compressed into an algorithm.
+      <article class="card card--blog">
+        <span class="card__label">RARE</span>
+        <img src="#" alt="Primal.exe image" class="card__image">
+        <h2 class="card__title title">Primal.exe</h2>
+        <p class="card__excerpt">We tried to resurrect the past. What we got was rage compressed into an algorithm.
         </p>
-        <img src="#" alt="Author icon" class="blog__author-icon">
-        <span class="blog__author">Dr. Wex Omega</span>
-        <span class="blog__separator separator"></span>
-        <time class="blog__date" datetime="2022-12-08">08 Dec 2022</time>
-        <a href="#" class="button button--secondary button--medium blog__read-more">Read more &gt;</a>
+        <div class="card__meta">
+          <img src="#" alt="Author icon" class="card__author-icon">
+          <span class="card__author">Dr. Wex Omega</span>
+          <span class="card__separator separator"></span>
+          <time class="card__date" datetime="2022-12-08">08 Dec 2022</time>
+        </div>
+        <a href="#" class="button button--secondary button--medium card__button">Read more &gt;</a>
       </article>
-      <article class="blog__card">
-        <span class="blog__label">ARTIFACT</span>
-        <img src="#" alt="Retrocore image" class="blog__image">
-        <h2 class="blog__card-title title">Retrocore</h2>
-        <p class="blog__excerpt">This console comes from a game no one remembers how to play. But it's still powered
+      <article class="card card--blog">
+        <span class="card__label">ARTIFACT</span>
+        <img src="#" alt="Retrocore image" class="card__image">
+        <h2 class="card__title title">Retrocore</h2>
+        <p class="card__excerpt">This console comes from a game no one remembers how to play. But it's still powered
           on.
         </p>
-        <img src="#" alt="Author icon" class="blog__author-icon">
-        <span class="blog__author">Echo Zero</span>
-        <span class="blog__separator separator"></span>
-        <time class="blog__date" datetime="2022-12-09">09 Dec 2022</time>
-        <a href="#" class="button button--secondary button--medium blog__read-more">Read more &gt;</a>
+        <div class="card__meta">
+          <img src="#" alt="Author icon" class="card__author-icon">
+          <span class="card__author">Echo Zero</span>
+          <span class="card__separator separator"></span>
+          <time class="card__date" datetime="2022-12-09">09 Dec 2022</time>
+        </div>
+        <a href="#" class="button button--secondary button--medium card__button">Read more &gt;</a>
       </article>
-      <article class="blog__card">
-        <span class="blog__label">NFT</span>
-        <img src="#" alt="White Protocol image" class="blog__image">
-        <h2 class="blog__card-title title">White Protocol</h2>
-        <p class="blog__excerpt">At first it was a signal - clean, white, hypnotic. We didn't know it was alive.</p>
-        <img src="#" alt="Author icon" class="blog__author-icon">
-        <span class="blog__author">Tony Nguyen</span>
-        <span class="blog__separator separator"></span>
-        <time class="blog__date" datetime="2022-06-20">20 Jun 2022</time>
-        <a href="#" class="button button--secondary button--medium blog__read-more">Read more &gt;</a>
+      <article class="card card--blog">
+        <span class="card__label">NFT</span>
+        <img src="#" alt="White Protocol image" class="card__image">
+        <h2 class="card__title title">White Protocol</h2>
+        <p class="card__excerpt">At first it was a signal - clean, white, hypnotic. We didn't know it was alive.</p>
+        <div class="card__meta">
+          <img src="#" alt="Author icon" class="card__author-icon">
+          <span class="card__author">Tony Nguyen</span>
+          <span class="card__separator separator"></span>
+          <time class="card__date" datetime="2022-06-20">20 Jun 2022</time>
+        </div>
+        <a href="#" class="button button--secondary button--medium card__button">Read more &gt;</a>
       </article>
       <a href="#" class="button button--secondary button--large read-more">Read more</a>
     </section>
@@ -205,109 +227,123 @@
       <h2 class="team__title title">Our team</h2>
       <ul class="team__list">
         <li class="team__member">
-          <img src="#" alt="Nova Riven" class="team__member-photo">
-          <h4 class="team__member-name title">Nova Riven</h4>
-          <span class="team__member-role">Creative Architect</span>
-          <div class="team__member-socials">
-            <a href="#" aria-label="Facebook" class="team__social-link"><img src="#" alt="Facebook icon"
-                class="team__social-icon"></a>
-            <a href="#" aria-label="Telegram" class="team__social-link"><img src="#" alt="Telegram icon"
-                class="team__social-icon"></a>
-            <a href="#" aria-label="LinkedIn" class="team__social-link"><img src="#" alt="LinkedIn icon"
-                class="team__social-icon"></a>
-            <a href="#" aria-label="Instagram" class="team__social-link"><img src="#" alt="Instagram icon"
-                class="team__social-icon"></a>
-          </div>
+          <article class="card card--team">
+            <img src="#" alt="Nova Riven" class="card__image">
+            <h4 class="card__title title">Nova Riven</h4>
+            <span class="card__role">Creative Architect</span>
+            <div class="card__socials">
+              <a href="#" aria-label="Facebook" class="card__social-link"><img src="#" alt="Facebook icon"
+                  class="card__social-icon"></a>
+              <a href="#" aria-label="Telegram" class="card__social-link"><img src="#" alt="Telegram icon"
+                  class="card__social-icon"></a>
+              <a href="#" aria-label="LinkedIn" class="card__social-link"><img src="#" alt="LinkedIn icon"
+                  class="card__social-icon"></a>
+              <a href="#" aria-label="Instagram" class="card__social-link"><img src="#" alt="Instagram icon"
+                  class="card__social-icon"></a>
+            </div>
+          </article>
         </li>
         <li class="team__member">
-          <img src="#" alt="Echo Zero" class="team__member-photo">
-          <h4 class="team__member-name title">Echo Zero</h4>
-          <span class="team__member-role">Tech Whisperer</span>
-          <div class="team__member-socials">
-            <a href="#" aria-label="Twitter" class="team__social-link"><img src="#" alt="Twitter icon"
-                class="team__social-icon"></a>
-            <a href="#" aria-label="Telegram" class="team__social-link"><img src="#" alt="Telegram icon"
-                class="team__social-icon"></a>
-            <a href="#" aria-label="LinkedIn" class="team__social-link"><img src="#" alt="LinkedIn icon"
-                class="team__social-icon"></a>
-            <a href="#" aria-label="Instagram" class="team__social-link"><img src="#" alt="Instagram icon"
-                class="team__social-icon"></a>
-          </div>
+          <article class="card card--team">
+            <img src="#" alt="Echo Zero" class="card__image">
+            <h4 class="card__title title">Echo Zero</h4>
+            <span class="card__role">Tech Whisperer</span>
+            <div class="card__socials">
+              <a href="#" aria-label="Twitter" class="card__social-link"><img src="#" alt="Twitter icon"
+                  class="card__social-icon"></a>
+              <a href="#" aria-label="Telegram" class="card__social-link"><img src="#" alt="Telegram icon"
+                  class="card__social-icon"></a>
+              <a href="#" aria-label="LinkedIn" class="card__social-link"><img src="#" alt="LinkedIn icon"
+                  class="card__social-icon"></a>
+              <a href="#" aria-label="Instagram" class="card__social-link"><img src="#" alt="Instagram icon"
+                  class="card__social-icon"></a>
+            </div>
+          </article>
         </li>
         <li class="team__member">
-          <img src="#" alt="Kairo Null" class="team__member-photo">
-          <h4 class="team__member-name title">Kairo Null</h4>
-          <span class="team__member-role">Lore Engineer</span>
-          <div class="team__member-socials">
-            <a href="#" aria-label="Twitter" class="team__social-link"><img src="#" alt="Twitter icon"
-                class="team__social-icon"></a>
-            <a href="#" aria-label="Facebook" class="team__social-link"><img src="#" alt="Facebook icon"
-                class="team__social-icon"></a>
-            <a href="#" aria-label="Telegram" class="team__social-link"><img src="#" alt="Telegram icon"
-                class="team__social-icon"></a>
-            <a href="#" aria-label="LinkedIn" class="team__social-link"><img src="#" alt="LinkedIn icon"
-                class="team__social-icon"></a>
-          </div>
+          <article class="card card--team">
+            <img src="#" alt="Kairo Null" class="card__image">
+            <h4 class="card__title title">Kairo Null</h4>
+            <span class="card__role">Lore Engineer</span>
+            <div class="card__socials">
+              <a href="#" aria-label="Twitter" class="card__social-link"><img src="#" alt="Twitter icon"
+                  class="card__social-icon"></a>
+              <a href="#" aria-label="Facebook" class="card__social-link"><img src="#" alt="Facebook icon"
+                  class="card__social-icon"></a>
+              <a href="#" aria-label="Telegram" class="card__social-link"><img src="#" alt="Telegram icon"
+                  class="card__social-icon"></a>
+              <a href="#" aria-label="LinkedIn" class="card__social-link"><img src="#" alt="LinkedIn icon"
+                  class="card__social-icon"></a>
+            </div>
+          </article>
         </li>
         <li class="team__member">
-          <img src="#" alt="Dr. Wex Omega" class="team__member-photo">
-          <h4 class="team__member-name title">Dr. Wex Omega</h4>
-          <span class="team__member-role">Visual Disruptor</span>
-          <div class="team__member-socials">
-            <a href="#" aria-label="Twitter" class="team__social-link"><img src="#" alt="Twitter icon"
-                class="team__social-icon"></a>
-            <a href="#" aria-label="Facebook" class="team__social-link"><img src="#" alt="Facebook icon"
-                class="team__social-icon"></a>
-            <a href="#" aria-label="Telegram" class="team__social-link"><img src="#" alt="Telegram icon"
-                class="team__social-icon"></a>
-            <a href="#" aria-label="LinkedIn" class="team__social-link"><img src="#" alt="LinkedIn icon"
-                class="team__social-icon"></a>
-            <a href="#" aria-label="Instagram" class="team__social-link"><img src="#" alt="Instagram icon"
-                class="team__social-icon"></a>
-          </div>
+          <article class="card card--team">
+            <img src="#" alt="Dr. Wex Omega" class="card__image">
+            <h4 class="card__title title">Dr. Wex Omega</h4>
+            <span class="card__role">Visual Disruptor</span>
+            <div class="card__socials">
+              <a href="#" aria-label="Twitter" class="card__social-link"><img src="#" alt="Twitter icon"
+                  class="card__social-icon"></a>
+              <a href="#" aria-label="Facebook" class="card__social-link"><img src="#" alt="Facebook icon"
+                  class="card__social-icon"></a>
+              <a href="#" aria-label="Telegram" class="card__social-link"><img src="#" alt="Telegram icon"
+                  class="card__social-icon"></a>
+              <a href="#" aria-label="LinkedIn" class="card__social-link"><img src="#" alt="LinkedIn icon"
+                  class="card__social-icon"></a>
+              <a href="#" aria-label="Instagram" class="card__social-link"><img src="#" alt="Instagram icon"
+                  class="card__social-icon"></a>
+            </div>
+          </article>
         </li>
         <li class="team__member">
-          <img src="#" alt="Synthya Void" class="team__member-photo">
-          <h4 class="team__member-name title">Synthya Void</h4>
-          <span class="team__member-role">UX Seer</span>
-          <div class="team__member-socials">
-            <a href="#" aria-label="Twitter" class="team__social-link"><img src="#" alt="Twitter icon"
-                class="team__social-icon"></a>
-          </div>
+          <article class="card card--team">
+            <img src="#" alt="Synthya Void" class="card__image">
+            <h4 class="card__title title">Synthya Void</h4>
+            <span class="card__role">UX Seer</span>
+            <div class="card__socials">
+              <a href="#" aria-label="Twitter" class="card__social-link"><img src="#" alt="Twitter icon"
+                  class="card__social-icon"></a>
+            </div>
+          </article>
         </li>
         <li class="team__member">
-          <img src="#" alt="Mirlo Drift" class="team__member-photo">
-          <h4 class="team__member-name title">Mirlo Drift</h4>
-          <span class="team__member-role">Community Catalyst</span>
-          <div class="team__member-socials">
-            <a href="#" aria-label="Twitter" class="team__social-link"><img src="#" alt="Twitter icon"
-                class="team__social-icon"></a>
-            <a href="#" aria-label="Facebook" class="team__social-link"><img src="#" alt="Facebook icon"
-                class="team__social-icon"></a>
-            <a href="#" aria-label="Telegram" class="team__social-link"><img src="#" alt="Telegram icon"
-                class="team__social-icon"></a>
-            <a href="#" aria-label="LinkedIn" class="team__social-link"><img src="#" alt="LinkedIn icon"
-                class="team__social-icon"></a>
-            <a href="#" aria-label="Instagram" class="team__social-link"><img src="#" alt="Instagram icon"
-                class="team__social-icon"></a>
-          </div>
+          <article class="card card--team">
+            <img src="#" alt="Mirlo Drift" class="card__image">
+            <h4 class="card__title title">Mirlo Drift</h4>
+            <span class="card__role">Community Catalyst</span>
+            <div class="card__socials">
+              <a href="#" aria-label="Twitter" class="card__social-link"><img src="#" alt="Twitter icon"
+                  class="card__social-icon"></a>
+              <a href="#" aria-label="Facebook" class="card__social-link"><img src="#" alt="Facebook icon"
+                  class="card__social-icon"></a>
+              <a href="#" aria-label="Telegram" class="card__social-link"><img src="#" alt="Telegram icon"
+                  class="card__social-icon"></a>
+              <a href="#" aria-label="LinkedIn" class="card__social-link"><img src="#" alt="LinkedIn icon"
+                  class="card__social-icon"></a>
+              <a href="#" aria-label="Instagram" class="card__social-link"><img src="#" alt="Instagram icon"
+                  class="card__social-icon"></a>
+            </div>
+          </article>
         </li>
         <li class="team__member">
-          <img src="#" alt="Axon Rune" class="team__member-photo">
-          <h4 class="team__member-name title">Axon Rune</h4>
-          <span class="team__member-role">Security Ghost</span>
-          <div class="team__member-socials">
-            <a href="#" aria-label="Twitter" class="team__social-link"><img src="#" alt="Twitter icon"
-                class="team__social-icon"></a>
-            <a href="#" aria-label="Facebook" class="team__social-link"><img src="#" alt="Facebook icon"
-                class="team__social-icon"></a>
-            <a href="#" aria-label="Telegram" class="team__social-link"><img src="#" alt="Telegram icon"
-                class="team__social-icon"></a>
-            <a href="#" aria-label="LinkedIn" class="team__social-link"><img src="#" alt="LinkedIn icon"
-                class="team__social-icon"></a>
-            <a href="#" aria-label="Instagram" class="team__social-link"><img src="#" alt="Instagram icon"
-                class="team__social-icon"></a>
-          </div>
+          <article class="card card--team">
+            <img src="#" alt="Axon Rune" class="card__image">
+            <h4 class="card__title title">Axon Rune</h4>
+            <span class="card__role">Security Ghost</span>
+            <div class="card__socials">
+              <a href="#" aria-label="Twitter" class="card__social-link"><img src="#" alt="Twitter icon"
+                  class="card__social-icon"></a>
+              <a href="#" aria-label="Facebook" class="card__social-link"><img src="#" alt="Facebook icon"
+                  class="card__social-icon"></a>
+              <a href="#" aria-label="Telegram" class="card__social-link"><img src="#" alt="Telegram icon"
+                  class="card__social-icon"></a>
+              <a href="#" aria-label="LinkedIn" class="card__social-link"><img src="#" alt="LinkedIn icon"
+                  class="card__social-icon"></a>
+              <a href="#" aria-label="Instagram" class="card__social-link"><img src="#" alt="Instagram icon"
+                  class="card__social-icon"></a>
+            </div>
+          </article>
         </li>
       </ul>
     </section>
