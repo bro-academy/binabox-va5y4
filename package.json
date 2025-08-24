@@ -1,0 +1,66 @@
+{
+  "name": "binabox-va5y4-build",
+  "version": "1.0.1",
+  "type": "module",
+  "scripts": {
+    "start": "npx forever --no-daemon --plain -c \"npm run dev\" .",
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "npx eslint .",
+    "lint:fix": "npx eslint . --fix",
+    "stylelint": "npx stylelint '**/*.scss'",
+    "format": "prettier --write \"**/*.{js,json,twig,njk,scss,css,html}\"",
+    "format:check": "prettier --check \"**/*.{js,json,twig,njk,scss,css,html}\"",
+    "format:lint": "npm run format && npm run lint:fix",
+    "prettier": "prettier --write -u 'src/**/*.{njk,twig,js,ts,scss,json}'",
+    "prepare": "husky"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "A project created with @bro-academy/create-vite-bundler",
+  "devDependencies": {
+    "@bro-academy/vite-plugin-image-optimizer": "^0.0.2",
+    "@bro-academy/vite-plugin-svg-sprite": "^0.0.3",
+    "@destination/prettier-plugin-twig": "^1.5.0",
+    "@html-eslint/eslint-plugin": "^0.40.3",
+    "@html-eslint/parser": "^0.40.0",
+    "@vituum/vite-plugin-nunjucks": "^1.1.0",
+    "@vituum/vite-plugin-postcss": "^1.1.0",
+    "@vituum/vite-plugin-twig": "^1.1.0",
+    "eslint": "^9.26.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.0.0",
+    "prettier": "3.5.3",
+    "sass-embedded": "^1.88.0",
+    "stylelint": "^16.19.1",
+    "stylelint-config-standard-scss": "^15.0.0",
+    "stylelint-prettier": "^5.0.3",
+    "vite": "^6.3.5",
+    "vituum": "^1.2.0"
+  },
+  "lint-staged": {
+    "*.{njk,twig}": [
+      "prettier --write -u",
+      "eslint --fix"
+    ],
+    "*.{js,ts}": [
+      "prettier --write -u",
+      "eslint --fix"
+    ],
+    "*.scss": [
+      "prettier --write -u",
+      "stylelint --fix"
+    ],
+    "src/data/*.json": [
+      "prettier --write -u"
+    ]
+  },
+  "volta": {
+    "node": "22.14.0"
+  },
+  "engines": {
+    "node": ">=22.14.0",
+    "npm": ">=9.6.7"
+  }
+}
