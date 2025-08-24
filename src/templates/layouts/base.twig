@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>
+      {% block title %}{{ common.siteTitle }}{% endblock %}
+    </title>
+    <link rel='stylesheet' href='/src/styles/main.scss'>
+  </head>
+  <body>
+    <header>
+      <div class='container'>
+        <h1>
+          {% block header %}<img src='/src/assets/images/logo.svg' alt=''>{% endblock %}
+        </h1>
+      </div>
+    </header>
+
+    <main>
+      <div class='container'>
+        {% block content %}{% endblock %}
+      </div>
+    </main>
+
+    <footer>
+      <div class='container'>
+        <p>
+          &copy; {% block year %}2024{% endblock %}
+          {{ common.siteTitle }}. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
