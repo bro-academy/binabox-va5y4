@@ -1,4 +1,4 @@
-# binabox-va5y4
+# 🌐 binabox-va5y4
 
 ## 👤 Project Info
 
@@ -7,11 +7,11 @@
 
 ## 📁 Structure
 
-- 🗂️ `src/assets/icons` — SVG icon files
+- 🏞️ `src/assets/icons` — SVG icon files
 - 🖼️ `src/assets/images` — Project images
 - 🎨 `src/styles` — SCSS stylesheets
 - 📊 `src/data` — JSON data files
-- 🏗️ `src/templates/layouts` — Twig layout templates
+- 🌳 `src/templates/layouts` — Twig layout templates
 - 🧩 `src/templates/partials` — Twig partial templates
 
 ## 🛠️ Commands
