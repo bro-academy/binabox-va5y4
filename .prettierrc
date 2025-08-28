@@ -1,0 +1,21 @@
+{
+  "tabWidth": 2,
+  "useTabs": false,
+  "endOfLine": "lf",
+  "singleQuote": true,
+  "plugins": ["@destination/prettier-plugin-twig"],
+  "overrides": [
+    {
+      "files": ["*.njk", "*.twig"],
+      "options": {
+        "parser": "liquid-html"
+      }
+    },
+    {
+      "files": ["*.scss"],
+      "options": {
+        "singleQuote": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{% macro icon(type, classes) %}
+<svg class='icon {{ classes }}'>
+  <use href='/src/assets/sprite.svg#icon-{{ type }}' />
+</svg>
+{% endmacro %}
