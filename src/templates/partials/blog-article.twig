@@ -1,0 +1,44 @@
+<article class="article">
+	<figure class="article__hero">
+		<img src="{{ article.hero_image }}" alt="{{ article.hero_image_alt }}" class="article__hero-image">
+		<figcaption class="article__hero-caption">{{ article.hero_caption }}</figcaption>
+	</figure>
+	<header class="article__header">
+		<h2 class="article__title title" id="{{ article.title|replace({' ': '-'})|lower }}">{{ article.title }}</h2>
+		<span class="button article__category">{{ article.category }}</span>
+		<span class="article__author">
+			<img src="{{ article.author_avatar }}" alt="Author profile picture" class="article__author-avatar">
+			<a href="{{ article.author_url }}" class="article__author-link">{{ article.author }}</a>
+		</span>
+		<img src="{{ article.date_icon }}" alt="Date icon" class="article__date-icon">
+		<time datetime="{{ article.date_iso }}" class="article__date">{{ article.date }}</time>
+	</header>
+	{% for paragraph in article.paragraphs %}
+		<p class="article__text">{{ paragraph }}</p>
+	{% endfor %}
+	<ul class="article__list">
+		{% for item in article.list %}
+			<li class="article__list-item">{{ item }}</li>
+		{% endfor %}
+	</ul>
+	<ul class="article__features">
+		{% for feature in article.features %}
+			{% include './blog-article-feature.twig' with { feature: feature } %}
+		{% endfor %}
+	</ul>
+	{% include './blog-article-quote.twig' with { quote: article.quote } %}
+	{% for figure in article.figures %}
+		<figure class="article__figure">
+			<img src="{{ figure.image }}" alt="{{ figure.alt }}" class="article__image">
+			<figcaption class="article__caption">{{ figure.caption }}</figcaption>
+		</figure>
+	{% endfor %}
+	{% for idx, subtitle in article.subtitles %}
+		<h3 class="article__subtitle" id="{{ subtitle|replace({' ': '-'})|lower }}">{{ subtitle }}</h3>
+		{% for paragraph in article.subparagraphs[idx] %}
+			<p class="article__text">{{ paragraph|raw }}</p>
+		{% endfor %}
+	{% endfor %}
+	{% include './blog-article-tags.twig' with { article: article } %}
+	{% include './blog-article-share.twig' with { article: article } %}
+</article>

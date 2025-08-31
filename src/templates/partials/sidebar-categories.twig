@@ -1,0 +1,11 @@
+<section class="sidebar__categories">
+	<h4 class="sidebar__title">{{ sidebar_categories.title }}</h4>
+	<ul class="sidebar__list">
+		{% for category in sidebar_categories.items %}
+			<li class="sidebar__item">
+				<a href="{{ category.url }}" class="sidebar__link">{{ category.label }}
+					({{ category.count }})</a>
+			</li>
+		{% endfor %}
+	</ul>
+</section>

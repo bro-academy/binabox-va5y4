@@ -1,0 +1,6 @@
+<section class="faq">
+	<h2 class="faq__title title">{{ faq_section.title }}</h2>
+	{% for faq in faq_section.items %}
+		{% include './faq-item.twig' with { faq: faq } %}
+	{% endfor %}
+</section>

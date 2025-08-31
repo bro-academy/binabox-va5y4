@@ -1,0 +1,12 @@
+<li class="employee">
+	<img src="{{ member.photo }}" alt="{{ member.name }}" class="employee__member-photo">
+	<h4 class="employee__member-name">{{ member.name }}</h4>
+	<span class="employee__member-role">{{ member.role }}</span>
+	<div class="employee__member-socials">
+		{% for social in member.socials %}
+			<a href="{{ social.url }}" aria-label="{{ social.label }}" class="employee__social-link">
+				<img src="{{ social.icon }}" alt="{{ social.label }} icon" class="employee__social-icon">
+			</a>
+		{% endfor %}
+	</div>
+</li>

@@ -1,0 +1,10 @@
+<section class="sidebar__tags">
+	<h4 class="sidebar__title">{{ sidebar_tags.title }}</h4>
+	<ul class="sidebar__tags-list">
+		{% for tag in sidebar_tags.items %}
+			<li class="sidebar__item">
+				<a href="{{ tag.url }}" class="link sidebar__tag">{{ tag.label }}</a>
+			</li>
+		{% endfor %}
+	</ul>
+</section>
