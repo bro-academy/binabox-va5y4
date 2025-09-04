@@ -1,0 +1,13 @@
+<section class="hero">
+	<h1 class="hero__title title title--primary">{{ index.title }}</h1>
+	<p class="hero__description">{{ index.description }}</p>
+	<dl class="hero__stats">
+		{% for item in index.stats %}
+			<dt class="hero__stats-number">{{ item.number }}</dt>
+			<dd class="hero__stats-label">{{ item.label }}</dd>
+		{% endfor %}
+	</dl>
+	<button type="button" class="button hero__button">{{ index.hero_button }}</button>
+	<a href="{{ index.link_url }}" class="link hero__link">{{ index.hero_link }}</a>
+	<img src="{{ index.image_src }}" alt="{{ index.image_alt }}" class="hero__image">
+</section>

@@ -1,0 +1,11 @@
+{% set current_page = 'blog' %}
+{% extends 'src/templates/layouts/base.twig' %}
+
+{% block content %}
+	<main class="main">
+		{% include 'src/templates/partials/blog-header.twig' %}
+		{% include 'src/templates/partials/sidebar.twig' %}
+		{% include 'src/templates/partials/blog-article.twig' %}
+
+	</main>
+{% endblock %}

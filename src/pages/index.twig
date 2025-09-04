@@ -1,9 +1,13 @@
+{% set current_page = 'home' %}
 {% extends 'src/templates/layouts/base.twig' %}
 
-{% from 'src/templates/partials/ui/icon.twig' import icon %}
-
 {% block content %}
-  <h1>{{ index.title }}</h1>
-
-  {% include 'src/templates/partials/welcome-section.twig' %}
+	<main class="main">
+		{% include 'src/templates/partials/hero.twig' %}
+		{% include 'src/templates/partials/catalog.twig' %}
+		{% include 'src/templates/partials/blog-section.twig' %}
+		{% include 'src/templates/partials/about.twig' %}
+		{% include 'src/templates/partials/team.twig' %}
+		{% include 'src/templates/partials/faq.twig' %}
+	</main>
 {% endblock %}
