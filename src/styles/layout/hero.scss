@@ -1,0 +1,39 @@
+@use '../global/variables' as vars;
+@use '../global/mixin' as *;
+
+.hero {
+
+    &__highlight {
+        color: vars.$color-marina-800;
+    }
+
+    &__description {
+        font-size: vars.$font-size-heading-5;
+        line-height: vars.$line-height-large;
+        font-weight: vars.$font-weight-medium;
+    }
+
+    &__stats-number {
+        font-family: vars.$font-family-secondary;
+        text-shadow: 0 4px 13px rgb(255 255 255 / 0.4);
+        font-size: vars.$font-size-heading-1;
+        line-height: vars.$line-height-heading-1;
+        letter-spacing: vars.$letter-spacing-heading;
+    }
+
+    &__stats-label {
+        font-size: vars.$font-size-medium;
+        line-height: vars.$line-height-medium;
+        color: vars.$color-text-muted;
+    }
+
+    &__button {
+        @include button;
+        color: vars.$color-text-main;
+    }
+
+    &__link {
+        @include link;
+        padding: vars.$padding-lg;
+    }
+}

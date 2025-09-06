@@ -1,0 +1,52 @@
+@use '../global/variables' as vars;
+@use '../global/mixin' as *;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: vars.$color-bg-main;
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        gap: vars.$gap-md;
+    }
+
+    &__search {
+        background-color: inherit;
+        padding: vars.$padding-md;
+        border: vars.$border-width solid vars.$color-separator-strong;
+        color: vars.$color-text-subtle;
+        font-size: vars.$font-size-base;
+        line-height: vars.$line-height-small;
+    }
+
+    &__discord-link {
+        @include link;
+        padding: vars.$padding-lg;
+    }
+
+    &__login-button {
+        @include button;
+        padding: vars.$padding-lg;
+        color: inherit;
+        vertical-align: middle;
+    }
+}
+
+.navigation-list {
+    display: flex;
+    gap: vars.$gap-lg;
+}
+
+
+.navigation-link {
+    font-weight: vars.$font-weight-semibold;
+    font-size: vars.$font-size-medium;
+    line-height: vars.$line-height-medium;
+
+    &--active {
+        border-bottom: vars.$border-width solid vars.$color-marina-800;
+    }
+}

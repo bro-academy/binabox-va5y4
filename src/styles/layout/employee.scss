@@ -1,0 +1,13 @@
+@use '../global/variables' as vars;
+
+.employee {
+
+    &__member-name {
+        font-family: vars.$font-family-secondary;
+    }
+
+    &__member-role {
+        font-size: vars.$font-size-large;
+        color: vars.$color-text-muted;
+    }
+}

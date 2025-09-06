@@ -1,0 +1,180 @@
+$border-width: 2px;
+$width-xs: 2px;
+$width-lg: 48px;
+$width-article: 1024px;
+$height-xs: 24px;
+$height-lg: 48px;
+$height-article: 132px;
+$radius-xs: 1px;
+$radius-lg: 16px;
+// =============================
+//        TEXT & ICON
+// =============================
+$color-text-main: rgb(245 248 251 / 1);
+$color-text-muted: rgb(239 245 250 / 0.82);
+$color-text-subtle: rgb(231 238 247 / 0.66);
+$color-icon: rgb(231 241 253 / 0.49);
+$color-disabled: rgb(229 236 251 / 0.36);
+$color-text-main-inverse: rgb(13 13 21 / 1);
+$color-text-muted-inverse: rgb(42 53 65 / 0.85);
+$color-text-subtle-inverse: rgb(42 53 65 / 0.7);
+$color-icon-inverse: rgb(39 53 68 / 0.55);
+$color-disabled-inverse: rgb(34 52 73 / 0.4);
+
+// =============================
+//     BRAND PALETTE: MARINA
+// =============================
+$color-marina-1200: rgb(0 39 84 / 1);
+$color-marina-1100: rgb(0 53 113 / 1);
+$color-marina-1000: rgb(0 68 145 / 1);
+$color-marina-900: rgb(0 84 182 / 1);
+$color-marina-800: rgb(2 101 220 / 1);
+$color-marina-700: rgb(20 122 243 / 1);
+$color-marina-600: rgb(56 146 243 / 1);
+$color-marina-500: rgb(89 167 246 / 1);
+$color-marina-400: rgb(120 187 250 / 1);
+$color-marina-300: rgb(150 206 253 / 1);
+$color-marina-200: rgb(181 222 255 / 1);
+$color-marina-100: rgb(202 232 255 / 1);
+$color-marina-50: rgb(224 242 255 / 1);
+
+// =============================
+//        BACKGROUNDS
+// =============================
+$color-bg-main: rgb(13 13 21 / 1);
+$color-bg-alt: rgb(26 25 37 / 1);
+$color-bg-alt2: rgb(29 28 40 / 1);
+$color-bg-icon: rgb(255 255 255 / 1);
+$color-bg-main-inverse: rgb(248 250 252 / 1);
+$color-bg-alt2-inverse: rgb(244 247 250 / 1);
+
+// =============================
+//         ELEMENTS
+// =============================
+$color-link-accent: rgb(120 187 250 / 1);
+$color-border: rgb(212 217 242 / 0.26);
+$color-separator: rgb(191 197 238 / 0.12);
+$color-separator-strong: rgb(208 215 251 / 0.17);
+$color-focus: rgb(150 206 253 / 1);
+$color-link-accent-inverse: rgb(2 101 220 / 1);
+$color-border-inverse: rgb(31 50 71 / 0.27);
+$color-separator-inverse: rgb(41 77 117 / 0.09);
+$color-separator-strong-inverse: rgb(29 54 83 / 0.17);
+$color-focus-inverse: rgb(56 146 243 / 1);
+
+// =============================
+//          STATUS
+// =============================
+$color-status-neutral: rgb(137 144 153 / 1);
+$color-status-negative: rgb(234 56 41 / 1);
+$color-status-high: rgb(203 93 0 / 1);
+$color-status-medium: rgb(248 217 4 / 1);
+$color-status-info: rgb(157 87 244 / 1);
+$color-status-positive: rgb(0 143 93 / 1);
+
+// =============================
+//          SURFACE
+// =============================
+$color-surface-red-inverse: rgb(89 0 0 / 1);
+$color-surface-orange-inverse: rgb(73 25 1 / 1);
+$color-surface-yellow-inverse: rgb(54 37 0 / 1);
+$color-surface-grass-inverse: rgb(10 46 29 / 1);
+$color-surface-emerald-inverse: rgb(18 44 43 / 1);
+$color-surface-marengo-inverse: rgb(0 42 70 / 1);
+$color-surface-marina-inverse: rgb(0 39 84 / 1);
+$color-surface-indigo-inverse: rgb(27 30 100 / 1);
+$color-surface-purple-inverse: rgb(51 16 106 / 1);
+$color-surface-violet-inverse: rgb(71 14 70 / 1);
+$color-surface-magenta-inverse: rgb(84 3 42 / 1);
+$color-surface-grey-inverse: rgb(43 51 62 / 1);
+$color-surface-white-inverse: rgb(32 38 49 / 1);
+$color-surface-red: rgb(255 237 235 / 1);
+$color-surface-orange: rgb(255 244 229 / 1);
+$color-surface-yellow: rgb(255 247 214 / 1);
+$color-surface-grass: rgb(220 244 230 / 1);
+$color-surface-emerald: rgb(214 245 242 / 1);
+$color-surface-marengo: rgb(213 245 249 / 1);
+$color-surface-marina: rgb(224 242 255 / 1);
+$color-surface-indigo: rgb(237 238 255 / 1);
+$color-surface-purple: rgb(246 235 255 / 1);
+$color-surface-violet: rgb(254 234 250 / 1);
+$color-surface-magenta: rgb(255 234 241 / 1);
+$color-surface-grey: rgb(244 247 250 / 1);
+$color-surface-white: rgb(255 255 255 / 1);
+
+// =============================
+//    FIXED NEUTRAL COLORS
+// =============================
+$color-white-main: rgb(245 248 251 / 1);
+$color-white-muted: rgb(239 245 250 / 0.82);
+$color-white-subtle: rgb(231 238 247 / 0.66);
+$color-white-disabled: rgb(229 236 251 / 0.36);
+$color-white-border: rgb(212 217 242 / 0.26);
+$color-white-icon: rgb(231 241 253 / 0.49);
+$color-white-separator: rgb(191 197 238 / 0.12);
+$color-white-bg-alt: rgb(248 250 252 / 1);
+$color-white-bg-alt2: rgb(244 247 250 / 1);
+$color-white-bg: rgb(255 255 255 / 1);
+$color-fixed-main: rgb(13 13 21 / 1);
+$color-fixed-muted: rgb(42 53 65 / 0.85);
+$color-fixed-subtle: rgb(42 53 65 / 0.7);
+$color-fixed-icon: rgb(39 53 68 / 0.55);
+$color-fixed-disabled: rgb(34 52 73 / 0.4);
+$color-fixed-border: rgb(31 50 71 / 0.27);
+$color-fixed-separator-strong: rgb(29 54 83 / 0.17);
+$color-fixed-separator: rgb(41 77 117 / 0.09);
+$color-fixed-bg-alt: rgb(26 25 37 / 1);
+$color-fixed-bg-alt2: rgb(29 28 40 / 1);
+$color-fixed-bg: rgb(13 13 21 / 1);
+
+
+// =============================
+//        TYPOGRAPHY
+// =============================
+
+// Font Families
+$font-family-primary: 'Poppins', Arial, sans-serif;
+$font-family-secondary: 'Bakbak One', Arial, sans-serif;
+
+// Font Sizes
+$font-size-base: 14px;
+$font-size-heading-1: 52px;
+$font-size-heading-2: 36px;
+$font-size-heading-3: 28px;
+$font-size-heading-4: 24px;
+$font-size-heading-5: 20px;
+$font-size-large: 18px;
+$font-size-medium: 16px;
+$font-size-small: 12px;
+
+// Line Heights
+$line-height-base: 28px;
+$line-height-heading-1: 62px;
+$line-height-heading-2: 48px;
+$line-height-heading-3: 36px;
+$line-height-heading-4: 32px;
+$line-height-heading-5: 26px;
+$line-height-large: 28px;
+$line-height-medium: 24px;
+$line-height-small: 16px;
+
+// Font Weights
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+
+// Letter Spacing
+$letter-spacing-heading: -0.5px;
+
+// =============================
+//        SPACING SYSTEM
+// =============================
+$padding-xs: 6px 12px;
+$padding-sm: 8px 10px;
+$padding-md: 8px 12px;
+$padding-lg: 10px 24px;
+$padding-xl: 16px;
+$padding-xxl: 8px 20px;
+$gap-md: 16px;
+$gap-lg: 24px;
+$margin-xs: 0 8px;

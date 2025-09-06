@@ -1,0 +1,116 @@
+@use '../global/variables' as vars;
+
+.article {
+
+    &__hero-caption {
+        font-weight: vars.$font-weight-medium;
+        font-size: vars.$font-size-medium;
+        line-height: vars.$line-height-medium;
+        color: vars.$color-white-bg;
+    }
+
+    &__category {
+        border: none;
+        padding: vars.$padding-lg;
+        background-color: vars.$color-marina-800;
+        font-weight: vars.$font-weight-semibold;
+        font-size: vars.$font-size-large;
+        line-height: vars.$line-height-large;
+    }
+
+    &__author-link {
+        font-weight: vars.$font-weight-semibold;
+        line-height: vars.$line-height-small;
+        color: vars.$color-text-muted;
+    }
+
+    &__date {
+        font-weight: vars.$font-weight-semibold;
+        line-height: vars.$line-height-small;
+        color: vars.$color-text-muted;
+    }
+
+    &__text {
+        font-size: vars.$font-size-large;
+        color: vars.$color-white-bg;
+    }
+
+    &__list {
+        font-size: vars.$font-size-large;
+        color: vars.$color-white-bg;
+        list-style: disc;
+    }
+
+    &__feature-text {
+        font-size: vars.$font-size-large;
+        color: vars.$color-white-bg;
+    }
+
+    &__quote-text {
+        font-size: vars.$font-size-heading-3;
+        line-height: vars.$line-height-heading-3;
+        color: vars.$color-white-bg;
+        font-family: vars.$font-family-secondary;
+        text-shadow: 0 4px 4px rgb(0 0 0 / 0.25);
+        -webkit-text-stroke: 1px #000000;
+    }
+
+    &__quote {
+        background-color: vars.$color-marina-1200;
+        border-radius: vars.$radius-lg;
+        padding: vars.$padding-xl;
+        width: vars.$width-article;
+        height: vars.$height-article;
+    }
+
+    &__quote-rating {
+        font-weight: vars.$font-weight-semibold;
+        line-height: vars.$line-height-small;
+        color: vars.$color-text-muted;
+    }
+
+    &__quote-source {
+        font-weight: vars.$font-weight-semibold;
+        line-height: vars.$line-height-small;
+        color: vars.$color-white-bg;
+    }
+
+    &__caption {
+        font-weight: vars.$font-weight-medium;
+        font-size: vars.$font-size-medium;
+        line-height: vars.$line-height-medium;
+        color: vars.$color-white-bg;
+    }
+
+    &__subtitle {
+        letter-spacing: 0px;
+        font-family: vars.$font-family-secondary;
+    }
+
+    &__link {
+        color: vars.$color-link-accent;
+        font-weight: vars.$font-weight-semibold;
+    }
+
+    &__tags-title {
+        line-height: vars.$line-height-medium;
+        color: vars.$color-white-bg;
+    }
+
+    &__tag {
+        border: vars.$border-width solid vars.$color-separator-strong;
+        padding: vars.$padding-xs;
+        font-weight: vars.$font-weight-semibold;
+        line-height: vars.$line-height-small;
+    }
+
+    &__share-title {
+        line-height: vars.$line-height-medium;
+        color: vars.$color-white-bg;
+    }
+
+    &__share-link {
+        border: vars.$border-width solid vars.$color-separator-strong;
+        padding: vars.$padding-xs;
+    }
+}

@@ -1,0 +1,5 @@
+@use '../global/mixin' as mixin;
+
+.title {
+    @include mixin.title;
+}
