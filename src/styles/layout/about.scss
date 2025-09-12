@@ -11,9 +11,9 @@
     }
 
     &__feature-title {
-        @include title;
         font-size: vars.$font-size-heading-4;
         line-height: vars.$line-height-heading-4;
+        @include title;
     }
 
     &__feature-description {

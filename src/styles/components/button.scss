@@ -1,5 +1,13 @@
-@use '../global/mixin' as mixin;
+@use '../global/variables' as vars;
 
 .button {
-    @include mixin.button;
+    border: none;
+    text-align: center;
+    background-color: var(--color-marina-800);
+    padding: var(--padding-lg);
+    color: inherit;
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-large);
+    line-height: var(--line-height-large);
+    vertical-align: middle;
 }

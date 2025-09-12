@@ -1,35 +1,16 @@
 @use '../global/variables' as vars;
 
-@mixin button {
-    border: none;
-    text-align: center;
-    background-color: vars.$color-marina-800;
-    padding: vars.$padding-lg;
-    color: inherit;
-    font-weight: vars.$font-weight-semibold;
-    font-size: vars.$font-size-large;
-    line-height: vars.$line-height-large;
-    vertical-align: middle;
-}
 
 @mixin title {
     font-family: vars.$font-family-secondary;
     color: #F8F7FF;
 
+    // Declarations above nested rules for Sass deprecation fix
     &--primary {
         color: #F5F8FB;
     }
 }
 
-@mixin separator {
-    display: inline-block;
-    width: vars.$width-xs;
-    height: vars.$height-xs;
-    background: vars.$color-separator-strong;
-    vertical-align: middle;
-    margin: vars.$margin-xs;
-    border-radius: vars.$radius-xs;
-}
 
 @mixin link {
     border: vars.$border-width solid vars.$color-separator-strong;

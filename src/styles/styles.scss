@@ -1,4 +1,5 @@
-// Global
+// All @use directives first (Sass rule). Normalize via package.
+@use './global/normalize';
 @use './global/base';
 
 

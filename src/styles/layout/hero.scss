@@ -28,7 +28,6 @@
     }
 
     &__button {
-        @include button;
         color: vars.$color-text-main;
     }
 

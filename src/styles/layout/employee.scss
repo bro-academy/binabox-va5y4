@@ -4,10 +4,15 @@
 
     &__member-name {
         font-family: vars.$font-family-secondary;
+        font-size: vars.$font-size-heading-4;
+        line-height: vars.$line-height-heading-4;
+        font-weight: 400;
     }
 
     &__member-role {
         font-size: vars.$font-size-large;
         color: vars.$color-text-muted;
+        line-height: vars.$line-height-large;
+        font-weight: vars.$font-weight-medium;
     }
 }
