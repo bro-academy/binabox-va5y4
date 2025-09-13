@@ -1,5 +1,4 @@
-// All @use directives first (Sass rule). Normalize via package.
-@use './global/normalize';
+// All @use directives first (Sass rule). Global base (normalize is imported from JS since it's plain CSS)
 @use './global/base';
 
 
