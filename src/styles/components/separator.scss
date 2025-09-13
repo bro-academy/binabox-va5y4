@@ -1,0 +1,11 @@
+@use '../global/variables' as vars;
+
+.separator {
+    display: inline-block;
+    width: vars.$width-xs;
+    height: vars.$height-xs;
+    background: vars.$color-separator-strong;
+    vertical-align: middle;
+    margin: vars.$margin-xs;
+    border-radius: vars.$radius-xs;
+}

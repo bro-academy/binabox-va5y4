@@ -1,0 +1,24 @@
+@use '../global/variables' as vars;
+
+.footer {
+
+    &__description {
+        line-height: vars.$line-height-small;
+    }
+
+    &__nav-title {
+        font-size: vars.$font-size-heading-5;
+        line-height: vars.$line-height-large;
+        font-weight: vars.$font-weight-medium;
+    }
+
+    &__nav-link {
+        font-weight: vars.$font-weight-semibold;
+        font-size: vars.$font-size-small;
+        line-height: vars.$line-height-small;
+    }
+
+    &__copyright {
+        line-height: vars.$line-height-small;
+    }
+}

@@ -1,7 +1,7 @@
 <article class="blog-card">
 	<span class="blog-card__label">{{ blog.label }}</span>
 	<img src="{{ blog.image_src }}" alt="{{ blog.image_alt }}" class="blog-card__image">
-	<h2 class="blog-card__title title">{{ blog.title }}</h2>
+	<h2 class="blog-card__title title title--h2">{{ blog.title }}</h2>
 	<p class="blog-card__excerpt">{{ blog.excerpt }}</p>
 	<img src="{{ blog.author_icon }}" alt="Author icon" class="blog-card__author-icon">
 	<span class="blog-card__author{% if blog.author_uppercase %} blog-card__author--uppercase{% endif %}">{{ blog.author }}</span>

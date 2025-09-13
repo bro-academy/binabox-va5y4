@@ -1,0 +1,22 @@
+@use '../global/variables' as vars;
+
+
+@mixin title {
+    font-family: vars.$font-family-secondary;
+    color: #F8F7FF;
+
+    // Declarations above nested rules for Sass deprecation fix
+    &--primary {
+        color: #F5F8FB;
+    }
+}
+
+
+@mixin link {
+    border: vars.$border-width solid vars.$color-separator-strong;
+    text-align: center;
+    padding: 10px 24px 10px 24px;
+    font-weight: vars.$font-weight-semibold;
+    font-size: vars.$font-size-large;
+    line-height: vars.$line-height-large;
+}

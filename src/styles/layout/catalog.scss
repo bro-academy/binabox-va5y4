@@ -1,0 +1,25 @@
+@use '../global/variables' as vars;
+@use '../global/mixin' as *;
+
+.catalog {
+
+    &__see-all {
+        @include link;
+        padding: vars.$padding-lg;
+    }
+
+    &__nav-button {
+        border: vars.$border-width solid vars.$color-separator-strong;
+        padding: vars.$padding-xl;
+        background-color: transparent;
+        width: vars.$width-lg;
+        height: vars.$height-lg;
+        color: vars.$color-text-main;
+    }
+
+    &__nav-button--active {
+        background-color: vars.$color-marina-800;
+        color: vars.$color-bg-main;
+        border: none;
+    }
+}

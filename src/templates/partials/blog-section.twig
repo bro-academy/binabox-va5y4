@@ -1,5 +1,5 @@
 <section class="blog">
-	<h2 class="blog__title title">{{ blog_section.title }}</h2>
+	<h2 class="blog__title title title--h2">{{ blog_section.title }}</h2>
 	{% for blog in blog_section.articles %}
 		{% include './blog-card.twig' with { blog: blog } %}
 	{% endfor %}

@@ -4,7 +4,7 @@
 		<figcaption class="article__hero-caption">{{ article.hero_caption }}</figcaption>
 	</figure>
 	<header class="article__header">
-		<h2 class="article__title title" id="{{ article.title|replace({' ': '-'})|lower }}">{{ article.title }}</h2>
+		<h2 class="article__title title title--h2" id="{{ article.title|replace({' ': '-'})|lower }}">{{ article.title }}</h2>
 		<span class="button article__category">{{ article.category }}</span>
 		<span class="article__author">
 			<img src="{{ article.author_avatar }}" alt="Author profile picture" class="article__author-avatar">
@@ -34,7 +34,7 @@
 		</figure>
 	{% endfor %}
 	{% for idx, subtitle in article.subtitles %}
-		<h3 class="article__subtitle" id="{{ subtitle|replace({' ': '-'})|lower }}">{{ subtitle }}</h3>
+		<h3 class="article__subtitle title title--h3" id="{{ subtitle|replace({' ': '-'})|lower }}">{{ subtitle }}</h3>
 		{% for paragraph in article.subparagraphs[idx] %}
 			<p class="article__text">{{ paragraph|raw }}</p>
 		{% endfor %}
