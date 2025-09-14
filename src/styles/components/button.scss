@@ -3,11 +3,108 @@
 .button {
     border: none;
     text-align: center;
-    background-color: var(--color-marina-800);
-    padding: var(--padding-lg);
+    background-color: vars.$color-marina-800;
+    padding: vars.$padding-lg;
     color: inherit;
-    font-weight: var(--font-weight-semibold);
-    font-size: var(--font-size-large);
-    line-height: var(--line-height-large);
+    font-weight: vars.$font-weight-semibold;
+    font-size: vars.$font-size-large;
+    line-height: vars.$line-height-large;
     vertical-align: middle;
+
+    &:hover {
+        background-color: vars.$color-marina-hover;
+        cursor: pointer;
+    }
+
+    &:focus {
+        outline: 4px solid vars.$color-marina-hover;
+    }
+
+    &:active {
+        background-color: vars.$color-marina-active;
+    }
+
+    &:disabled {
+        background-color: vars.$color-marina-disabled;
+        color: vars.$color-disabled-text;
+        cursor: not-allowed;
+    }
+
+    &--inverted {
+        background-color: vars.$color-white;
+        color: vars.$color-dark;
+
+        &:hover {
+            background-color: vars.$color-inverted-hover;
+            color: vars.$color-dark;
+        }
+
+        &:focus {
+            outline: solid 4px vars.$color-inverted-focus;
+        }
+
+        &:active {
+            background-color: vars.$color-inverted-active;
+            color: vars.$color-inverted-active-text;
+        }
+
+        &:disabled {
+            background-color: vars.$color-inverted-disabled;
+            color: vars.$color-disabled-text;
+            cursor: not-allowed;
+        }
+    }
+
+    &--secondary {
+        background-color: transparent;
+        border: 2px solid vars.$button-secondary-border;
+        color: vars.$color-text-main;
+
+        &:hover {
+            background-color: vars.$button-secondary-bg-hover;
+            border: 2px solid vars.$button-secondary-border-hover;
+        }
+
+        &:focus {
+            outline: solid 4px vars.$button-secondary-outline-focus;
+        }
+
+        &:active {
+            background-color: vars.$button-secondary-bg-hover;
+            border: 2px solid vars.$button-secondary-border-hover;
+        }
+
+        &:disabled {
+            background-color: vars.$button-secondary-border;
+            border: 2px solid vars.$button-secondary-border-disabled;
+            color: vars.$button-secondary-text-disabled;
+            cursor: not-allowed;
+        }
+    }
+
+    &--tertiary {
+        background-color: transparent;
+        color: vars.$color-text-main;
+
+        &:hover {
+            background-color: vars.$button-tertiary-bg-hover;
+            border: 1px solid vars.$button-tertiary-border-hover;
+        }
+
+        &:focus {
+            outline: solid 4px vars.$button-tertiary-outline-focus;
+            background-color: vars.$button-tertiary-bg-hover;
+        }
+
+        &:active {
+            background-color: vars.$button-tertiary-bg-hover;
+        }
+
+        &:disabled {
+            color: vars.$button-tertiary-text-disabled;
+            cursor: not-allowed;
+            border: none;
+            background: transparent;
+        }
+    }
 }

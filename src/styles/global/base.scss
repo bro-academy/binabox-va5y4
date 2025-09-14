@@ -16,6 +16,24 @@ ul {
 a {
     text-decoration: none;
     color: inherit;
+
+    &:hover {
+        color: rgba(56, 146, 243, 1);
+    }
+
+    &:focus {
+        outline: 4px solid rgba(56, 146, 243, 1);
+    }
+
+    &:active {
+        color: rgba(0, 84, 182, 1);
+    }
+
+    &:disabled {
+        color: rgba(229, 236, 251, 0.36);
+        pointer-events: none;
+        cursor: not-allowed;
+    }
 }
 
 .caps {
