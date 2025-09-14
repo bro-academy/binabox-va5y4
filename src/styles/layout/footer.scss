@@ -1,7 +1,6 @@
 @use '../global/variables' as vars;
 
 .footer {
-
     &__description {
         line-height: vars.$line-height-small;
     }

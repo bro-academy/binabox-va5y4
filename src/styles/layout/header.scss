@@ -1,14 +1,11 @@
 @use '../global/variables' as vars;
 @use '../global/mixin' as *;
+@use './navigation.scss';
 
-// Ensure header/nav is always flush to the top and not affected by page-specific wrappers
 .header {
     position: relative;
     top: 0;
     margin-top: 0 !important;
-}
-
-.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,27 +35,5 @@
         padding: vars.$padding-lg;
         color: inherit;
         vertical-align: middle;
-    }
-}
-
-.navigation-list {
-    display: flex;
-    gap: vars.$gap-lg;
-}
-
-
-.navigation-link {
-    font-weight: vars.$font-weight-semibold;
-    font-size: vars.$font-size-medium;
-    line-height: 1.2;
-    padding-bottom: 2px;
-    border: 0 !important;
-    border-width: 0 !important;
-    border-style: none !important;
-    border-color: transparent !important;
-    border-bottom: 0 !important;
-
-    &--active {
-        border-bottom: vars.$border-width solid vars.$color-marina-800 !important;
     }
 }

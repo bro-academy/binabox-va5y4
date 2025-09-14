@@ -2,7 +2,6 @@
 @use '../global/mixin' as *;
 
 .hero {
-
     &__highlight {
         color: vars.$color-marina-800;
     }
@@ -33,6 +32,7 @@
 
     &__link {
         @include link;
+
         padding: vars.$padding-lg;
     }
 }

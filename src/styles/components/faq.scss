@@ -1,7 +1,6 @@
 @use '../global/variables' as vars;
 
 .faq {
-
     &__item {
         background-color: vars.$color-bg-alt2;
         padding: vars.$padding-xl;

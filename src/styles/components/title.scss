@@ -1,58 +1,63 @@
 @use '../global/mixin' as mixin;
 
+
 .title {
-    font-family: 'Bakbak One', Arial, sans-serif;
+    font-family: 'Bakbak One', "arial", sans-serif;
     font-weight: 400;
     letter-spacing: -0.5px;
-}
 
-.title--h1 {
-    font-size: 52px;
-    line-height: 62px;
-}
+    &--h1 {
+        font-size: 52px;
+        line-height: 62px;
+    }
 
-.title--h2 {
-    font-size: 36px;
-    line-height: 48px;
-}
+    &--h2 {
+        font-size: 36px;
+        line-height: 48px;
+    }
 
-.title--h3 {
-    font-size: 28px;
-    line-height: 36px;
-}
+    &--h3 {
+        font-size: 28px;
+        line-height: 36px;
+    }
 
-.title--h4 {
-    font-size: 24px;
-    line-height: 32px;
-}
+    &--h4 {
+        font-size: 24px;
+        line-height: 32px;
+    }
 
-.title--h5 {
-    font-size: 20px;
-    line-height: 26px;
-}
+    &--h5 {
+        font-size: 20px;
+        line-height: 26px;
+    }
 
-// Fallbacks: if a heading has class .title without a size modifier, map semantic levels.
-h1.title:not([class*="title--h"]) {
-    font-size: 52px;
-    line-height: 62px;
-}
+    // Fallbacks: if a heading has class .title without a size modifier, map semantic levels.
+    &.title:not([class*="title--h"]) {
 
-h2.title:not([class*="title--h"]) {
-    font-size: 36px;
-    line-height: 48px;
-}
+        // For h1.title, h2.title, etc. selectors
+        @at-root h1#{&} {
+            font-size: 52px;
+            line-height: 62px;
+        }
 
-h3.title:not([class*="title--h"]) {
-    font-size: 28px;
-    line-height: 36px;
-}
+        @at-root h2#{&} {
+            font-size: 36px;
+            line-height: 48px;
+        }
 
-h4.title:not([class*="title--h"]) {
-    font-size: 24px;
-    line-height: 32px;
-}
+        @at-root h3#{&} {
+            font-size: 28px;
+            line-height: 36px;
+        }
 
-h5.title:not([class*="title--h"]) {
-    font-size: 20px;
-    line-height: 26px;
+        @at-root h4#{&} {
+            font-size: 24px;
+            line-height: 32px;
+        }
+
+        @at-root h5#{&} {
+            font-size: 20px;
+            line-height: 26px;
+        }
+    }
 }

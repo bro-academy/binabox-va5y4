@@ -1,18 +1,18 @@
-// All @use directives first (Sass rule). Global base (normalize is imported from JS since it's plain CSS)
+// Global
+@use './global/normalize';
 @use './global/base';
-
 
 // Layout
 @use './layout/header';
 @use './layout/hero';
 @use './layout/catalog';
-@use './layout/blog-card';
+@use './components/blog-card';
 @use './layout/about';
-@use './layout/employee';
-@use './layout/faq';
+@use './components/employee';
+@use './components/faq';
 @use './layout/footer';
-@use './layout/breadcrumb';
-@use './layout/sidebar';
+@use './components/breadcrumb';
+@use './components/sidebar';
 @use './layout/article';
 
 // Components

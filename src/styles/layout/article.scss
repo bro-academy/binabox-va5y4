@@ -1,7 +1,6 @@
 @use '../global/variables' as vars;
 
 .article {
-
     &__hero-caption {
         font-weight: vars.$font-weight-medium;
         font-size: vars.$font-size-medium;
@@ -83,7 +82,7 @@
     }
 
     &__subtitle {
-        letter-spacing: 0px;
+        letter-spacing: 0;
         font-family: vars.$font-family-secondary;
     }
 

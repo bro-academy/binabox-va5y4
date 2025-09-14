@@ -2,9 +2,9 @@
 @use '../global/mixin' as *;
 
 .catalog {
-
     &__see-all {
         @include link;
+
         padding: vars.$padding-lg;
     }
 

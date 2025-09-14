@@ -1,7 +1,6 @@
 @use '../global/variables' as vars;
 
 .employee {
-
     &__member-name {
         font-family: vars.$font-family-secondary;
         font-size: vars.$font-size-heading-4;

@@ -2,7 +2,6 @@
 @use '../global/mixin' as *;
 
 .about {
-
     &__description {
         font-size: vars.$font-size-heading-5;
         line-height: vars.$line-height-large;
@@ -13,6 +12,7 @@
     &__feature-title {
         font-size: vars.$font-size-heading-4;
         line-height: vars.$line-height-heading-4;
+
         @include title;
     }
 
