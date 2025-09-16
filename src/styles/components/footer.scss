@@ -1,0 +1,21 @@
+.footer {
+    &__description {
+        line-height: var(--line-height-small);
+    }
+
+    &__nav-title {
+        font-size: var(--font-size-heading-5);
+        line-height: var(--line-height-large);
+        font-weight: var(--font-weight-medium);
+    }
+
+    &__nav-link {
+        font-weight: var(--font-weight-semibold);
+        font-size: var(--font-size-small);
+        line-height: var(--line-height-small);
+    }
+
+    &__copyright {
+        line-height: var(--line-height-small);
+    }
+}

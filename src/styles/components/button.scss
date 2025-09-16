@@ -1,13 +1,17 @@
-@use '../global/variables' as vars;
-
 .button {
     border: none;
     text-align: center;
     background-color: var(--color-marina-800);
+    /* Keep as is */
     padding: var(--padding-lg);
+    /* Keep as is */
     color: inherit;
+    /* Keep as is */
     font-weight: var(--font-weight-semibold);
+    /* Keep as is */
     font-size: var(--font-size-large);
+    /* Keep as is */
     line-height: var(--line-height-large);
+    /* Keep as is */
     vertical-align: middle;
 }
