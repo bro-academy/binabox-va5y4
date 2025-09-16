@@ -1,7 +1,2 @@
-@import "./about.scss";
-@import "./article.scss";
-@import "./catalog.scss";
-@import "./footer.scss";
-@import "./header.scss";
-@import "./hero.scss";
-@import "./navigation.scss";
+@import "./blog.scss";
+@import "./index.scss";
