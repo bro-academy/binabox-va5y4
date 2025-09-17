@@ -17,25 +17,49 @@ a {
     text-decoration: none;
     color: inherit;
 
-    &:hover {
+    &:hover,
+    &.blue:hover,
+    &.blue-dashed:hover {
         color: rgba(56, 146, 243, 1);
     }
 
-    &:focus {
+    &:focus,
+    &.blue:focus,
+    &.blue-dashed:focus {
         outline: 4px solid rgba(56, 146, 243, 1);
     }
 
-    &:active {
+    &:active,
+    &.blue:active,
+    &.blue-dashed:active {
         color: rgba(0, 84, 182, 1);
     }
 
-    &:disabled {
+    &:disabled,
+    &.disabled {
         color: rgba(229, 236, 251, 0.36);
         pointer-events: none;
         cursor: not-allowed;
-    }
-}
 
-.caps {
-    text-transform: uppercase;
+        &:hover,
+        &:focus,
+        &:active {
+            color: rgba(229, 236, 251, 0.36);
+            outline: none;
+        }
+    }
+
+    &.dashed {
+        border-bottom: 1px dashed currentColor;
+    }
+
+    &.blue,
+    &.blue-dashed {
+        color: rgba(120, 187, 250, 1);
+        border-bottom: 1px dashed currentColor;
+    }
+
+    .caps {
+        text-transform: uppercase;
+    }
 }
