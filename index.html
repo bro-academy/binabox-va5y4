@@ -10,8 +10,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:wght@400;500;600&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="style.css">
+  <!-- Styles now imported via main.js (SCSS + normalize) -->
+  <script type="module" src="/src/main.js"></script>
 </head>
 
 <body>
@@ -20,12 +20,12 @@
       <img src="#" alt="Binabox logo" class="logo header__logo-image">
     </a>
     <nav class="header__nav">
-      <ul class="navigation-list">
-        <li class="navigation-item"><a href="index.html" class="navigation-link navigation-link--active">Home</a>
+      <ul class="navigation">
+        <li class="navigation__item"><a href="index.html" class="navigation__link navigation__link--active">Home</a>
         </li>
-        <li class="navigation-item"><a href="blog.html" class="navigation-link">Blog</a></li>
-        <li class="navigation-item"><a href="#catalog" class="navigation-link">Catalog</a></li>
-        <li class="navigation-item"><a href="#contact-us" class="navigation-link">Contact Us</a></li>
+        <li class="navigation__item"><a href="blog.html" class="navigation__link">Blog</a></li>
+        <li class="navigation__item"><a href="#catalog" class="navigation__link">Catalog</a></li>
+        <li class="navigation__item"><a href="#contact-us" class="navigation__link">Contact Us</a></li>
       </ul>
     </nav>
     <div class="header__actions">
@@ -346,17 +346,18 @@
     <nav class="footer__nav">
       <span class="footer__nav-title">Navigation</span>
       <ul class="footer__nav-list">
-        <li class="footer__nav-item"><a href="#home" class="footer__nav-link">Home</a></li>
-        <li class="footer__nav-item"><a href="/blog.html" class="footer__nav-link">Blog</a></li>
+        <li class="footer__nav-item"><a href="index.html" class="footer__nav-link">Home</a></li>
+        <li class="footer__nav-item"><a href="blog.html" class="footer__nav-link">Blog</a></li>
         <li class="footer__nav-item"><a href="#catalog" class="footer__nav-link">Catalog</a></li>
         <li class="footer__nav-item"><a href="#contact-us" class="footer__nav-link">Contact Us</a></li>
-        <li class="footer__nav-item"><a href="#terms-conditions" class="footer__nav-link">Terms Conditions</a></li>
+        <li class="footer__nav-item"><a href="#terms-conditions" class="footer__nav-link">Terms Conditions</a>
+        </li>
         <li class="footer__nav-item"><a href="#privacy-policy" class="footer__nav-link">Privacy Policy</a></li>
         <li class="footer__nav-item"><a href="#whitepaper" class="footer__nav-link">Whitepaper</a></li>
         <li class="footer__nav-item"><a href="#help-center" class="footer__nav-link">Help Center</a></li>
       </ul>
     </nav>
-    <p class="footer__copyright">BINABOX 2025 - ALL rights reserved</p>
+    <p class="footer__copyright">BINABOX 2025 - All rights reserved</p>
     <address class="footer__socials">
       <a href="#" aria-label="Twitter" class="footer__social-link"><img src="#" alt="Twitter icon"
           class="footer__social-icon"></a>

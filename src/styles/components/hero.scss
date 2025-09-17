@@ -1,0 +1,37 @@
+@use '../global/mixin' as *;
+
+.hero {
+    &__highlight {
+        color: var(--color-marina-800);
+    }
+
+    &__description {
+        font-size: var(--font-size-heading-5);
+        line-height: var(--line-height-large);
+        font-weight: var(--font-weight-medium);
+    }
+
+    &__stats-number {
+        font-family: var(--font-family-secondary);
+        text-shadow: 0 var(--shadow-offset) var(--shadow-blur) rgba(255, 255, 255, var(--shadow-opacity));
+        font-size: var(--font-size-heading-1);
+        line-height: var(--line-height-heading-1);
+        letter-spacing: var(--letter-spacing-heading);
+    }
+
+    &__stats-label {
+        font-size: var(--font-size-medium);
+        line-height: var(--line-height-medium);
+        color: var(--color-text-muted);
+    }
+
+    &__button {
+        color: var(--color-text-main);
+    }
+
+    &__link {
+        @include link;
+
+        padding: var(--padding-lg);
+    }
+}

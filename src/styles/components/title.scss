@@ -1,0 +1,35 @@
+@use '../global/mixin' as mixin;
+
+
+.title {
+    font-family: var(--font-family-secondary);
+    font-weight: var(--font-weight-medium);
+    letter-spacing: var(--letter-spacing-heading);
+
+    &--h1 {
+        font-size: var(--font-size-heading-1);
+        line-height: calc(var(--font-size-heading-1) * var(--line-height-heading-1));
+    }
+
+    &--h2 {
+        font-size: var(--font-size-heading-2);
+        line-height: var(--font-size-heading-2-line);
+        color: var(--color-text-main);
+    }
+
+    &--h3 {
+        font-size: var(--font-size-heading-3);
+        line-height: calc(var(--font-size-heading-3) * var(--line-height-heading-3));
+    }
+
+    &--h4 {
+        font-size: var(--font-size-heading-4);
+        line-height: calc(var(--font-size-heading-4) * var(--line-height-heading-4));
+    }
+
+    &--h5 {
+        font-size: var(--font-size-heading-5);
+        line-height: var(--font-size-heading-5-line);
+        font-size: var(--font-size-heading-1);
+    }
+}

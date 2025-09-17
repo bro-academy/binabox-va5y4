@@ -1,0 +1,9 @@
+.breadcrumb-link {
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-small);
+    color: var(--color-text-main);
+
+    &--secondary {
+        color: var(--color-text-subtle);
+    }
+}

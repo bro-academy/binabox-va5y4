@@ -1,0 +1,15 @@
+.employee {
+    &__member-name {
+        font-family: var(--font-family-secondary);
+        font-size: var(--font-size-heading-4);
+        line-height: var(--line-height-heading-4);
+        font-weight: 400;
+    }
+
+    &__member-role {
+        font-size: var(--font-size-large);
+        color: var(--color-text-muted);
+        line-height: var(--line-height-large);
+        font-weight: var(--font-weight-medium);
+    }
+}

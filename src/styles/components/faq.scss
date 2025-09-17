@@ -1,0 +1,26 @@
+.faq {
+    &__item {
+        background-color: var(--color-bg-alt2);
+        padding: var(--padding-xl);
+        display: flex;
+        flex-direction: column;
+        margin-bottom: var(--padding-xl);
+    }
+
+    &__question {
+        font-size: var(--font-size-heading-4);
+        line-height: var(--line-height-heading-4);
+        font-family: var(--font-family-secondary);
+
+    }
+
+    &__answer {
+        font-size: var(--font-size-medium);
+        line-height: var(--line-height-medium);
+    }
+
+    &__link {
+        color: var(--color-marina-800);
+    }
+
+}

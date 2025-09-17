@@ -1,0 +1,19 @@
+.sidebar {
+    &__title {
+        font-family: var(--font-family-secondary);
+    }
+
+    &__link {
+        font-weight: var(--font-weight-semibold);
+        line-height: var(--line-height-small);
+    }
+
+    &__tag {
+        font-weight: var(--font-weight-semibold);
+        line-height: var(--line-height-small);
+        color: var(--color-text-main);
+        border: var(--border-width) solid var(--color-separator-strong);
+        padding: var(--padding-xs);
+        display: inline-block;
+    }
+}

@@ -1,5 +1,5 @@
 <section class="page-header">
-	<h1 class="page-header__title title" id="{{ blog_header.title|lower|replace({' ': '-'}) }}">{{ blog_header.title }}</h1>
+	<h1 class="page-header__title title title--h1" id="{{ blog_header.title|lower|replace({' ': '-'}) }}">{{ blog_header.title }}</h1>
 	<nav class="breadcrumb">
 		<ul class="breadcrumb-list">
 			{% for crumb in blog_header.breadcrumbs %}

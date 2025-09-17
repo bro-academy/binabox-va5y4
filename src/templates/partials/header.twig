@@ -3,10 +3,10 @@
 		<img src="{{ header.logo_url }}" alt="{{ header.logo_alt }}" class="logo header__logo-image">
 	</a>
 	<nav class="header__nav">
-		<ul class="navigation-list">
+		<ul class="navigation">
 			{% for item in header.navigation_items %}
-				<li class="navigation-item{% if item.label|lower == current_page %} navigation-link--active{% endif %}">
-					<a href="{{ item.url }}" class="navigation-link">{{ item.label }}</a>
+				<li class="navigation__item{% if item.label|lower == current_page %} navigation__link--active{% endif %}">
+					<a href="{{ item.url }}" class="navigation__link">{{ item.label }}</a>
 				</li>
 			{% endfor %}
 		</ul>

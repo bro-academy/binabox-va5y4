@@ -13,6 +13,9 @@
 - 📊 `src/data` — JSON data files
 - 🌳 `src/templates/layouts` — Twig layout templates
 - 🧩 `src/templates/partials` — Twig partial templates
+- 📦 `src/styles/components` — SCSS component styles
+- 📐 `src/styles/layout` — SCSS layout styles
+- 🌍 `src/styles/global` — Global SCSS styles and variables
 
 ## 🛠️ Commands
 
