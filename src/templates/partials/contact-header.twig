@@ -3,8 +3,13 @@
 	<nav class="breadcrumb">
 		<ul class="breadcrumb-list">
 			{% for crumb in contact_header.breadcrumbs %}
-				<li class="breadcrumb-list__item">
-					<a href="{{ crumb.url }}" class="breadcrumb-list__link">{{ crumb.label }}</a>
+				<li class="breadcrumb-item">
+					{% if loop.last %}
+						<span class="breadcrumb-link--secondary">{{ crumb.label }}</span>
+					{% else %}
+						<a href="{{ crumb.url }}" class="{{ crumb.class }}">{{ crumb.label }}</a>
+						<span class="separator"></span>
+					{% endif %}
 				</li>
 			{% endfor %}
 		</ul>

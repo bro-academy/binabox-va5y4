@@ -15,9 +15,11 @@
 @use './components/breadcrumb';
 @use './components/sidebar';
 @use './layout/article';
+@use './layout/contact';
 
 // Components
 @use './components/button';
 @use './components/link';
 @use './components/title';
 @use './components/separator';
+@use './components/form';
