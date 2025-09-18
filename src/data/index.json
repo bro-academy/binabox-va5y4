@@ -15,7 +15,8 @@
     "hero_button": "Connect Wallet",
     "hero_link": "Whitelist now",
     "image_src": "#",
-    "image_alt": "NFT box"
+    "image_alt": "NFT box",
+    "link_url": "#"
   },
   "catalog": {
     "icon_src": "#",
