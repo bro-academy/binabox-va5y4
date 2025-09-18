@@ -1,9 +1,16 @@
+@import "./about.scss";
+@import "./article.scss";
 @import "./blog-card.scss";
 @import "./breadcrumb.scss";
 @import "./button.scss";
+@import "./catalog.scss";
 @import "./employee.scss";
 @import "./faq.scss";
+@import "./footer.scss";
+@import "./header.scss";
+@import "./hero.scss";
 @import "./link.scss";
+@import "./navigation.scss";
 @import "./separator.scss";
 @import "./sidebar.scss";
 @import "./title.scss";

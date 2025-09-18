@@ -1,11 +1,9 @@
-@use '../global/variables' as vars;
-
 .breadcrumb-link {
-    font-weight: vars.$font-weight-semibold;
-    line-height: vars.$line-height-small;
-    color: vars.$color-text-main;
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-small);
+    color: var(--color-text-main);
 
     &--secondary {
-        color: vars.$color-text-subtle;
+        color: var(--color-text-subtle);
     }
 }
