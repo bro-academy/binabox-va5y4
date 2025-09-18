@@ -49,7 +49,7 @@
         color: var(--color-white-bg);
         font-family: var(--font-family-secondary);
         text-shadow: 0 var(--shadow-offset) var(--shadow-offset) rgba(0, 0, 0, 0.25);
-        -webkit-text-stroke: var(--border-width) var(--color-black);
+        -webkit-text-stroke: var(--border-width-sm) var(--color-black);
     }
 
     &__quote {
