@@ -1,36 +1,36 @@
 <section class="contact-form">
 	<div class="container">
-		<form action="#" class="form" novalidate>
+		<form class="form" action="#" method="POST">
 			<div class="form-header">
 				<h2 class="form-title title title--h2">Get in touch</h2>
 				<p>Browse through the most frequently asked questions</p>
 			</div>
 			<div class="form-group">
 				<label for="name" class="form-label">Name</label>
-				<input type="text" id="name" class="form-input" placeholder="Enter your name" required autocomplete="given-name">
+				<input type="text" id="name" class="form-input" placeholder="Enter your name" required autocomplete="given-name" pattern="^[A-Za-z\s'-]{2,}" title="Please enter a valid name (letters, spaces, apostrophes, hyphens)">
 			</div>
 			<div class="form-group">
 				<label for="last-name" class="form-label">Last Name</label>
-				<input type="text" id="last-name" class="form-input" placeholder="Enter your last name" required autocomplete="family-name">
+				<input type="text" id="last-name" class="form-input" placeholder="Enter your last name" required autocomplete="family-name" pattern="^[A-Za-z\s'-]{2,}$" title="Please enter a valid last name (letters, spaces, apostrophes, hyphens)">
 			</div>
 			<div class="form-group">
 				<label for="date-of-birth" class="form-label">Date of birth</label>
-				<input type="date" id="date-of-birth" class="form-input" required min="{{ (date('now')|date_modify('-100 years'))|date('Y-m-d') }}" max="{{ (date('now')|date_modify('-18 years'))|date('Y-m-d') }}">
+				<input type="date" id="date-of-birth" class="form-input" required>
 			</div>
 			<div class="form-group">
-				<fieldset class="form-radio-group">
-					<legend class="form-label">Sex</legend>
-					<div class="form-radio-container">
-						<label class="form-radio-label" for="sex-male">
-							<input type="radio" id="sex-male" name="sex" value="male" required>
-							Male
-						</label>
-						<label class="form-radio-label" for="sex-female">
-							<input type="radio" id="sex-female" name="sex" value="female" required>
-							Female
-						</label>
-					</div>
-				</fieldset>
+
+				<label for="sex-male" class="form-label">Sex</label>
+				<div class="form-radio-container">
+					<label class="form-radio-label" for="sex-male">
+						<input type="radio" id="sex-male" name="sex" value="male" required>
+						Male
+					</label>
+					<label class="form-radio-label" for="sex-female">
+						<input type="radio" id="sex-female" name="sex" value="female" required>
+						Female
+					</label>
+				</div>
+
 			</div>
 			<div class="form-group">
 				<label for="email" class="form-label">Email</label>

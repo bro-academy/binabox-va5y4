@@ -82,6 +82,14 @@
     color: rgba(245, 248, 251, 1);
     padding: 10px 12px;
     margin: 0 auto;
+
+    &:user-invalid {
+        border: 2px solid red;
+    }
+
+    &:user-valid {
+        border: 2px solid green;
+    }
 }
 
 .form-radio-label {
@@ -127,5 +135,12 @@
             border-radius: 50%;
             transform: translate(-50%, -50%);
         }
+    }
+
+    .form-checkbox {
+        appearance: none;
+        background-color: rgba(13, 13, 21, 1);
+
+
     }
 }
