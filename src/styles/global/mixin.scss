@@ -7,24 +7,3 @@
         color: var(--color-text-main);
     }
 }
-
-
-@mixin link {
-    border: var(--border-width) solid var(--color-separator-strong);
-    text-align: center;
-    padding: var(--padding-lg);
-    font-weight: var(--font-weight-semibold);
-    font-size: var(--font-size-large);
-    line-height: var(--line-height-large);
-
-    &:hover {
-        color: var(--color-text-main);
-        cursor: pointer;
-        background-color: var(--button-secondary-bg-hover);
-        border: 2px solid var(--button-secondary-border-hover);
-    }
-
-    &:active {
-        outline: none;
-    }
-}
