@@ -1,5 +1,55 @@
-@use '../global/mixin' as mixin;
-
 .link {
-    @include mixin.link;
+    border: var(--border-width) solid var(--color-separator-strong);
+    text-align: center;
+    padding: var(--padding-lg);
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-large);
+    line-height: var(--line-height-large);
+    transition: color 0.2s, outline 0.2s, border-color 0.2s;
+
+    &:hover,
+    &.accent:hover,
+    &.accent-dashed:hover {
+        color: var(--color-marina-hover);
+    }
+
+    &:focus,
+    &.accent:focus,
+    &.accent-dashed:focus {
+        outline: 4px solid var(--color-marina-hover);
+    }
+
+    &:active,
+    &.accent:active,
+    &.accent-dashed:active {
+        color: var(--color-marina-active);
+    }
+
+    &:disabled,
+    &.disabled {
+        color: var(--color-white-active);
+        pointer-events: none;
+        cursor: not-allowed;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: var(--color-white-active);
+            outline: none;
+        }
+    }
+
+    &.dashed {
+        border-bottom: 1px dashed currentColor;
+    }
+
+    &.accent,
+    &.accent-dashed {
+        color: var(--color-link-accent);
+        border-bottom: 1px dashed currentColor;
+    }
+
+    .caps {
+        text-transform: uppercase;
+    }
 }
