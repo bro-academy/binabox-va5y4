@@ -3,7 +3,7 @@
 	<ul class="sidebar__tags-list">
 		{% for tag in sidebar_tags.items %}
 			<li class="sidebar__item">
-				<a href="{{ tag.url }}" class="link sidebar__tag">{{ tag.label }}</a>
+				<a href="{{ tag.url }}" class="button button--secondary sidebar__tag">{{ tag.label }}</a>
 			</li>
 		{% endfor %}
 	</ul>

@@ -365,7 +365,7 @@
     "items": [
       {
         "question": "What are the NFTs",
-        "answer": "<a href=\"#\" class=\"faq__link\">NFTs (non-fungible tokens)</a> are unique digital objects stored on the blockchain. They can be art, music, code, memes, memories - anything that can be owned and verified. No copies. No fakes. Just you and the chain."
+        "answer": "<a href=\"#\" class=\"link link--accent faq__link\">NFTs (non-fungible tokens)</a> are unique digital objects stored on the blockchain. They can be art, music, code, memes, memories - anything that can be owned and verified. No copies. No fakes. Just you and the chain."
       },
       {
         "question": "How do I get NFTs?",
