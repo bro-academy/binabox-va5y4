@@ -1,25 +1,26 @@
 // Global
+@use './global/variables';
 @use './global/normalize';
 @use './global/base';
 
-// Layout
-@use './layout/header';
-@use './layout/navigation';
-@use './layout/hero';
-@use './layout/catalog';
+// Components
+@use './components/header';
+@use './components/navigation';
+@use './components/hero';
+@use './components/catalog';
 @use './components/blog-card';
-@use './layout/about';
+@use './components/about';
 @use './components/employee';
 @use './components/faq';
-@use './layout/footer';
+@use './components/footer';
 @use './components/breadcrumb';
 @use './components/sidebar';
-@use './layout/article';
-@use './layout/contact';
-
-// Components
+@use './components/article';
 @use './components/button';
 @use './components/link';
 @use './components/title';
 @use './components/separator';
-@use './components/form';
+
+// Layout
+@use './layout/index';
+@use './layout/blog';

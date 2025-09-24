@@ -1,0 +1,30 @@
+@use '../global/mixin' as *;
+
+.header {
+    position: relative;
+    top: 0;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-bg-main);
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        gap: var(--gap-md);
+    }
+
+    &__search {
+        background-color: inherit;
+        padding: var(--padding-md);
+        border: var(--border-width) solid var(--color-separator-strong);
+        color: var(--color-text-subtle);
+        font-size: var(--font-size-base);
+        line-height: var(--line-height-small);
+    }
+
+
+
+
+}

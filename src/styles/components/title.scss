@@ -2,62 +2,34 @@
 
 
 .title {
-    font-family: 'Bakbak One', "arial", sans-serif;
-    font-weight: 400;
-    letter-spacing: -0.5px;
+    font-family: var(--font-family-secondary);
+    font-weight: var(--font-weight-medium);
+    letter-spacing: var(--letter-spacing-heading);
 
     &--h1 {
-        font-size: 52px;
-        line-height: 62px;
+        font-size: var(--font-size-heading-1);
+        line-height: calc(var(--font-size-heading-1) * var(--line-height-heading-1));
     }
 
     &--h2 {
-        font-size: 36px;
-        line-height: 48px;
+        font-size: var(--font-size-heading-2);
+        line-height: var(--font-size-heading-2-line);
+        color: var(--color-text-main);
     }
 
     &--h3 {
-        font-size: 28px;
-        line-height: 36px;
+        font-size: var(--font-size-heading-3);
+        line-height: calc(var(--font-size-heading-3) * var(--line-height-heading-3));
     }
 
     &--h4 {
-        font-size: 24px;
-        line-height: 32px;
+        font-size: var(--font-size-heading-4);
+        line-height: calc(var(--font-size-heading-4) * var(--line-height-heading-4));
     }
 
     &--h5 {
-        font-size: 20px;
-        line-height: 26px;
-    }
-
-    // Fallbacks: if a heading has class .title without a size modifier, map semantic levels.
-    &.title:not([class*="title--h"]) {
-
-        // For h1.title, h2.title, etc. selectors
-        @at-root h1#{&} {
-            font-size: 52px;
-            line-height: 62px;
-        }
-
-        @at-root h2#{&} {
-            font-size: 36px;
-            line-height: 48px;
-        }
-
-        @at-root h3#{&} {
-            font-size: 28px;
-            line-height: 36px;
-        }
-
-        @at-root h4#{&} {
-            font-size: 24px;
-            line-height: 32px;
-        }
-
-        @at-root h5#{&} {
-            font-size: 20px;
-            line-height: 26px;
-        }
+        font-size: var(--font-size-heading-5);
+        line-height: var(--font-size-heading-5-line);
+        font-size: var(--font-size-heading-1);
     }
 }

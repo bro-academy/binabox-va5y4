@@ -4,7 +4,7 @@
 		<ul class="breadcrumb-list">
 			{% for crumb in blog_header.breadcrumbs %}
 				<li class="breadcrumb-item">
-					<a href="{{ crumb.url }}" class="{{ crumb.class }}">{{ crumb.label }}</a>
+					<a class="link breadcrumb-link" href="{{ crumb.url }}" class="{{ crumb.class }}">{{ crumb.label }}</a>
 				</li>
 			{% endfor %}
 		</ul>

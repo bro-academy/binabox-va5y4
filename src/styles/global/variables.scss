@@ -4,21 +4,25 @@
  * ============================= */
 
 :root {
-    /* ========== Typography ========== */
-    --font-family-primary: 'Poppins', Arial, sans-serif;
-    --font-family-secondary: 'Bakbak One', Arial, sans-serif;
+    /* Font Sizes & Line Heights */
     --font-size-base: 14px;
     --font-size-small: 12px;
     --font-size-medium: 16px;
     --font-size-large: 18px;
     --font-size-heading-1: 52px;
+    --font-size-heading-2: 36px;
     --font-size-heading-3: 28px;
     --font-size-heading-4: 24px;
     --font-size-heading-5: 20px;
 
-    /* Line Heights */
+    --font-size-heading-1-line: 62px;
+    --font-size-heading-2-line: 48px;
+    --font-size-heading-3-line: 36px;
+    --font-size-heading-4-line: 32px;
+    --font-size-heading-5-line: 26px;
+
     --line-height-base: 2.0;
-    /* 28px/14px */
+    /* 28px/14px = 2.0 */
     --line-height-small: 1.33;
     /* 16px/12px */
     --line-height-medium: 1.5;
@@ -32,11 +36,15 @@
     --line-height-heading-4: 1.33;
     /* 32px/24px */
 
+    /* Font Families & Weights */
+    --font-family-primary: 'Poppins', arial, sans-serif;
+    --font-family-secondary: 'Bakbak One', arial, sans-serif;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
-    --letter-spacing-heading: -0.5px;
 
-    /* ========== Colors ========== */
+
+    /* Colors */
+    --color-black: rgb(0 0 0 / 1);
     --color-marina-800: rgb(2 101 220 / 1);
     --color-marina-1200: rgb(0 39 84 / 1);
     --color-marina-hover: rgb(56 146 243 / 1);
@@ -45,15 +53,48 @@
     --color-text-main: rgb(245 248 251 / 1);
     --color-text-muted: rgb(239 245 250 / 0.82);
     --color-text-subtle: rgb(231 238 247 / 0.66);
+    --color-bg-root: rgb(13 13 21 / 1);
     --color-bg-main: rgb(13 13 21 / 1);
     --color-bg-alt2: rgb(29 28 40 / 1);
     --color-separator-strong: rgb(208 215 251 / 0.17);
     --color-link-accent: rgb(120 187 250 / 1);
     --color-link-accent-inverse: rgb(2 101 220 / 1);
     --color-white-bg: rgb(255 255 255 / 1);
+    --color-dark: rgb(34 34 34 / 1);
+    --color-disabled-text: rgb(170 170 170 / 1);
+    --color-primary-text: rgb(34 34 34 / 1);
+    --color-primary-bg-hover: rgb(244 247 250 / 1);
+    --color-primary-focus: rgb(56 146 243 / 1);
+    --color-primary-active: rgb(229 236 251 / 0.36);
+    --color-primary-active-text: rgb(245 248 251 / 1);
+    --color-primary-disabled: rgb(208 215 251 / 0.17);
+    --button-secondary-border: rgb(208 215 251 / 0.17);
+    --button-secondary-bg-hover: rgb(191 197 238 / 0.12);
+    --button-secondary-border-hover: rgb(191 197 238 / 0.12);
+    --button-secondary-outline-focus: rgb(56 146 243 / 1);
+    --button-secondary-border-disabled: rgb(229 236 251 / 0.36);
+    --button-secondary-text-disabled: rgb(229 236 251 / 0.36);
+    --button-tertiary-bg-hover: rgb(191 197 238 / 0.12);
+    --button-tertiary-border-hover: rgb(56 146 243 / 1);
+    --button-tertiary-outline-focus: rgb(56 146 243 / 1);
+    --button-tertiary-text-disabled: rgb(204 204 204 / 1);
+    --color-marina-hover: rgb(56 146 243 / 1);
+    --color-marina-active: rgb(0 84 182 / 1);
+    --color-white-active: rgb(229 236 251 / 0.36);
+    --color-link-accent: rgb(120 187 250 / 1);
 
-    /* ========== Layout & Spacing ========== */
+
+    /* Shadows & Gradients */
+    --shadow-blur: 13px;
+    --shadow-offset: 4px;
+    --shadow-opacity: 0.4;
+    --gradient-radial-size: 700px 300px;
+    --gradient-radial-from: rgb(2 100 220 / 0.62);
+    --gradient-radial-to: rgb(2 101 220 / 0);
+
+    /* Layout & Spacing */
     --border-width: 2px;
+    --border-width-sm: 1px;
     --width-xs: 2px;
     --width-lg: 48px;
     --width-article: 1024px;
@@ -62,8 +103,9 @@
     --height-article: 132px;
     --radius-xs: 1px;
     --radius-lg: 16px;
+    --letter-spacing-heading: -0.5px;
 
-    /* ========== Padding ========== */
+    /* Padding */
     --padding-xs: 6px 12px;
     --padding-sm: 8px 10px;
     --padding-md: 8px 12px;
@@ -71,117 +113,9 @@
     --padding-xl: 16px;
     --padding-xxl: 8px 20px;
 
-    /* ========== Gaps & Margins ========== */
+    /* Gaps & Margins */
     --gap-md: 16px;
     --gap-lg: 24px;
     --margin-xs: 0 8px;
+
 }
-
-
-
-// =============================
-//   SCSS VARIABLES ($var)
-//   (For use in SCSS files)
-// =============================
-
-// -------- Layout & Structure --------
-$border-width: 2px;
-$width-xs: 2px;
-$width-lg: 48px;
-$width-article: 1024px;
-$height-xs: 24px;
-$height-lg: 48px;
-$height-article: 132px;
-$radius-xs: 1px;
-$radius-lg: 16px;
-
-// -------- Colors --------
-$color-text-main: rgb(245 248 251 / 1);
-$color-text-muted: rgb(239 245 250 / 0.82);
-$color-text-subtle: rgb(231 238 247 / 0.66);
-$color-marina-800: rgb(2 101 220 / 1);
-$color-marina-1200: rgb(0 39 84 / 1);
-$color-bg-main: rgb(13 13 21 / 1);
-$color-bg-alt2: rgb(29 28 40 / 1);
-$color-separator-strong: rgb(208 215 251 / 0.17);
-$color-link-accent: rgb(120 187 250 / 1);
-$color-link-accent-inverse: rgb(2 101 220 / 1);
-$color-white-bg: rgb(255 255 255 / 1);
-$color-marina-hover: rgb(56 146 243 / 1);
-$color-marina-active: rgb(0 84 182 / 1);
-$color-marina-disabled: rgb(208 215 251 / 0.17);
-$color-disabled-text: rgb(229 236 251 / 0.36);
-$color-white: rgb(255 255 255 / 1);
-$color-dark: rgb(13 13 21 / 1);
-$color-inverted-hover: rgb(244 247 250 / 1);
-$color-inverted-focus: rgb(56 146 243 / 1);
-$color-inverted-active: rgb(229 236 251 / 0.36);
-$color-inverted-active-text: rgb(245 248 251 / 1);
-$color-inverted-disabled: rgb(208 215 251 / 0.17);
-
-// -------- Button Variables --------
-// Use for button backgrounds, states, and text
-$button-base-bg: $color-marina-800;
-$button-base-bg-hover: rgb(56 146 243 / 1); // hover
-$button-base-bg-active: rgb(0 84 182 / 1); // active
-$button-base-bg-disabled: rgb(208 215 251 / 0.17); // disabled
-$button-base-text-disabled: rgb(229 236 251 / 0.36); // disabled text
-
-$button-inverted-bg: $color-white-bg;
-$button-inverted-text: $color-bg-main;
-$button-inverted-bg-hover: rgb(244 247 250 / 1);
-$button-inverted-outline-focus: rgb(56 146 243 / 1);
-$button-inverted-bg-active: rgb(229 236 251 / 0.36);
-$button-inverted-text-active: $color-text-main;
-$button-inverted-bg-disabled: rgb(208 215 251 / 0.17);
-$button-inverted-text-disabled: rgb(229 236 251 / 0.36);
-
-$button-secondary-border: rgb(208 215 251 / 0.17);
-$button-secondary-bg-hover: rgb(191 197 238 / 0.12);
-$button-secondary-border-hover: rgb(191 197 238 / 0.12);
-$button-secondary-outline-focus: rgb(56 146 243 / 1);
-$button-secondary-border-disabled: rgb(229 236 251 / 0.36);
-$button-secondary-text-disabled: rgb(229 236 251 / 0.36);
-
-$button-tertiary-bg-hover: rgb(191 197 238 / 0.12);
-$button-tertiary-border-hover: rgb(56 146 243 / 1);
-$button-tertiary-outline-focus: rgb(56 146 243 / 1);
-$button-tertiary-text-disabled: rgb(229 236 251 / 0.36);
-$button-tertiary-border: none;
-$button-tertiary-bg-disabled: transparent;
-
-// -------- Typography --------
-$font-family-primary: 'Poppins', Arial, sans-serif;
-$font-family-secondary: 'Bakbak One', Arial, sans-serif;
-$font-size-base: 14px;
-$font-size-heading-1: 52px;
-$font-size-heading-3: 28px;
-$font-size-heading-4: 24px;
-$font-size-heading-5: 20px;
-$font-size-large: 18px;
-$font-size-medium: 16px;
-$font-size-small: 12px;
-
-// -------- Line Heights --------
-$line-height-base: 2.0; // 28px/14px
-$line-height-small: 1.33; // 16px/12px
-$line-height-medium: 1.5; // 24px/16px
-$line-height-large: 1.56; // 28px/18px
-$line-height-heading-1: 1.19; // 62px/52px
-$line-height-heading-3: 1.29; // 36px/28px
-$line-height-heading-4: 1.33; // 32px/24px
-
-$font-weight-medium: 500;
-$font-weight-semibold: 600;
-$letter-spacing-heading: -0.5px;
-
-// -------- Spacing --------
-$padding-xs: 6px 12px;
-$padding-sm: 8px 10px;
-$padding-md: 8px 12px;
-$padding-lg: 10px 24px;
-$padding-xl: 16px;
-$padding-xxl: 8px 20px;
-$gap-md: 16px;
-$gap-lg: 24px;
-$margin-xs: 0 8px;

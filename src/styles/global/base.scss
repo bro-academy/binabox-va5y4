@@ -1,6 +1,6 @@
 body {
-    background-color: #0D0D15;
-    background-image: radial-gradient(700px 300px at 0% 0%, rgb(2 100 220 / 0.62) 0%, rgb(2 101 220 / 0) 100%);
+    background-color: var(--color-bg-root);
+    background-image: radial-gradient(var(--gradient-radial-size) at 0% 0%, var(--gradient-radial-from) 0%, var(--gradient-radial-to) 100%);
     font-family: var(--font-family-primary);
     color: var(--color-text-main);
     font-size: var(--font-size-base);
@@ -17,25 +17,4 @@ a {
     text-decoration: none;
     color: inherit;
 
-    &:hover {
-        color: rgba(56, 146, 243, 1);
-    }
-
-    &:focus {
-        outline: 4px solid rgba(56, 146, 243, 1);
-    }
-
-    &:active {
-        color: rgba(0, 84, 182, 1);
-    }
-
-    &:disabled {
-        color: rgba(229, 236, 251, 0.36);
-        pointer-events: none;
-        cursor: not-allowed;
-    }
-}
-
-.caps {
-    text-transform: uppercase;
 }

@@ -1,30 +1,28 @@
-@use '../global/variables' as vars;
-
 .blog-card {
-    background-color: vars.$color-bg-alt2;
-    margin-bottom: vars.$padding-xl;
-    padding: vars.$padding-xl;
+    background-color: var(--color-bg-alt2);
+    margin-bottom: var(--padding-xl);
+    padding: var(--padding-xl);
 
     &__label {
         border: none;
-        background-color: vars.$color-white-bg;
-        padding: vars.$padding-sm;
-        color: vars.$color-link-accent-inverse;
-        font-weight: vars.$font-weight-semibold;
-        line-height: vars.$line-height-small;
+        background-color: var(--color-white-bg);
+        padding: var(--padding-sm);
+        color: var(--color-link-accent-inverse);
+        font-weight: var(--font-weight-semibold);
+        line-height: var(--line-height-small);
     }
 
     &__excerpt {
-        font-size: vars.$font-size-medium;
-        line-height: vars.$line-height-medium;
-        color: vars.$color-text-muted;
+        font-size: var(--font-size-medium);
+        line-height: var(--line-height-medium);
+        color: var(--color-text-muted);
     }
 
     &__author {
-        font-weight: vars.$font-weight-semibold;
-        font-size: vars.$font-size-medium;
-        line-height: vars.$line-height-medium;
-        color: vars.$color-text-muted;
+        font-weight: var(--font-weight-semibold);
+        font-size: var(--font-size-medium);
+        line-height: var(--line-height-medium);
+        color: var(--color-text-muted);
     }
 
     &__author--uppercase {
@@ -32,17 +30,11 @@
     }
 
     &__date {
-        font-weight: vars.$font-weight-semibold;
-        font-size: vars.$font-size-medium;
-        line-height: vars.$line-height-medium;
-        color: vars.$color-text-muted;
+        font-weight: var(--font-weight-semibold);
+        font-size: var(--font-size-medium);
+        line-height: var(--line-height-medium);
+        color: var(--color-text-muted);
     }
 
-    &__read-more {
-        font-weight: vars.$font-weight-semibold;
-        font-size: vars.$font-size-medium;
-        line-height: vars.$line-height-medium;
-        border: vars.$border-width solid vars.$color-separator-strong;
-        padding: vars.$padding-xxl;
-    }
+
 }

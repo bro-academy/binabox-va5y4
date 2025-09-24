@@ -1,0 +1,24 @@
+@use '../global/mixin' as *;
+
+.about {
+    &__description {
+        font-size: var(--font-size-heading-5);
+        line-height: var(--line-height-large);
+        font-weight: var(--font-weight-medium);
+        color: var(--color-text-muted);
+    }
+
+    &__feature-title {
+        font-size: var(--font-size-heading-4);
+        line-height: var(--line-height-heading-4);
+
+        @include title;
+    }
+
+    &__feature-description {
+        font-size: var(--font-size-large);
+        color: var(--color-text-muted);
+    }
+
+
+}

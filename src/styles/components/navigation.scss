@@ -1,0 +1,20 @@
+.navigation {
+    display: flex;
+    gap: var(--gap-lg);
+
+    &__link {
+        font-weight: var(--font-weight-semibold);
+        font-size: var(--font-size-medium);
+        line-height: 1.2;
+        padding-bottom: var(--border-width);
+        border: 0;
+        border-width: 0;
+        border-style: none;
+        border-color: transparent;
+        border-bottom: 0;
+
+        &--active {
+            border-bottom: var(--border-width) solid var(--color-marina-800);
+        }
+    }
+}

@@ -161,7 +161,7 @@
             ],
             [
                 "Looking to join the pack?",
-                "Use the <a href=\"#\" class=\"article__link\">NFT Avatar Generator</a> to craft your own beast — or grab a rare egg on the marketplace.",
+                "Use the <a href=\"#\" class=\"link link--accent article__link\">NFT Avatar Generator</a> to craft your own beast — or grab a rare egg on the marketplace.",
                 "You name it. You own it. You unleash it."
             ]
         ],

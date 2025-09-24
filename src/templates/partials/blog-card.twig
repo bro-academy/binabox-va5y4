@@ -7,5 +7,5 @@
 	<span class="blog-card__author{% if blog.author_uppercase %} blog-card__author--uppercase{% endif %}">{{ blog.author }}</span>
 	<span class="blog-card__separator separator"></span>
 	<time class="blog-card__date" datetime="{{ blog.date_iso }}">{{ blog.date }}</time>
-	<a href="{{ blog.read_more_url }}" class="link blog-card__read-more">Read more &gt;</a>
+	<a href="{{ blog.read_more_url }}" class="button button--secondary blog-card__read-more">Read more &gt;</a>
 </article>
