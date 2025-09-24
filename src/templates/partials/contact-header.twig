@@ -5,9 +5,9 @@
 			{% for crumb in contact_header.breadcrumbs %}
 				<li class="breadcrumb-item">
 					{% if loop.last %}
-						<span class="breadcrumb-link--secondary">{{ crumb.label }}</span>
+						<span class="link breadcrumb-link--secondary">{{ crumb.label }}</span>
 					{% else %}
-						<a href="{{ crumb.url }}" class="{{ crumb.class }}">{{ crumb.label }}</a>
+						<a href="{{ crumb.url }}" class="link {{ crumb.class }}">{{ crumb.label }}</a>
 						<span class="separator"></span>
 					{% endif %}
 				</li>
