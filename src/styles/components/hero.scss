@@ -25,13 +25,7 @@
         color: var(--color-text-muted);
     }
 
-    &__button {
-        color: var(--color-text-main);
-    }
 
-    &__link {
-        @include link;
 
-        padding: var(--padding-lg);
-    }
+
 }

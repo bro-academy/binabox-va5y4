@@ -36,11 +36,5 @@
         color: var(--color-text-muted);
     }
 
-    &__read-more {
-        font-weight: var(--font-weight-semibold);
-        font-size: var(--font-size-medium);
-        line-height: var(--line-height-medium);
-        border: var(--border-width) solid var(--color-separator-strong);
-        padding: var(--padding-xxl);
-    }
+
 }

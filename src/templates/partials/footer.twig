@@ -1,6 +1,6 @@
 <footer class="footer">
 	<section class="footer__brand">
-		<a href="{{ footer.logo.href }}" class="logo footer__logo-link">
+		<a href="{{ footer.logo.href }}" class="link logo footer__logo-link">
 			<img src="{{ footer.logo.src }}" alt="{{ footer.logo.alt }}" class="logo footer__logo-image">
 		</a>
 		<p class="footer__description">{{ footer.description }}</p>
@@ -10,7 +10,7 @@
 		<ul class="footer__nav-list">
 			{% for item in footer.nav.items %}
 				<li class="footer__nav-item">
-					<a href="{{ item.href }}" class="footer__nav-link">{{ item.text }}</a>
+					<a href="{{ item.href }}" class="link footer__nav-link">{{ item.text }}</a>
 				</li>
 			{% endfor %}
 		</ul>
@@ -19,7 +19,7 @@
 	<address class="footer__socials">
 		{% for social in footer.socials %}
 			<a href="{{ social.href }}" aria-label="{{ social.label }}" class="footer__social-link">
-				<img src="{{ social.icon.src }}" alt="{{ social.icon.alt }}" class="footer__social-icon">
+				<img src="{{ social.icon.src }}" alt="{{ social.icon.alt }}" class="link footer__social-icon">
 			</a>
 		{% endfor %}
 	</address>

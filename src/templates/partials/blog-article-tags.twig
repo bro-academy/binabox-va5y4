@@ -1,6 +1,6 @@
 <section class="article__tags">
 	<span class="article__tags-title">Tags:</span>
 	{% for tag in article.tags %}
-		<a href="{{ tag.url }}" class="link article__tag">{{ tag.label }}</a>
+		<a href="{{ tag.url }}" class="button button--secondary article__tag">{{ tag.label }}</a>
 	{% endfor %}
 </section>

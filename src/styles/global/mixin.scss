@@ -2,18 +2,7 @@
     font-family: var(--font-family-secondary);
     color: var(--color-white-bg);
 
-    // Declarations above nested rules for Sass deprecation fix
     &--primary {
         color: var(--color-text-main);
     }
-}
-
-
-@mixin link {
-    border: var(--border-width) solid var(--color-separator-strong);
-    text-align: center;
-    padding: var(--padding-lg);
-    font-weight: var(--font-weight-semibold);
-    font-size: var(--font-size-large);
-    line-height: var(--line-height-large);
 }
