@@ -82,6 +82,9 @@
     --color-marina-active: rgb(0 84 182 / 1);
     --color-white-active: rgb(229 236 251 / 0.36);
     --color-link-accent: rgb(120 187 250 / 1);
+    --color-error: rgb(255 0 0 / 1);
+    --color-success: rgb(0 128 0 / 1);
+    --color-focus-shadow: rgba(2, 101, 220, 0.1);
 
 
     /* Shadows & Gradients */
@@ -104,6 +107,9 @@
     --radius-xs: 1px;
     --radius-lg: 16px;
     --letter-spacing-heading: -0.5px;
+    --max-width-form: 640px;
+    --radio-size: 18px;
+    --textarea-height: 160px;
 
     /* Padding */
     --padding-xs: 6px 12px;
@@ -112,10 +118,16 @@
     --padding-lg: 10px 24px;
     --padding-xl: 16px;
     --padding-xxl: 8px 20px;
+    --padding-form: 10px 12px;
 
     /* Gaps & Margins */
     --gap-md: 16px;
     --gap-lg: 24px;
     --margin-xs: 0 8px;
+    --gap-small: 8px;
+    --gap-medium: 12px;
+    --margin-medium: 10px;
+    --margin-large: 30px;
+    --margin-xl: 40px;
 
 }
