@@ -20,7 +20,9 @@
 @use './components/link';
 @use './components/title';
 @use './components/separator';
+@use './components/form';
 
 // Layout
 @use './layout/index';
 @use './layout/blog';
+@use './layout/contact';
