@@ -1,4 +1,7 @@
 .footer {
+    background-color: var(--color-footer-bg);
+
+
     &__description {
         line-height: var(--line-height-small);
     }
@@ -17,5 +20,7 @@
 
     &__copyright {
         line-height: var(--line-height-small);
+        align-items: stretch;
+        border-top: 1px solid var(--color-separator-strong);
     }
 }
