@@ -3,6 +3,7 @@
     top: 0;
     margin-top: 0;
     display: flex;
+    flex-wrap: nowrap; // prevent items from wrapping to a new line
     justify-content: space-between;
     align-items: center;
     background-color: var(--color-bg-main);
@@ -11,6 +12,7 @@
         display: flex;
         align-items: center;
         gap: var(--gap-md);
+        flex: 0 1 auto; // allow actions to shrink if needed
     }
 
     &__search {
@@ -20,9 +22,37 @@
         color: var(--color-text-subtle);
         font-size: var(--font-size-base);
         line-height: var(--line-height-small);
+        padding-left: var(--search-input-padding-left);
+        height: var(--search-input-height);
+        max-width: 220px; // limit width so it doesn't force wrapping
+        width: 100%;
+        box-sizing: border-box;
     }
 
+    &__search-icon {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: var(--search-icon-size);
+        height: var(--search-icon-size);
+        pointer-events: none;
 
+        img,
+        svg {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    }
 
-
+    &__search-wrapper {
+        position: relative;
+        display: inline-flex; // keep wrapper inline so it doesn't expand
+        align-items: center;
+        flex: 0 1 auto; // allow wrapper to shrink
+    }
 }
