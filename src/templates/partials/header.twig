@@ -5,8 +5,17 @@
 	<nav class="header__nav">
 		<ul class="navigation">
 			{% for item in header.navigation_items %}
-				<li class="navigation__item{% if item.label|lower == current_page %} navigation__link--active{% endif %}">
-					<a href="{{ item.url }}" class="link navigation__link">{{ item.label }}</a>
+				{# Map current_page to navigation label for accurate active state #}
+				{% set page_map = {
+							'index': 'home',
+							'blog': 'blog',
+							'catalog': 'catalog',
+							'contact': 'contact us'
+						} %}
+				{% set page_label = page_map[current_page]|default(current_page)|lower|replace({' ': ''}) %}
+				{% set item_key = item.label|lower|replace({' ': ''}) %}
+				<li class="navigation__item">
+					<a href="{{ item.url }}" class="link navigation__link{% if item_key == page_label %} navigation__link--active{% endif %}">{{ item.label }}</a>
 				</li>
 			{% endfor %}
 		</ul>
