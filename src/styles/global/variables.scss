@@ -36,6 +36,8 @@
     --line-height-heading-4: 1.33;
     /* 32px/24px */
 
+    --line-height-form-label: 20px;
+
     /* Font Families & Weights */
     --font-family-primary: 'Poppins', arial, sans-serif;
     --font-family-secondary: 'Bakbak One', arial, sans-serif;
@@ -119,6 +121,10 @@
     --padding-xl: 16px;
     --padding-xxl: 8px 20px;
     --padding-form: 10px 12px;
+    /* Search input specific sizes */
+    --search-icon-size: 20px;
+    --search-input-height: 40px;
+    --search-input-padding-left: calc(var(--search-icon-size) + 20px);
 
     /* Gaps & Margins */
     --gap-md: 16px;
