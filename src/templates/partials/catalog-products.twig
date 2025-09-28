@@ -1,0 +1,24 @@
+<section class="catalog-products">
+	<h2 class="catalog-products__title">{{ catalog_products.title }}</h2>
+
+	<div class="catalog-products__sort">
+		<select id="sort-select" class="catalog-products__sort-select">
+			<option value="" disabled selected hidden>Sort by</option>
+			{% for option in catalog_products.sort_options %}
+				<option value="{{ option.value }}">{{ option.label }}</option>
+			{% endfor %}
+		</select>
+	</div>
+
+	<div class="catalog-products__search">
+		<form action="/search" method="get" class="catalog-products__search">
+			<div class="catalog-products__search-wrapper">
+				<input type="search" id="search" name="product" placeholder="{{ catalog_products.search.placeholder }}" aria-label="{{ catalog_products.search.aria_label }}" class="catalog-products__search-input">
+				<span class="catalog-products__search-icon">
+					<img src="#" alt="Search Icon">
+				</span>
+			</div>
+		</form>
+	</div>
+
+</section>
