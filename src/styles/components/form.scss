@@ -6,7 +6,8 @@
     text-align: left;
     font-size: inherit;
     font-weight: inherit;
-    color: var(--color-text-subtle);
+    color: var(--color-text-main);
+    line-height: var(--line-height-form-label);
 }
 
 .form-radio-group legend.form-label {
@@ -19,13 +20,7 @@
     font-weight: inherit;
 }
 
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    gap: var(--margin-xl);
-}
+
 
 .form-header {
     display: flex;
@@ -163,7 +158,6 @@
 
 }
 
-// Custom checkbox styling
 .form-checkbox {
     appearance: none;
     width: var(--radio-size);
@@ -206,4 +200,12 @@
 
 .form-input[type="date"]::-webkit-calendar-picker-indicator {
     display: none;
+}
+
+.form-input[type="date"] {
+    color: var(--color-text-subtle);
+}
+
+input::placeholder {
+    color: var(--color-text-subtle);
 }
