@@ -4,7 +4,10 @@
 		<ul class="breadcrumb-list">
 			{% for crumb in blog_header.breadcrumbs %}
 				<li class="breadcrumb-item">
-					<a class="link breadcrumb-link" href="{{ crumb.url }}" class="{{ crumb.class }}">{{ crumb.label }}</a>
+					<a class="link breadcrumb-link{% if loop.last %} breadcrumb-link--active{% endif %}" href="{{ crumb.url }}">{{ crumb.label }}</a>
+					{% if not loop.last %}
+						<span class="separator"></span>
+					{% endif %}
 				</li>
 			{% endfor %}
 		</ul>
