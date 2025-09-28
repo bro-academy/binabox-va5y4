@@ -1,0 +1,16 @@
+<section class="page-header">
+	<h1 class="page-header__title title title--h1" id="{{ catalog_header.title|lower|replace({' ': '-'}) }}">{{ catalog_header.title }}</h1>
+	<nav class="breadcrumb">
+		<ul class="breadcrumb-list">
+			{% for crumb in catalog_header.breadcrumbs %}
+				<li class="breadcrumb-item">
+					<a class="link breadcrumb-link{% if loop.last %} breadcrumb-link--active{% endif %}" href="{{ crumb.url }}">{{ crumb.label }}</a>
+					{% if not loop.last %}
+						<span class="separator"></span>
+					{% endif %}
+				</li>
+			{% endfor %}
+		</ul>
+	</nav>
+
+</section>
