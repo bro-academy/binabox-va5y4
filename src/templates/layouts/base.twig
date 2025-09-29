@@ -4,8 +4,8 @@
 	<body>
 		{% include '../partials/header.twig' %}
 		{% block content %}{% endblock %}
-		   {% if current_page != 'index' %}
-			   {% include '../partials/footer.twig' %}
-		   {% endif %}
+		{% if current_page != 'index' %}
+			{% include '../partials/footer.twig' %}
+		{% endif %}
 	</body>
 </html>

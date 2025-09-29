@@ -25,13 +25,22 @@
     }
 
     &__discord-link {
-        @include link;
-        padding: var(--padding-lg);
+        padding: 10px 24px 10px 24px;
+        gap: 8px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+    &__discord-icon {
+        margin-top: -4px;
+        margin-left: 1px;
     }
 
     &__login-button {
         padding: var(--padding-lg);
         color: inherit;
-        vertical-align: middle;
+
     }
 }
