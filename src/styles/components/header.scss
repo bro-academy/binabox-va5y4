@@ -2,17 +2,21 @@
     display: flex;
     flex-direction: row;
     background-color: var(--color-bg-main);
-    width: 100%;
-    height: auto;
     justify-content: space-between;
     padding: 32px;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    height: auto;
+
+
 
     &__actions {
         display: flex;
         flex-direction: row;
+        gap: 16px;
         width: auto;
         height: auto;
-        gap: 16px;
 
     }
 
@@ -23,10 +27,9 @@
         color: var(--color-text-subtle);
         font-size: var(--font-size-base);
         line-height: var(--line-height-small);
-        padding-left: var(--search-input-padding-left);
-        height: var(--search-input-height);
-        max-width: 220px; // limit width so it doesn't force wrapping
-        width: 100%;
+        padding: 8px 12px 8px 28px; // increased left padding for placeholder
+        width: 188px;
+        height: 48px;
         box-sizing: border-box;
     }
 
