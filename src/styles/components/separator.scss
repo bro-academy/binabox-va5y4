@@ -6,4 +6,11 @@
     vertical-align: middle;
     margin: var(--margin-xs);
     border-radius: var(--radius-xs);
+
+    &__catalog {
+        width: 1167px;
+        height: 2px;
+        border-radius: 2px;
+
+    }
 }
