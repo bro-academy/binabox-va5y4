@@ -5,11 +5,7 @@ body {
     font-size: var(--font-size-base);
     font-weight: 400;
     line-height: var(--line-height-base);
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    gap: 0px;
-    height: auto;
+    max-width: 1728px;
 }
 
 
