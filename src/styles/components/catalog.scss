@@ -1,16 +1,20 @@
 .catalog {
-    padding: 64px;
-    gap: 40px;
-    width: 100%;
-    height: auto;
+
     display: flex;
     flex-direction: column;
+    padding-top: 64px;
 
     &__header {
         display: flex;
         flex-direction: row;
-        gap: 32px;
-        width: 100%;
+        gap: 0 32px;
+        align-items: center;
+        margin-bottom: 24px;
+        width: 95%;
         height: auto;
+        align-items: center;
+        justify-content: space-between;
+
+
     }
 }
