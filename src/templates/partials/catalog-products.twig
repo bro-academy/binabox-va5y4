@@ -32,7 +32,7 @@
 		{% for product in catalog_products.items %}
 			<article class="product-card">
 				<img src="{{ product.image }}" alt="{{ product.title }}" class="product-card__image">
-				<span class="product-card__label label">{{ product.label }}</span>
+				<span class="product-card__label label{% if product.label|lower == 'sold out' %} label--secondary{% endif %}">{{ product.label }}</span>
 				<h2 class="title title--h2 product-card__price">{{ product.price }}</h2>
 				<p class="product-card__title">{{ product.title }}</p>
 			</article>
