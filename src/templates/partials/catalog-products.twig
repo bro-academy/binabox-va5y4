@@ -31,7 +31,15 @@
 	<div class="catalog-products__grid">
 		{% for product in catalog_products.items %}
 			<article class="product-card">
-				<img src="{{ product.image }}" alt="{{ product.title }}" class="product-card__image">
+				<div class="product-card__image-container">
+					<img src="{{ product.image }}" alt="{{ product.title }}" class="product-card__image">
+					<div class="product-card__hover-menu">
+						<button class="product-card__favourites">
+							<span>♡</span>
+							Favourites</button>
+						<button class="product-card__buy">Buy</button>
+					</div>
+				</div>
 				<span class="product-card__label label{% if product.label|lower == 'sold out' %} label--secondary{% endif %}">{{ product.label }}</span>
 				<h2 class="title title--h2 product-card__price">{{ product.price }}</h2>
 				<p class="product-card__title">{{ product.title }}</p>
