@@ -21,4 +21,23 @@
 		</form>
 	</div>
 
+	<form method="get" action="/catalog" class="catalog-products__tags">
+		{% for tag in catalog_products.tags %}
+			<button class="catalog-products__tag" name="tag" value="{{ tag }}">{{ tag }}</button>
+		{% endfor %}
+		<button class="catalog-products__clear-all" type="reset">Clear all</button>
+	</form>
+
+	<div class="catalog-products__grid">
+		{% for product in catalog_products.items %}
+			<article class="product-card">
+				<img src="{{ product.image }}" alt="{{ product.title }}" class="product-card__image">
+				<span class="product-card__label label">{{ product.label }}</span>
+				<h2 class="title title--h2 product-card__price">{{ product.price }}</h2>
+				<p class="product-card__title">{{ product.title }}</p>
+			</article>
+		{% endfor %}
+		<button class="catalog-products__load-more">Load More</button>
+	</div>
+
 </section>
