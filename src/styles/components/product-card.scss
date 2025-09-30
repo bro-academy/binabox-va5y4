@@ -1,0 +1,25 @@
+.product-card {
+    &__image-container {
+        position: relative;
+    }
+
+    &_hover-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.2s;
+        width: 100%;
+    }
+
+    &:hover .product-card__hover-menu {
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
