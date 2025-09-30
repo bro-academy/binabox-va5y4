@@ -39,6 +39,76 @@
         "search": {
             "placeholder": "Search NFT",
             "aria_label": "Search NFT Products"
-        }
+        },
+        "tags": [
+            "NFT",
+            "ICO",
+            "Crypto"
+        ],
+        "items": [
+            {
+                "image": "#",
+                "label": "New",
+                "title": "Name Product",
+                "price": "$199",
+                "link": "#"
+            },
+            {
+                "image": "#",
+                "label": "Popular",
+                "title": "Name Product",
+                "price": "$199",
+                "link": "#"
+            },
+            {
+                "image": "#",
+                "label": "Sold out",
+                "title": "Name Product",
+                "price": "$199",
+                "link": "#"
+            },
+            {
+                "image": "#",
+                "label": "New",
+                "title": "Name Product",
+                "price": "$199",
+                "link": "#"
+            },
+            {
+                "image": "#",
+                "label": "New",
+                "title": "Name Product",
+                "price": "$199",
+                "link": "#"
+            },
+            {
+                "image": "#",
+                "label": "New",
+                "title": "Name Product",
+                "price": "$199",
+                "link": "#"
+            },
+            {
+                "image": "#",
+                "label": "New",
+                "title": "Name Product",
+                "price": "$199",
+                "link": "#"
+            },
+            {
+                "image": "#",
+                "label": "New",
+                "title": "Name Product",
+                "price": "$199",
+                "link": "#"
+            },
+            {
+                "image": "#",
+                "label": "New",
+                "title": "Name Product",
+                "price": "$199",
+                "link": "#"
+            }
+        ]
     }
 }
