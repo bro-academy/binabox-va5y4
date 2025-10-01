@@ -1,0 +1,81 @@
+.radio {
+    input[type="radio"] {
+        appearance: none;
+        -webkit-appearance: none;
+        background-color: rgba(13, 13, 21, 1);
+        border: 2px solid rgba(212, 217, 242, 0.26);
+        width: 16px;
+        height: 16px;
+        border-radius: 8px;
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+        transition: border 0.2s, border-radius 0.2s, width 0.2s, height 0.2s, background-color 0.2s;
+
+        &:hover {
+            border-color: rgba(212, 217, 242, 0.26);
+            background-color: rgba(29, 28, 40, 1);
+        }
+
+        &:active {
+            border: 5px solid rgba(181, 222, 255, 1);
+        }
+
+        &:focus {
+            outline: 2px solid rgba(56, 146, 243, 1);
+            outline-offset: 1px;
+            border: 2px solid rgba(231, 238, 247, 0.66);
+            width: 18px;
+            height: 18px;
+            border-radius: 10px;
+        }
+
+
+
+        &:checked {
+            border: 5px solid rgba(2, 101, 220, 1);
+            border-radius: 7px;
+            width: 14px;
+            height: 14px;
+
+            &:hover {
+                border-color: rgba(56, 146, 243, 1);
+            }
+
+            &:active {
+                border-color: rgba(181, 222, 255, 1);
+                width: 16px;
+                height: 16px;
+                border-radius: 8px;
+            }
+
+            &:focus {
+                width: 18px;
+                height: 18px;
+                border-radius: 10px;
+                outline: 2px solid rgba(56, 146, 243, 1);
+                outline-offset: 1px;
+                border-color: rgba(56, 146, 243, 1);
+            }
+
+            &:disabled {
+                border-color: rgba(212, 217, 242, 0.26);
+                background-color: rgba(231, 238, 247, 0.66);
+                width: 16px;
+                height: 16px;
+                border-radius: 8px;
+            }
+        }
+
+        &:disabled {
+            border: none;
+            background-color: rgba(208, 215, 251, 0.17);
+            width: 16px;
+            height: 16px;
+            border-radius: 8px;
+            cursor: not-allowed;
+            outline: none;
+            box-shadow: none;
+        }
+    }
+}
