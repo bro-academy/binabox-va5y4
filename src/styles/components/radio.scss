@@ -12,7 +12,6 @@
         position: relative;
         cursor: pointer;
 
-
         &:hover {
             border-color: rgba(212, 217, 242, 0.26);
             background-color: rgba(29, 28, 40, 1);
@@ -38,8 +37,6 @@
                 background-color: rgba(29, 28, 40, 1);
             }
         }
-
-
 
         &:checked {
             border: 5px solid rgba(2, 101, 220, 1);
