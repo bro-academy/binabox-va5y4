@@ -66,37 +66,6 @@
         cursor: pointer;
     }
 
-    &-input,
-    &-textarea {
-        border: var(--border-width) solid var(--color-marina-disabled);
-        background-color: var(--color-bg-main);
-        width: 100%;
-        max-width: var(--max-width-form);
-        height: auto;
-        color: var(--color-text-main);
-        padding: var(--padding-form);
-        margin: 0 auto;
-        transition: border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-
-        &:focus {
-            outline: none;
-            border-color: var(--color-marina-800);
-            box-shadow: 0 0 0 3px var(--color-focus-shadow);
-        }
-
-        &:user-invalid {
-            border: var(--border-width) solid var(--color-error);
-        }
-
-        &:user-valid {
-            border: var(--border-width) solid var(--color-success);
-        }
-
-        &:hover {
-            border-color: var(--color-marina-hover);
-            transition: border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-    }
 
 
     &-input[type="date"]::-webkit-calendar-picker-indicator {
@@ -109,5 +78,11 @@
 
     input::placeholder {
         color: var(--color-text-subtle);
+    }
+
+    textarea {
+        resize: none;
+        width: 640px;
+        height: 160px;
     }
 }
