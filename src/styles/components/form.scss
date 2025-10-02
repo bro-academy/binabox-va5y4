@@ -99,48 +99,6 @@
     }
 
 
-
-
-    &-checkbox {
-        appearance: none;
-        width: var(--radio-size);
-        height: var(--radio-size);
-        background-color: var(--color-bg-main);
-        border: var(--border-width) solid var(--color-marina-disabled);
-        border-radius: 4px;
-        position: relative;
-        cursor: pointer;
-        transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-
-        &:focus {
-            outline: none;
-            box-shadow: 0 0 0 3px var(--color-focus-shadow);
-        }
-
-        &:checked {
-            background-color: var(--color-marina-800);
-            border-color: var(--color-marina-800);
-
-            &::after {
-                content: '';
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                width: 4px;
-                height: 8px;
-                border: solid var(--color-text-main);
-                border-width: 0 var(--border-width) var(--border-width) 0;
-                transform: translate(-50%, -50%) rotate(45deg);
-            }
-        }
-
-        &:hover {
-            background-color: var(--color-marina-hover);
-            border-color: var(--color-marina-hover);
-            transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-    }
-
     &-input[type="date"]::-webkit-calendar-picker-indicator {
         display: none;
     }
