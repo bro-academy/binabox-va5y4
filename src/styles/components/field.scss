@@ -11,16 +11,17 @@
 
     &:focus {
         outline: none;
-        border: 3px solid rgba(56, 146, 243, 1);
-
+        border-color: rgba(56, 146, 243, 1);
+        box-shadow: 0 0 0 2px rgba(56, 146, 243, 0.18);
     }
 
     &:user-invalid {
-        border: var(--border-width) solid rgba(234, 56, 41, 1);
+        border-color: rgba(234, 56, 41, 1);
+        box-shadow: 0 0 0 2px rgba(234, 56, 41, 0.12);
     }
 
     &:user-valid {
-        border: var(--border-width) solid rgba(208, 215, 251, 0.17);
+        border-color: rgba(208, 215, 251, 0.17);
     }
 
     &:hover {

@@ -4,8 +4,10 @@
 @import "./breadcrumb.scss";
 @import "./button.scss";
 @import "./catalog-products.scss";
+@import "./catalog-sidebar.scss";
 @import "./catalog.scss";
 @import "./checkbox.scss";
+@import "./contact-form.scss";
 @import "./dropdown.scss";
 @import "./employee.scss";
 @import "./faq.scss";

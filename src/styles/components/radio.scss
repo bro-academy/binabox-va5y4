@@ -1,6 +1,6 @@
 .radio {
     input[type="radio"] {
-        transition: border-color 0.2s, background-color 0.2s, box-shadow 0.2s, width 0.2s, height 0.2s, border-radius 0.2s;
+        transition: border-color 0.2s, background-color 0.2s, box-shadow 0.2s;
         appearance: none;
         -webkit-appearance: none;
         background-color: rgba(13, 13, 21, 1);
@@ -18,16 +18,15 @@
         }
 
         &:active {
-            border: 5px solid rgba(181, 222, 255, 1);
+            border-color: rgba(181, 222, 255, 1);
+            box-shadow: 0 0 0 3px rgba(181, 222, 255, 0.5);
         }
 
         &:focus {
             outline: 2px solid rgba(56, 146, 243, 1);
             outline-offset: 1px;
-            border: 2px solid rgba(231, 238, 247, 0.66);
-            width: 18px;
-            height: 18px;
-            border-radius: 10px;
+            border-color: rgba(231, 238, 247, 0.66);
+            box-shadow: 0 0 0 4px rgba(56, 146, 243, 0.25);
         }
 
         &:user-invalid {
@@ -39,37 +38,30 @@
         }
 
         &:checked {
-            border: 5px solid rgba(2, 101, 220, 1);
-            border-radius: 7px;
-            width: 14px;
-            height: 14px;
+            border-color: rgba(2, 101, 220, 1);
+            background-color: rgba(2, 101, 220, 0.15);
+            box-shadow: 0 0 0 3px rgba(2, 101, 220, 0.25);
 
             &:hover {
                 border-color: rgba(56, 146, 243, 1);
+                box-shadow: 0 0 0 4px rgba(56, 146, 243, 0.18);
             }
 
             &:active {
                 border-color: rgba(181, 222, 255, 1);
-                width: 16px;
-                height: 16px;
-                border-radius: 8px;
+                box-shadow: 0 0 0 5px rgba(181, 222, 255, 0.5);
             }
 
             &:focus {
-                width: 18px;
-                height: 18px;
-                border-radius: 10px;
                 outline: 2px solid rgba(56, 146, 243, 1);
                 outline-offset: 1px;
                 border-color: rgba(56, 146, 243, 1);
+                box-shadow: 0 0 0 6px rgba(56, 146, 243, 0.25);
             }
 
             &:disabled {
                 border-color: rgba(212, 217, 242, 0.26);
                 background-color: rgba(231, 238, 247, 0.66);
-                width: 16px;
-                height: 16px;
-                border-radius: 8px;
             }
 
             &:user-invalid {
@@ -83,11 +75,8 @@
         }
 
         &:disabled {
-            border: none;
+            border-color: rgba(208, 215, 251, 0.17);
             background-color: rgba(208, 215, 251, 0.17);
-            width: 16px;
-            height: 16px;
-            border-radius: 8px;
             cursor: not-allowed;
         }
     }

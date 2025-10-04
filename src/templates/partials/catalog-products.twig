@@ -2,31 +2,30 @@
 	<h2 class="catalog-products__title">{{ catalog_products.title }}</h2>
 
 	<div class="catalog-products__sort">
-		<select id="sort-select" class="catalog-products__sort-select dropdown">
-			<option value="" disabled selected hidden>Sort by</option>
-			{% for option in catalog_products.sort_options %}
-				<option value="{{ option.value }}">{{ option.label }}</option>
-			{% endfor %}
-		</select>
-	</div>
-
-	<div class="catalog-products__search">
-		<form action="/search" method="get" class="catalog-products__search">
-			<div class="catalog-products__search-wrapper">
-				<input type="search" id="search" name="product" placeholder="{{ catalog_products.search.placeholder }}" aria-label="{{ catalog_products.search.aria_label }}" class="catalog-products__search-input">
-				<span class="catalog-products__search-icon">
-					<img src="#" alt="Search Icon">
-				</span>
-			</div>
+		<form action="/catalog" method="get" class="catalog-products__sort-form">
+			<select id="sort-select" name="sort" class="catalog-products__sort-select dropdown">
+				<option value="" disabled selected hidden>Sort by</option>
+				{% for option in catalog_products.sort_options %}
+					<option value="{{ option.value }}">{{ option.label }}</option>
+				{% endfor %}
+			</select>
+			<button type="submit" class="visually-hidden">Sort</button>
 		</form>
 	</div>
 
-	<form method="get" action="/catalog" class="catalog-products__tags">
+	<div class="catalog-products__search">
+		{% include 'search-form.twig' with {
+			   placeholder: catalog_products.search.placeholder,
+			   aria_label: catalog_products.search.aria_label
+		   } %}
+	</div>
+
+	<div class="catalog-products__tags">
 		{% for tag in catalog_products.tags %}
 			<button class="catalog-products__tag" name="tag" value="{{ tag }}">{{ tag }}</button>
 		{% endfor %}
-		<button class="catalog-products__clear-all" type="reset">Clear all</button>
-	</form>
+		<button class="catalog-products__clear-all" type="button">Clear all</button>
+	</div>
 
 	<div class="catalog-products__grid">
 		{% for product in catalog_products.items %}

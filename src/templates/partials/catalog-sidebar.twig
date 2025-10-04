@@ -1,114 +1,24 @@
 <section class="catalog-sidebar">
-	<form class="filter-form" method="get">
-
-		<details class="filter-group" open>
-			<summary class="filter-title">Clothing</summary>
-			<ul class="filter-list">
-				<li>
-					<label class="filter-label checkbox">
-						<input type="checkbox" name="clothing[]" value="Combatant">
-						Combatant
-					</label>
-				</li>
-				<li>
-					<label class="filter-label checkbox">
-						<input type="checkbox" name="clothing[]" value="Ninja">
-						Ninja
-					</label>
-				</li>
-				<li>
-					<label class="filter-label checkbox">
-						<input type="checkbox" name="clothing[]" value="King">
-						King
-					</label>
-				</li>
-				<li>
-					<label class="filter-label checkbox">
-						<input type="checkbox" name="clothing[]" value="Queen">
-						Queen
-					</label>
-				</li>
-				<li>
-					<label class="filter-label checkbox">
-						<input type="checkbox" name="clothing[]" value="Robot">
-						Robot
-					</label>
-				</li>
-			</ul>
-		</details>
-
-		<details class="filter-group" open>
-			<summary class="filter-title">Eyes</summary>
-			<ul class="filter-list">
-				<li>
-					<label class="filter-label radio">
-						<input type="radio" name="eyes" value="Yellow">
-						Yellow
-					</label>
-				</li>
-				<li>
-					<label class="filter-label radio">
-						<input type="radio" name="eyes" value="Green">
-						Green
-					</label>
-				</li>
-				<li>
-					<label class="filter-label radio">
-						<input type="radio" name="eyes" value="Mix">
-						Mix
-					</label>
-				</li>
-				<li>
-					<label class="filter-label radio">
-						<input type="radio" name="eyes" value="Orange">
-						Orange
-					</label>
-				</li>
-			</ul>
-		</details>
-
-		<details class="filter-group" closed>
-			<summary class="filter-title">Face</summary>
-		</details>
-
-		<details class="filter-group" closed>
-			<summary class="filter-title">Skin</summary>
-		</details>
-
-		<details class="filter-group" closed>
-			<summary class="filter-title">Background</summary>
-		</details>
-
-		<details class="filter-group" open>
-			<summary class="filter-title">Special</summary>
-			<ul class="filter-list">
-				<li>
-					<label class="filter-label checkbox">
-						<input type="checkbox" name="special[]" value="Yellow">
-						Yellow
-					</label>
-				</li>
-				<li>
-					<label class="filter-label checkbox">
-						<input type="checkbox" name="special[]" value="Green">
-						Green
-					</label>
-				</li>
-				<li>
-					<label class="filter-label checkbox">
-						<input type="checkbox" name="special[]" value="Mix">
-						Mix
-					</label>
-				</li>
-				<li>
-					<label class="filter-label checkbox">
-						<input type="checkbox" name="special[]" value="Orange">
-						Orange
-					</label>
-				</li>
-			</ul>
-		</details>
-
-		<button type="submit" class="button filter-apply-btn">Apply</button>
+	<form class="catalog-sidebar__form" method="get" action="">
+		{% for filter in sidebar_filters %}
+			<fieldset class="catalog-sidebar__fieldset">
+				<details class="catalog-sidebar__group" {% if filter.type != 'none' %} open {% else %} closed {% endif %}>
+					<summary class="catalog-sidebar__title">{{ filter.group }}</summary>
+					{% if filter.type != 'none' and filter.options|length > 0 %}
+						<ul class="catalog-sidebar__list">
+							{% for option in filter.options %}
+								<li>
+									<input type="{{ filter.type }}" id="{{ filter.name|replace({'[]':''}) }}-{{ option.value|lower }}" name="{{ filter.name }}" value="{{ option.value }}">
+									<label for="{{ filter.name|replace({'[]':''}) }}-{{ option.value|lower }}" class="catalog-sidebar__label catalog-sidebar__label--{{ filter.type }}">
+										{{ option.label }}
+									</label>
+								</li>
+							{% endfor %}
+						</ul>
+					{% endif %}
+				</details>
+			</fieldset>
+		{% endfor %}
+		<button type="submit" class="catalog-sidebar__apply-btn button">Apply</button>
 	</form>
 </section>
