@@ -1,3 +1,11 @@
+// Style search input inside the wrapper for catalog-products
+.catalog-products__search-input-wrapper input[type="search"] {
+    margin-bottom: 20px;
+    background-color: rgba(26, 25, 37, 1);
+    border: 2px solid rgba(208, 215, 251, 0.17);
+    color: rgba(231, 238, 247, 0.66);
+}
+
 .catalog-products {
 
     &__search-input {

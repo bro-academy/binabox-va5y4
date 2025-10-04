@@ -14,17 +14,21 @@
 	</div>
 
 	<div class="catalog-products__search">
-		{% include 'search-form.twig' with {
-			   placeholder: catalog_products.search.placeholder,
-			   aria_label: catalog_products.search.aria_label
-		   } %}
+		<div class="catalog-products__search-input-wrapper">
+			{% include 'search-form.twig' with {
+				   placeholder: catalog_products.search.placeholder,
+				   aria_label: catalog_products.search.aria_label
+			   } %}
+		</div>
 	</div>
 
 	<div class="catalog-products__tags">
 		{% for tag in catalog_products.tags %}
 			<button class="catalog-products__tag" name="tag" value="{{ tag }}">{{ tag }}</button>
 		{% endfor %}
-		<button class="catalog-products__clear-all" type="button">Clear all</button>
+		<div class="catalog-products__clear-all-wrapper">
+			<button class="catalog-products__clear-all" type="button">Clear all</button>
+		</div>
 	</div>
 
 	<div class="catalog-products__grid">

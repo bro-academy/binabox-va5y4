@@ -8,10 +8,12 @@
 						<ul class="catalog-sidebar__list">
 							{% for option in filter.options %}
 								<li>
-									<input type="{{ filter.type }}" id="{{ filter.name|replace({'[]':''}) }}-{{ option.value|lower }}" name="{{ filter.name }}" value="{{ option.value }}">
-									<label for="{{ filter.name|replace({'[]':''}) }}-{{ option.value|lower }}" class="catalog-sidebar__label catalog-sidebar__label--{{ filter.type }}">
-										{{ option.label }}
-									</label>
+									<div class="{{ filter.type }}">
+										<input type="{{ filter.type }}" id="{{ filter.name|replace({'[]':''}) }}-{{ option.value|lower }}" name="{{ filter.name }}" value="{{ option.value }}">
+										<label for="{{ filter.name|replace({'[]':''}) }}-{{ option.value|lower }}" class="catalog-sidebar__label catalog-sidebar__label--{{ filter.type }}">
+											{{ option.label }}
+										</label>
+									</div>
 								</li>
 							{% endfor %}
 						</ul>
