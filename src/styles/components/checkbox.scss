@@ -16,6 +16,11 @@
             background-color: rgba(29, 28, 40, 1);
         }
 
+        &:focus {
+            background-color: rgba(26, 25, 37, 1);
+            border: 2px solid rgba(56, 146, 243, 1);
+        }
+
         &:checked {
             background-color: rgba(2, 101, 220, 1);
             border: none;
@@ -56,6 +61,7 @@
             &.user-invalid,
             &:user-invalid {
                 border-color: rgba(234, 56, 41, 1);
+                background-color: rgba(2, 101, 220, 1);
 
                 &:hover {
                     border-color: rgba(234, 56, 41, 1);
@@ -67,9 +73,9 @@
             background-color: rgba(181, 222, 255, 1);
         }
 
-        &:focus {
-            background-color: rgba(2, 101, 220, 1);
+        &:checked:focus {
             border: 2px solid rgba(56, 146, 243, 1);
+            background-color: rgba(2, 101, 220, 1);
         }
 
         &:disabled,
@@ -81,11 +87,17 @@
             border: none;
         }
 
+        &.user-invalid:disabled,
+        &:user-invalid:disabled {
+            border: 2px solid rgba(234, 56, 41, 1);
+            background-color: rgba(208, 215, 251, 0.17);
+        }
+
         &:user-invalid {
             border-color: rgba(234, 56, 41, 1);
 
             &:hover {
-                background-color: rgba(56, 146, 243, 1);
+                background-color: rgba(191, 197, 238, 0.12);
             }
         }
     }
@@ -93,6 +105,22 @@
 
 .checkbox--alt {
     input[type="checkbox"] {
+
+        &:focus {
+            border: 2px solid rgba(56, 146, 243, 1);
+            background-color: rgba(26, 25, 37, 1);
+        }
+
+        &.user-invalid,
+        &:user-invalid {
+            border-color: rgba(234, 56, 41, 1);
+        }
+
+        &.user-invalid:disabled,
+        &:user-invalid:disabled {
+            border: 2px solid rgba(234, 56, 41, 1);
+        }
+
         &:checked {
             background-color: rgba(2, 101, 220, 1);
 
@@ -112,6 +140,10 @@
                 &::after {
                     background: rgba(2, 101, 220, 1);
                 }
+            }
+
+            &:disabled::after {
+                background: rgba(229, 236, 251, 0.36);
             }
         }
     }
