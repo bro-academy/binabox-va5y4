@@ -12,8 +12,13 @@
         outline: none;
         transition: background 0.2s;
 
+        &:hover {
+            background-color: rgba(29, 28, 40, 1);
+        }
+
         &:checked {
             background-color: rgba(2, 101, 220, 1);
+            border: none;
 
             &::after {
                 content: '';
@@ -25,6 +30,10 @@
                 border: solid rgba(245, 248, 251, 1);
                 border-width: 0 2px 2px 0;
                 transform: translate(-50%, -50%) rotate(45deg);
+            }
+
+            &:disabled::after {
+                border-color: rgba(229, 236, 251, 0.36);
             }
 
             &:hover {
