@@ -1,5 +1,14 @@
 .navigation {
     display: flex;
+    flex-direction: row;
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
+    gap: 0;
+}
+
+.navigation {
+    display: flex;
     gap: var(--gap-lg);
 
     &__link {

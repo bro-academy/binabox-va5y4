@@ -1,0 +1,84 @@
+.radio {
+    input[type="radio"] {
+        transition: border-color 0.2s, background-color 0.2s;
+        appearance: none;
+        -webkit-appearance: none;
+        background-color: rgba(13, 13, 21, 1);
+        border: 2px solid rgba(212, 217, 242, 0.26);
+        width: 16px;
+        height: 16px;
+        border-radius: 8px;
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+
+        &:hover {
+            border-color: rgba(212, 217, 242, 0.26);
+            background-color: rgba(29, 28, 40, 1);
+        }
+
+        &:active {
+            border: 5px solid rgba(181, 222, 255, 1);
+
+        }
+
+        &:focus {
+            background-color: rgba(26, 25, 37, 1);
+            border: 2px solid rgba(231, 238, 247, 0.66);
+            outline: 2px solid rgba(56, 146, 243, 1);
+            outline-offset: 1px;
+        }
+
+        &:user-invalid {
+            border-color: rgba(234, 56, 41, 1);
+
+            &:hover {
+                background-color: rgba(29, 28, 40, 1);
+            }
+        }
+
+        &:checked {
+            border: 5px solid rgba(2, 101, 220, 1);
+            background-color: rgba(26, 25, 37, 1);
+
+
+            &:hover {
+                border-color: rgba(56, 146, 243, 1);
+
+            }
+
+            &:active {
+                border-color: rgba(181, 222, 255, 1);
+
+            }
+
+            &:focus {
+                outline: 2px solid rgba(56, 146, 243, 1);
+                outline-offset: 1px;
+                border-color: rgba(56, 146, 243, 1);
+
+            }
+
+            &:disabled {
+                border: 5px solid rgb(91, 91, 109);
+                background-color: rgba(231, 238, 247, 0.66);
+                cursor: not-allowed;
+            }
+
+            &:user-invalid {
+                border: 2px solid rgba(234, 56, 41, 1);
+                background-color: rgba(26, 25, 37, 1);
+
+                &:hover {
+                    background-color: rgba(29, 28, 40, 1);
+                }
+            }
+        }
+
+        &:disabled {
+            border: none;
+            background-color: rgba(208, 215, 251, 0.17);
+            cursor: not-allowed;
+        }
+    }
+}

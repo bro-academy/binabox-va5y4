@@ -1,0 +1,54 @@
+<section class="catalog-products">
+	<h2 class="catalog-products__title">{{ catalog_products.title }}</h2>
+
+	<div class="catalog-products__sort">
+		<form action="/catalog" method="get" class="catalog-products__sort-form">
+			<select id="sort-select" name="sort" class="catalog-products__sort-select dropdown">
+				<option value="" disabled selected hidden>Sort by</option>
+				{% for option in catalog_products.sort_options %}
+					<option value="{{ option.value }}">{{ option.label }}</option>
+				{% endfor %}
+			</select>
+			<button type="submit" class="visually-hidden">Sort</button>
+		</form>
+	</div>
+
+	<div class="catalog-products__search">
+		<div class="catalog-products__search-input-wrapper">
+			{% include 'search-form.twig' with {
+				   placeholder: catalog_products.search.placeholder,
+				   aria_label: catalog_products.search.aria_label
+			   } %}
+		</div>
+	</div>
+
+	<div class="catalog-products__tags">
+		{% for tag in catalog_products.tags %}
+			<button class="catalog-products__tag" name="tag" value="{{ tag }}">{{ tag }}</button>
+		{% endfor %}
+		<div class="catalog-products__clear-all-wrapper">
+			<button class="catalog-products__clear-all" type="button">Clear all</button>
+		</div>
+	</div>
+
+	<div class="catalog-products__grid">
+		{% for product in catalog_products.items %}
+			<article class="product-card">
+				<div class="product-card__image-container">
+					<img src="{{ product.image }}" alt="{{ product.title }}" class="product-card__image">
+					<div class="product-card__hover-menu">
+						<button class="product-card__favourites">
+							<span>♡</span>
+							Favourites</button>
+						<button class="product-card__buy button">Buy</button>
+					</div>
+				</div>
+				<span class="product-card__label label{% if product.label|lower == 'sold out' %} label--secondary{% endif %}">{{ product.label }}</span>
+				<h2 class="title title--h2 product-card__price">{{ product.price }}</h2>
+				<p class="product-card__title">{{ product.title }}</p>
+			</article>
+		{% endfor %}
+		<button class="catalog-products__load-more button button--secondary">Load More</button>
+	</div>
+
+</section>

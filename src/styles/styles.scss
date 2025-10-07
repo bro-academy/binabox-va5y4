@@ -3,7 +3,6 @@
 @use './global/normalize';
 @use './global/base';
 
-// Components
 @use './components/header';
 @use './components/navigation';
 @use './components/hero';
@@ -15,12 +14,24 @@
 @use './components/footer';
 @use './components/breadcrumb';
 @use './components/sidebar';
+@use './components/catalog-sidebar';
 @use './components/article';
 @use './components/button';
 @use './components/link';
 @use './components/title';
 @use './components/separator';
+@use './components/form';
+@use './components/catalog-products';
+@use './components/label';
+@use './components/product-card';
+@use './components/radio';
+@use './components/checkbox';
+@use './components/field';
+@use './components/dropdown';
+@use './components/contact-form';
 
 // Layout
 @use './layout/index';
 @use './layout/blog';
+@use './layout/contact';
+@use './layout/catalog-page';

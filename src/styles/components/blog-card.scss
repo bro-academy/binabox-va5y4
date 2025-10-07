@@ -3,14 +3,6 @@
     margin-bottom: var(--padding-xl);
     padding: var(--padding-xl);
 
-    &__label {
-        border: none;
-        background-color: var(--color-white-bg);
-        padding: var(--padding-sm);
-        color: var(--color-link-accent-inverse);
-        font-weight: var(--font-weight-semibold);
-        line-height: var(--line-height-small);
-    }
 
     &__excerpt {
         font-size: var(--font-size-medium);

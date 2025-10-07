@@ -1,0 +1,13 @@
+.label {
+    border: none;
+    background-color: var(--color-white-bg);
+    padding: var(--padding-sm);
+    color: var(--color-link-accent-inverse);
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-small);
+
+    &--secondary {
+        background-color: var(--color-label-secondary-bg);
+        color: var(--color-label-secondary-text);
+    }
+}

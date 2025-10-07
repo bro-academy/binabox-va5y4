@@ -1,0 +1,95 @@
+{
+    "sidebar_filters": [
+        {
+            "group": "Clothing",
+            "type": "checkbox",
+            "name": "clothing[]",
+            "options": [
+                {
+                    "value": "Combatant",
+                    "label": "Combatant"
+                },
+                {
+                    "value": "Ninja",
+                    "label": "Ninja"
+                },
+                {
+                    "value": "King",
+                    "label": "King"
+                },
+                {
+                    "value": "Queen",
+                    "label": "Queen"
+                },
+                {
+                    "value": "Robot",
+                    "label": "Robot"
+                }
+            ]
+        },
+        {
+            "group": "Eyes",
+            "type": "radio",
+            "name": "eyes",
+            "options": [
+                {
+                    "value": "Yellow",
+                    "label": "Yellow"
+                },
+                {
+                    "value": "Green",
+                    "label": "Green"
+                },
+                {
+                    "value": "Mix",
+                    "label": "Mix"
+                },
+                {
+                    "value": "Orange",
+                    "label": "Orange"
+                }
+            ]
+        },
+        {
+            "group": "Face",
+            "type": "none",
+            "name": "face",
+            "options": []
+        },
+        {
+            "group": "Skin",
+            "type": "none",
+            "name": "skin",
+            "options": []
+        },
+        {
+            "group": "Background",
+            "type": "none",
+            "name": "background",
+            "options": []
+        },
+        {
+            "group": "Special",
+            "type": "checkbox",
+            "name": "special[]",
+            "options": [
+                {
+                    "value": "Yellow",
+                    "label": "Yellow"
+                },
+                {
+                    "value": "Green",
+                    "label": "Green"
+                },
+                {
+                    "value": "Mix",
+                    "label": "Mix"
+                },
+                {
+                    "value": "Orange",
+                    "label": "Orange"
+                }
+            ]
+        }
+    ]
+}

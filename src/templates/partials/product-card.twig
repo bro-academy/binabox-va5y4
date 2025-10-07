@@ -1,10 +1,10 @@
 <li class="product">
-  <img src="{{ product.image_src }}" alt="{{ product.image_alt }}" class="product__image">
-  {% if product.label %}
-    <span class="product__label product__label--{{ product.label|lower|replace({' ': '-'}) }}">{{ product.label }}</span>
-  {% endif %}
-  {% if product.price %}
-    <span class="product__price">{{ product.price }}</span>
-  {% endif %}
-  <span class="product__name">{{ product.name }}</span>
+	<img src="{{ product.image_src }}" alt="{{ product.image_alt }}" class="product__image">
+	{% if product.label %}
+		<span class="product__label label{% if product.label|lower == 'sold out' %} label--secondary{% endif %}">{{ product.label }}</span>
+	{% endif %}
+	{% if product.price %}
+		<span class="product__price">{{ product.price }}</span>
+	{% endif %}
+	<span class="product__name">{{ product.name }}</span>
 </li>

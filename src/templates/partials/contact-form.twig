@@ -1,0 +1,78 @@
+<section class="contact-form">
+	<div class="contact-form__container container">
+		<form class="contact-form__form" action="#" method="POST">
+			<div class="contact-form__header">
+				<h2 class="contact-form__title title title--h2">{{ contact_form.title }}</h2>
+				<p class="contact-form__subtitle">{{ contact_form.subtitle }}</p>
+			</div>
+
+			<fieldset class="contact-form__fieldset" name="personal-info">
+				<legend class="visually-hidden">Personal Information</legend>
+				{% for field in contact_form.fields if field.id in ['name', 'last-name', 'date-of-birth'] %}
+					<div class="contact-form__group">
+						<label for="{{ field.id }}" class="contact-form__label">{{ field.label }}</label>
+						<input type="{{ field.type }}" id="{{ field.id }}" name="{{ field.name|default(field.id) }}" class="contact-form__input field" {% if field.placeholder %} placeholder="{{ field.placeholder }}" {% endif %} {% if field.required %} required {% endif %} {% if field.autocomplete %} autocomplete="{{ field.autocomplete }}" {% endif %} {% if field.pattern %} pattern="{{ field.pattern }}" {% endif %} {% if field.title %} title="{{ field.title }}" {% endif %} {% if field.inputmode %} inputmode="{{ field.inputmode }}" {% endif %}>
+					</div>
+				{% endfor %}
+			</fieldset>
+
+			<fieldset class="contact-form__fieldset" name="sex">
+				<legend class="visually-hidden">Sex</legend>
+				{% for field in contact_form.fields if field.type == 'radio' %}
+					<div class="contact-form__group">
+						<div class="contact-form__group-label">{{ field.label }}</div>
+						<div class="radio contact-form__radio-container">
+							{% for option in field.options %}
+								<div class="contact-form__radio-item">
+									<input type="radio" id="{{ option.id }}" name="{{ field.name }}" value="{{ option.value }}" {% if field.required %} required {% endif %}>
+									<label class="contact-form__radio-label" for="{{ option.id }}">{{ option.label }}</label>
+								</div>
+							{% endfor %}
+						</div>
+					</div>
+				{% endfor %}
+			</fieldset>
+
+			<fieldset class="contact-form__fieldset" name="contact-info">
+				<legend class="visually-hidden">Contact Information</legend>
+				{% for field in contact_form.fields if field.id in ['email', 'phone'] %}
+					<div class="contact-form__group">
+						<label for="{{ field.id }}" class="contact-form__label">{{ field.label }}</label>
+						<input type="{{ field.type }}" id="{{ field.id }}" name="{{ field.name|default(field.id) }}" class="contact-form__input field" {% if field.placeholder %} placeholder="{{ field.placeholder }}" {% endif %} {% if field.required %} required {% endif %} {% if field.autocomplete %} autocomplete="{{ field.autocomplete }}" {% endif %} {% if field.pattern %} pattern="{{ field.pattern }}" {% endif %} {% if field.title %} title="{{ field.title }}" {% endif %} {% if field.inputmode %} inputmode="{{ field.inputmode }}" {% endif %}>
+					</div>
+				{% endfor %}
+			</fieldset>
+
+			<fieldset class="contact-form__fieldset" name="message">
+				<legend class="visually-hidden">Message</legend>
+				{% for field in contact_form.fields if field.type == 'textarea' %}
+					<div class="contact-form__group">
+						<label for="{{ field.id }}" class="contact-form__label">{{ field.label }}</label>
+						<textarea id="{{ field.id }}" name="{{ field.name|default(field.id) }}" class="contact-form__textarea field" placeholder="{{ field.placeholder }}" {% if field.required %} required {% endif %} {% if field.minlength %} minlength="{{ field.minlength }}" {% endif %} {% if field.maxlength %} maxlength="{{ field.maxlength }}" {% endif %} {% if field.title %} title="{{ field.title }}" {% endif %}></textarea>
+					</div>
+				{% endfor %}
+			</fieldset>
+
+			<fieldset class="contact-form__fieldset" name="agreement">
+				<legend class="visually-hidden">Agreement</legend>
+				{% for field in contact_form.fields if field.type == 'checkbox' %}
+					<div class="contact-form__group">
+						<label for="{{ field.id }}" class="checkbox contact-form__checkbox-label">
+							<div class="contact-form__checkbox">
+								<input type="checkbox" id="{{ field.id }}" name="{{ field.name|default(field.id) }}" class="contact-form__checkbox-input" {% if field.required %} required {% endif %}>
+								{{ field.label }}
+								{% if field.link %}
+									<a href="{{ field.link.url }}" class="contact-form__link link link--accent" target="_blank">{{ field.link.text }}</a>
+								{% endif %}
+							</div>
+						</label>
+					</div>
+				{% endfor %}
+			</fieldset>
+
+			<div class="contact-form__group">
+				<button type="submit" class="contact-form__button button">{{ contact_form.button.text }}</button>
+			</div>
+		</form>
+	</div>
+</section>

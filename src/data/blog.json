@@ -4,18 +4,15 @@
         "breadcrumbs": [
             {
                 "url": "/",
-                "label": "Home",
-                "class": "breadcrumb-link"
+                "label": "Home"
             },
             {
                 "url": "#our-blog",
-                "label": "Our Blog",
-                "class": "breadcrumb-link"
+                "label": "Our Blog"
             },
             {
                 "url": "#the-basilisks-nft",
-                "label": "The Basilisks NFT",
-                "class": "breadcrumb-link--secondary"
+                "label": "The Basilisks NFT"
             }
         ]
     },

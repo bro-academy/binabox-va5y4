@@ -1,0 +1,10 @@
+{% set current_page = 'catalog' %}
+{% extends 'src/templates/layouts/base.twig' %}
+
+{% block content %}
+	<main class="main">
+		{% include 'src/templates/partials/catalog-header.twig' %}
+		{% include 'src/templates/partials/catalog-sidebar.twig' %}
+		{% include 'src/templates/partials/catalog-products.twig' %}
+	</main>
+{% endblock %}

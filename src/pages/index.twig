@@ -1,10 +1,10 @@
-{% set current_page = 'home' %}
+{% set current_page = 'index' %}
 {% extends 'src/templates/layouts/base.twig' %}
 
 {% block content %}
 	<main class="main">
 		{% include 'src/templates/partials/hero.twig' %}
-		{% include 'src/templates/partials/catalog.twig' %}
+		{% include 'src/templates/partials/catalog-index.twig' %}
 		{% include 'src/templates/partials/blog-section.twig' %}
 		{% include 'src/templates/partials/about.twig' %}
 		{% include 'src/templates/partials/team.twig' %}
