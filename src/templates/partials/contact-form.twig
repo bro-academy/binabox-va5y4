@@ -20,15 +20,13 @@
 				<legend class="visually-hidden">Sex</legend>
 				{% for field in contact_form.fields if field.type == 'radio' %}
 					<div class="contact-form__group">
-						<label class="contact-form__label">{{ field.label }}</label>
+						<div class="contact-form__group-label">{{ field.label }}</div>
 						<div class="radio contact-form__radio-container">
 							{% for option in field.options %}
-								<label class="contact-form__radio-label" for="{{ option.id }}">
-									<div class="contact-form__radio">
-										<input type="radio" id="{{ option.id }}" name="{{ field.name }}" value="{{ option.value }}" {% if field.required %} required {% endif %}>
-									</div>
-									{{ option.label }}
-								</label>
+								<div class="contact-form__radio-item">
+									<input type="radio" id="{{ option.id }}" name="{{ field.name }}" value="{{ option.value }}" {% if field.required %} required {% endif %}>
+									<label class="contact-form__radio-label" for="{{ option.id }}">{{ option.label }}</label>
+								</div>
 							{% endfor %}
 						</div>
 					</div>
