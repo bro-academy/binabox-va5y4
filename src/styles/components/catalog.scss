@@ -1,24 +1,20 @@
-@use '../global/mixin' as *;
-
 .catalog {
-    &__see-all {
-        @include link;
 
-        padding: var(--padding-lg);
-    }
+    display: flex;
+    flex-direction: column;
+    padding-top: 64px;
 
-    &__nav-button {
-        border: var(--border-width) solid var(--color-separator-strong);
-        padding: var(--padding-xl);
-        background-color: transparent;
-        width: var(--width-lg);
-        height: var(--height-lg);
-        color: var(--color-text-main);
-    }
+    &__header {
+        display: flex;
+        flex-direction: row;
+        gap: 0 32px;
+        align-items: center;
+        margin-bottom: 24px;
+        width: 95%;
+        height: auto;
+        align-items: center;
+        justify-content: space-between;
 
-    &__nav-button--active {
-        background-color: var(--color-marina-800);
-        color: var(--color-bg-main);
-        border: none;
+
     }
 }

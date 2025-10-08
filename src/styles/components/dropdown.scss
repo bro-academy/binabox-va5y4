@@ -1,0 +1,31 @@
+.dropdown {
+    border: 2px solid rgba(208, 215, 251, 0.17);
+    background-color: rgba(13, 13, 21, 1);
+    color: rgba(245, 248, 251, 1);
+    width: 160px;
+    height: auto;
+    box-sizing: border-box;
+
+    &:hover {
+        border-color: rgba(56, 146, 243, 1);
+        background-color: rgba(191, 197, 238, 0.12);
+        color: rgba(56, 146, 243, 1);
+    }
+
+    &:focus {
+        background-color: rgba(191, 197, 238, 0.12);
+        border-color: rgba(56, 146, 243, 1);
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+        background-color: rgba(208, 215, 251, 0.17);
+        border-color: transparent;
+        color: rgba(229, 236, 251, 0.36);
+    }
+
+    option {
+        background-color: rgba(32, 38, 49, 1);
+        color: rgba(245, 248, 251, 1);
+    }
+}

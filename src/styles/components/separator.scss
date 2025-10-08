@@ -1,9 +1,18 @@
 .separator {
-    display: inline-block;
     width: var(--width-xs);
     height: var(--height-xs);
     background: var(--color-separator-strong);
-    vertical-align: middle;
     margin: var(--margin-xs);
     border-radius: var(--radius-xs);
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+    &__catalog {
+        width: 1167px;
+        height: 2px;
+        border-radius: 2px;
+
+    }
 }

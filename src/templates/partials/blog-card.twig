@@ -1,5 +1,5 @@
 <article class="blog-card">
-	<span class="blog-card__label">{{ blog.label }}</span>
+	<span class="blog-card__label label">{{ blog.label }}</span>
 	<img src="{{ blog.image_src }}" alt="{{ blog.image_alt }}" class="blog-card__image">
 	<h2 class="blog-card__title title title--h2">{{ blog.title }}</h2>
 	<p class="blog-card__excerpt">{{ blog.excerpt }}</p>
@@ -7,5 +7,5 @@
 	<span class="blog-card__author{% if blog.author_uppercase %} blog-card__author--uppercase{% endif %}">{{ blog.author }}</span>
 	<span class="blog-card__separator separator"></span>
 	<time class="blog-card__date" datetime="{{ blog.date_iso }}">{{ blog.date }}</time>
-	<a href="{{ blog.read_more_url }}" class="link blog-card__read-more">Read more &gt;</a>
+	<a href="{{ blog.read_more_url }}" class="button button--secondary blog-card__read-more">Read more &gt;</a>
 </article>

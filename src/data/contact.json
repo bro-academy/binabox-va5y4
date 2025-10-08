@@ -1,0 +1,125 @@
+{
+    "contact_header": {
+        "title": "Contact Us",
+        "breadcrumbs": [
+            {
+                "url": "/",
+                "label": "Home",
+                "class": "breadcrumb-link"
+            },
+            {
+                "url": "#contact-us",
+                "label": "Contact Us",
+                "class": "breadcrumb-link--secondary"
+            }
+        ]
+    },
+    "contact_info": {
+        "location": {
+            "title": "Location",
+            "address": "2163 Phillips Gap Rd"
+        },
+        "email": {
+            "title": "Email",
+            "address": "Info.avitex@gmail.com"
+        },
+        "phone": {
+            "title": "Phone",
+            "number": "+1 666 8888"
+        }
+    },
+    "contact_form": {
+        "title": "Get in touch",
+        "subtitle": "Browse through the most frequently asked questions",
+        "fields": [
+            {
+                "type": "text",
+                "id": "name",
+                "label": "Name",
+                "placeholder": "Enter your name",
+                "required": true,
+                "autocomplete": "given-name",
+                "pattern": "^[A-Za-z\\s'-]{2,}",
+                "title": "Please enter a valid name (letters, spaces, apostrophes, hyphens)"
+            },
+            {
+                "type": "text",
+                "id": "last-name",
+                "label": "Last Name",
+                "placeholder": "Enter your last name",
+                "required": true,
+                "autocomplete": "family-name",
+                "pattern": "^[A-Za-z\\s'-]{2,}$",
+                "title": "Please enter a valid last name (letters, spaces, apostrophes, hyphens)"
+            },
+            {
+                "type": "date",
+                "id": "date-of-birth",
+                "label": "Date of birth",
+                "required": true
+            },
+            {
+                "type": "radio",
+                "name": "sex",
+                "label": "Sex",
+                "required": true,
+                "options": [
+                    {
+                        "id": "sex-male",
+                        "value": "male",
+                        "label": "Male"
+                    },
+                    {
+                        "id": "sex-female",
+                        "value": "female",
+                        "label": "Female"
+                    }
+                ]
+            },
+            {
+                "type": "email",
+                "id": "email",
+                "label": "Email",
+                "placeholder": "Enter your email",
+                "required": true,
+                "autocomplete": "email",
+                "pattern": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$",
+                "title": "Please enter a valid email address"
+            },
+            {
+                "type": "tel",
+                "id": "phone",
+                "label": "Phone Number",
+                "placeholder": "Enter your phone number",
+                "required": true,
+                "autocomplete": "tel",
+                "pattern": "^\\+?[0-9]+$",
+                "title": "Phone number must contain only digits and an optional plus sign",
+                "inputmode": "tel"
+            },
+            {
+                "type": "textarea",
+                "id": "message",
+                "label": "Message",
+                "placeholder": "Text your message",
+                "required": true,
+                "minlength": 10,
+                "maxlength": 500,
+                "title": "Message must be between 10 and 500 characters"
+            },
+            {
+                "type": "checkbox",
+                "id": "terms",
+                "label": "By clicking on the ‘Send Message’ button I agree to",
+                "required": true,
+                "link": {
+                    "url": "#",
+                    "text": "all the terms of the security policy"
+                }
+            }
+        ],
+        "button": {
+            "text": "Send Message"
+        }
+    }
+}

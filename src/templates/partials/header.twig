@@ -1,25 +1,41 @@
 {% from '/ui/icon.twig' import icon %}
 
 <header class="header">
-	<a href="{{ header.home_url }}" class="logo header__logo-link">
+	<a href="{{ header.home_url }}" class="link logo header__logo-link">
 		<img src="{{ header.logo_url }}" alt="{{ header.logo_alt }}" class="logo header__logo-image">
 	</a>
 	<nav class="header__nav">
 		<ul class="navigation">
 			{% for item in header.navigation_items %}
-				<li class="navigation__item{% if item.label|lower == current_page %} navigation__link--active{% endif %}">
-					<a href="{{ item.url }}" class="navigation__link">{{ item.label }}</a>
+				{# Map current_page to navigation label for accurate active state #}
+				{% set page_map = {
+							'index': 'home',
+							'blog': 'blog',
+							'catalog': 'catalog',
+							'contact': 'contact us'
+						} %}
+				{% set page_label = page_map[current_page]|default(current_page)|lower|replace({' ': ''}) %}
+				{% set item_key = item.label|lower|replace({' ': ''}) %}
+				<li class="navigation__item">
+					<a href="{{ item.url }}" class="link navigation__link{% if item_key == page_label %} navigation__link--active{% endif %}">{{ item.label }}</a>
 				</li>
 			{% endfor %}
 		</ul>
 	</nav>
 	<div class="header__actions">
-		<input type="search" id="search" name="search" placeholder="{{ header.search_placeholder }}" class="header__search">
+		<form action="/search" method="get" class="header__search-form">
+			<label for="search" class="visually-hidden">{{ header.search_label|default('Search') }}</label>
+			<div class="header__search-wrapper">
+				<input type="search" id="search" name="search" placeholder="{{ header.search_placeholder }}" class="header__search">
+				<span class="header__search-icon">
+					<img src="#" alt="Search Icon">
+				</span>
+				<button type="submit" class="visually-hidden">{{ header.search_submit_label|default('Search') }}</button>
+			</div>
+		</form>
 		<span class="header__separator separator"></span>
-		<a
-			href="{{ header.discord_url }}" class="link header__discord-link">
-			{# <img src="{{ header.discord_icon }}" alt="{{ header.discord_alt }}" class="header__discord-icon"> #}
-			{{ icon('header__discord-icon', 'discord') }}
+		<a href="{{ header.discord_url }}" class="button button--secondary header__discord-link">
+			<img src="{{ header.discord_icon }}" alt="{{ header.discord_alt }}" class="header__discord-icon">
 			{{ header.discord_label }}
 		</a>
 		<button

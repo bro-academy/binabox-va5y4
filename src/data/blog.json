@@ -4,18 +4,15 @@
         "breadcrumbs": [
             {
                 "url": "/",
-                "label": "Home",
-                "class": "breadcrumb-link"
+                "label": "Home"
             },
             {
                 "url": "#our-blog",
-                "label": "Our Blog",
-                "class": "breadcrumb-link"
+                "label": "Our Blog"
             },
             {
                 "url": "#the-basilisks-nft",
-                "label": "The Basilisks NFT",
-                "class": "breadcrumb-link--secondary"
+                "label": "The Basilisks NFT"
             }
         ]
     },
@@ -161,7 +158,7 @@
             ],
             [
                 "Looking to join the pack?",
-                "Use the <a href=\"#\" class=\"article__link\">NFT Avatar Generator</a> to craft your own beast — or grab a rare egg on the marketplace.",
+                "Use the <a href=\"#\" class=\"link link--accent article__link\">NFT Avatar Generator</a> to craft your own beast — or grab a rare egg on the marketplace.",
                 "You name it. You own it. You unleash it."
             ]
         ],

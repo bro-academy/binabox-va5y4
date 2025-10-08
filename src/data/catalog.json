@@ -1,0 +1,114 @@
+{
+    "catalog_header": {
+        "title": "Explore catalog",
+        "breadcrumbs": [
+            {
+                "url": "/",
+                "label": "Home"
+            },
+            {
+                "url": "#catalog",
+                "label": "Catalog"
+            },
+            {
+                "url": "#the-basilisks-nft",
+                "label": "The Basilisks NFT"
+            }
+        ]
+    },
+    "catalog_products": {
+        "title": "All items",
+        "sort_options": [
+            {
+                "value": "newest",
+                "label": "Newest"
+            },
+            {
+                "value": "most-popular",
+                "label": "Most Popular"
+            },
+            {
+                "value": "price-asc",
+                "label": "Increasing in price"
+            },
+            {
+                "value": "price-desc",
+                "label": "Lowering the price"
+            }
+        ],
+        "search": {
+            "placeholder": "Search NFT",
+            "aria_label": "Search NFT Products"
+        },
+        "tags": [
+            "NFT",
+            "ICO",
+            "Crypto"
+        ],
+        "items": [
+            {
+                "image": "#",
+                "label": "New",
+                "title": "Name Product",
+                "price": "$199",
+                "link": "#"
+            },
+            {
+                "image": "#",
+                "label": "Popular",
+                "title": "Name Product",
+                "price": "$199",
+                "link": "#"
+            },
+            {
+                "image": "#",
+                "label": "Sold out",
+                "title": "Name Product",
+                "price": "$199",
+                "link": "#"
+            },
+            {
+                "image": "#",
+                "label": "New",
+                "title": "Name Product",
+                "price": "$199",
+                "link": "#"
+            },
+            {
+                "image": "#",
+                "label": "New",
+                "title": "Name Product",
+                "price": "$199",
+                "link": "#"
+            },
+            {
+                "image": "#",
+                "label": "New",
+                "title": "Name Product",
+                "price": "$199",
+                "link": "#"
+            },
+            {
+                "image": "#",
+                "label": "New",
+                "title": "Name Product",
+                "price": "$199",
+                "link": "#"
+            },
+            {
+                "image": "#",
+                "label": "New",
+                "title": "Name Product",
+                "price": "$199",
+                "link": "#"
+            },
+            {
+                "image": "#",
+                "label": "New",
+                "title": "Name Product",
+                "price": "$199",
+                "link": "#"
+            }
+        ]
+    }
+}

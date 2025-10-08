@@ -1,0 +1,29 @@
+// Style search input inside the wrapper for catalog-products
+.catalog-products__search-input-wrapper input[type="search"] {
+    margin-bottom: 20px;
+    background-color: rgba(26, 25, 37, 1);
+    border: 2px solid rgba(208, 215, 251, 0.17);
+    color: rgba(231, 238, 247, 0.66);
+}
+
+.catalog-products {
+
+    &__search-input {
+        margin-bottom: 20px;
+        background-color: rgba(26, 25, 37, 1);
+        border: 2px solid rgba(208, 215, 251, 0.17);
+        color: rgba(231, 238, 247, 0.66);
+    }
+
+    &__tag {
+        border: 2px solid rgba(208, 215, 251, 0.17);
+        background-color: rgba(29, 28, 40, 1);
+        color: rgba(245, 248, 251, 1);
+    }
+
+    &__clear-all {
+        background-color: rgba(255, 255, 255, 1);
+        color: rgba(13, 13, 21, 1);
+        border: none;
+    }
+}

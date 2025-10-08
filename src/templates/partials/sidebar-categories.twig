@@ -3,7 +3,7 @@
 	<ul class="sidebar__list">
 		{% for category in sidebar_categories.items %}
 			<li class="sidebar__item">
-				<a href="{{ category.url }}" class="sidebar__link">{{ category.label }}
+				<a href="{{ category.url }}" class="link sidebar__link">{{ category.label }}
 					({{ category.count }})</a>
 			</li>
 		{% endfor %}

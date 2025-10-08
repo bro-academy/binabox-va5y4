@@ -1,6 +1,7 @@
-@use '../global/mixin' as *;
-
 .hero {
+
+
+
     &__highlight {
         color: var(--color-marina-800);
     }
@@ -25,13 +26,7 @@
         color: var(--color-text-muted);
     }
 
-    &__button {
-        color: var(--color-text-main);
-    }
 
-    &__link {
-        @include link;
 
-        padding: var(--padding-lg);
-    }
+
 }

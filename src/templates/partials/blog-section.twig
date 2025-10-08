@@ -3,5 +3,5 @@
 	{% for blog in blog_section.articles %}
 		{% include './blog-card.twig' with { blog: blog } %}
 	{% endfor %}
-	<a href="{{ blog_section.read_more_url }}" class="link blog-card__read-more-main read-more">Read more</a>
+	<a href="{{ blog_section.read_more_url }}" class="button button--secondary blog-card__read-more-main read-more">Read more</a>
 </section>

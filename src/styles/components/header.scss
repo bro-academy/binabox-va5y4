@@ -1,18 +1,23 @@
-@use '../global/mixin' as *;
-
 .header {
-    position: relative;
-    top: 0;
-    margin-top: 0;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: row;
     background-color: var(--color-bg-main);
+    justify-content: space-between;
+    padding: 32px;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    height: auto;
+
+
 
     &__actions {
         display: flex;
-        align-items: center;
-        gap: var(--gap-md);
+        flex-direction: row;
+        gap: 16px;
+        width: auto;
+        height: auto;
+
     }
 
     &__search {
@@ -22,25 +27,36 @@
         color: var(--color-text-subtle);
         font-size: var(--font-size-base);
         line-height: var(--line-height-small);
+        padding: 8px 12px 8px 28px; // increased left padding for placeholder
+        width: 188px;
+        height: 48px;
+        box-sizing: border-box;
     }
 
-    &__discord-link {
-        padding: 10px 24px 10px 24px;
-        gap: 8px;
+    &__search-icon {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
         display: flex;
-        flex-direction: row;
         align-items: center;
+        justify-content: center;
+        width: var(--search-icon-size);
+        height: var(--search-icon-size);
+        pointer-events: none;
 
+        img,
+        svg {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
     }
 
-    &__discord-icon {
-        margin-top: -4px;
-        margin-left: 1px;
-    }
-
-    &__login-button {
-        padding: var(--padding-lg);
-        color: inherit;
-
+    &__search-wrapper {
+        position: relative;
+        display: inline-flex; // keep wrapper inline so it doesn't expand
+        align-items: center;
+        flex: 0 1 auto; // allow wrapper to shrink
     }
 }

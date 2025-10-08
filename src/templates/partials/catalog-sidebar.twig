@@ -1,0 +1,26 @@
+<section class="catalog-sidebar">
+	<form class="catalog-sidebar__form" method="get" action="">
+		{% for filter in sidebar_filters %}
+			<fieldset class="catalog-sidebar__fieldset">
+				<details class="catalog-sidebar__group" {% if filter.type != 'none' %} open {% else %} closed {% endif %}>
+					<summary class="catalog-sidebar__title">{{ filter.group }}</summary>
+					{% if filter.type != 'none' and filter.options|length > 0 %}
+						<ul class="catalog-sidebar__list">
+							{% for option in filter.options %}
+								<li>
+									<div class="{{ filter.type }}">
+										<input type="{{ filter.type }}" id="{{ filter.name|replace({'[]':''}) }}-{{ option.value|lower }}" name="{{ filter.name }}" value="{{ option.value }}">
+										<label for="{{ filter.name|replace({'[]':''}) }}-{{ option.value|lower }}" class="catalog-sidebar__label catalog-sidebar__label--{{ filter.type }}">
+											{{ option.label }}
+										</label>
+									</div>
+								</li>
+							{% endfor %}
+						</ul>
+					{% endif %}
+				</details>
+			</fieldset>
+		{% endfor %}
+		<button type="submit" class="catalog-sidebar__apply-btn button">Apply</button>
+	</form>
+</section>

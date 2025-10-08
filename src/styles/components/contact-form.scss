@@ -1,0 +1,120 @@
+.contact-form__fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: var(--margin-xl);
+
+    &__container {
+        width: 100%;
+        margin: 0 auto;
+        max-width: var(--max-width-form);
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        width: 100%;
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--gap-small);
+        width: 100%;
+        height: auto;
+        margin-bottom: var(--margin-large);
+    }
+
+    &__title {
+        margin-bottom: var(--margin-medium);
+        margin-top: var(--margin-xl);
+    }
+
+    &__subtitle {
+        margin-top: 0;
+    }
+
+    &__group {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        max-width: var(--max-width-form);
+        margin: 0 auto;
+        margin-bottom: var(--margin-large);
+    }
+
+    &__label {
+        display: block;
+        width: 100%;
+        max-width: var(--max-width-form);
+        margin: 0 auto var(--gap-small) auto;
+        text-align: left;
+        font-size: inherit;
+        font-weight: inherit;
+        color: var(--color-text-main);
+        line-height: var(--line-height-form-label);
+    }
+
+    &__radio-container {
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap-medium);
+        margin-top: var(--gap-small);
+        align-items: flex-start;
+    }
+
+    &__radio-label {
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+        margin: 0;
+        cursor: pointer;
+    }
+
+    &__input[type="date"]::-webkit-calendar-picker-indicator {
+        display: none;
+    }
+
+    &__input[type="date"] {
+        color: var(--color-text-subtle);
+    }
+
+    &__input::placeholder {
+        color: var(--color-text-subtle);
+    }
+
+    &__textarea {
+        resize: none;
+        width: 640px;
+        height: 160px;
+    }
+
+    &__checkbox-label {
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+        font-size: 14px;
+    }
+
+    &__checkbox {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__checkbox-input {
+        margin-right: 8px;
+    }
+
+
+}

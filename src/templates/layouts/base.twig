@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
 	{% include '../partials/head.twig' %}
-	<body>
+	<body {% if current_page == 'index' %} class="index-page" {% endif %}>
 		{% include '../partials/header.twig' %}
 		{% block content %}{% endblock %}
-		{% if current_page != 'index' %}
-			{% include '../partials/footer.twig' %}
-		{% endif %}
+		{% include '../partials/footer.twig' %}
 	</body>
 </html>
