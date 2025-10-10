@@ -28,5 +28,22 @@
         color: var(--color-text-muted);
     }
 
+    &__image-container {
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 12px;
+        background: var(--color-bg-alt2);
+        display: block;
+        margin: 0 auto var(--padding-md) auto;
+    }
+
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
 
 }

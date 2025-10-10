@@ -12,4 +12,12 @@
         line-height: var(--line-height-large);
         font-weight: var(--font-weight-medium);
     }
+
+    &__member-photo {
+        width: 148px;
+        height: 148px;
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
+    }
 }

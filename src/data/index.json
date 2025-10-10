@@ -14,8 +14,8 @@
     ],
     "hero_button": "Connect Wallet",
     "hero_link": "Whitelist now",
-    "image_src": "#",
-    "image_alt": "NFT box",
+    "image_src": "src/assets/images/home/hero/binabox-cube.png",
+    "image_alt": "Binabox cube NFT hero image",
     "link_url": "#"
   },
   "catalog": {
@@ -25,35 +25,35 @@
     "see_all_url": "#",
     "products": [
       {
-        "image_src": "#",
-        "image_alt": "Echo of Bones picture",
+        "image_src": "src/assets/images/home/catalog/echo-of-bones.jpg",
+        "image_alt": "Echo of Bones NFT artwork",
         "label": "New",
         "price": "$1990",
         "name": "Echo of Bones"
       },
       {
-        "image_src": "#",
-        "image_alt": "Nyx the Watcher picture",
+        "image_src": "src/assets/images/home/catalog/nyx-the-watcher.jpg",
+        "image_alt": "Nyx the Watcher NFT character",
         "label": "New",
         "price": "$299.99",
         "name": "Nyx the Watcher"
       },
       {
-        "image_src": "#",
-        "image_alt": "Blade of Silence picture",
+        "image_src": "src/assets/images/home/catalog/blade-of-silence.jpg",
+        "image_alt": "Blade of Silence NFT sword",
         "label": "Sold out",
         "price": "$20",
         "name": "Blade of Silence"
       },
       {
-        "image_src": "#",
-        "image_alt": "Data Core: Alpha picture",
+        "image_src": "src/assets/images/home/catalog/data-core-alpha.jpg",
+        "image_alt": "Data Core: Alpha NFT core",
         "price": "$1.000.000",
         "name": "Data Core: Alpha"
       },
       {
-        "image_src": "#",
-        "image_alt": "Phantom Console picture",
+        "image_src": "src/assets/images/home/catalog/phantom-console.jpg",
+        "image_alt": "Phantom Console NFT device",
         "price": "$199.5",
         "name": "Phantom Console"
       }
@@ -65,8 +65,8 @@
     "articles": [
       {
         "label": "NFT",
-        "image_src": "#",
-        "image_alt": "Neural Drift image",
+        "image_src": "src/assets/images/home/our-blog/neural-drift.jpg",
+        "image_alt": "Neural Drift NFT artwork",
         "title": "Neural Drift",
         "excerpt": "I woke up inside the void. My body stayed in the past - only thoughts were allowed throug...",
         "author_icon": "#",
@@ -78,8 +78,8 @@
       },
       {
         "label": "DROP",
-        "image_src": "#",
-        "image_alt": "Deadframe image",
+        "image_src": "src/assets/images/home/our-blog/deadframe.jpg",
+        "image_alt": "Deadframe NFT sword",
         "title": "Deadframe",
         "excerpt": "He just stood there, waiting. Not for a person - for a signal. Like the memory of the network...",
         "author_icon": "#",
@@ -91,8 +91,8 @@
       },
       {
         "label": "NFT",
-        "image_src": "#",
-        "image_alt": "Glitch Panther image",
+        "image_src": "src/assets/images/home/our-blog/glitch-panther.jpg",
+        "image_alt": "Glitch Panther NFT cat",
         "title": "Glitch Panther",
         "excerpt": "Cats always knew more than they showed. Especially the ones that vanish into the code.",
         "author_icon": "#",
@@ -104,8 +104,8 @@
       },
       {
         "label": "RARE",
-        "image_src": "#",
-        "image_alt": "Primal.exe image",
+        "image_src": "src/assets/images/home/our-blog/primal-exe.jpg",
+        "image_alt": "Primal.exe NFT gorilla",
         "title": "Primal.exe",
         "excerpt": "We tried to resurrect the past. What we got was rage compressed into an algorithm.",
         "author_icon": "#",
@@ -117,8 +117,8 @@
       },
       {
         "label": "ARTIFACT",
-        "image_src": "#",
-        "image_alt": "Retrocore image",
+        "image_src": "src/assets/images/home/our-blog/retrocore.jpg",
+        "image_alt": "Retrocore NFT console",
         "title": "Retrocore",
         "excerpt": "This console comes from a game no one remembers how to play. But it's still powered on.",
         "author_icon": "#",
@@ -130,8 +130,8 @@
       },
       {
         "label": "NFT",
-        "image_src": "#",
-        "image_alt": "White Protocol image",
+        "image_src": "src/assets/images/home/our-blog/white-protocol.jpg",
+        "image_alt": "White Protocol NFT swan",
         "title": "White Protocol",
         "excerpt": "At first it was a signal - clean, white, hypnotic. We didn't know it was alive.",
         "author_icon": "#",
@@ -170,7 +170,7 @@
     "title": "Our team",
     "members": [
       {
-        "photo": "#",
+        "photo": "src/assets/images/home/our-team/nova-riven.jpg",
         "name": "Nova Riven",
         "role": "Creative Architect",
         "socials": [
@@ -197,7 +197,7 @@
         ]
       },
       {
-        "photo": "#",
+        "photo": "src/assets/images/home/our-team/echo-zero.jpg",
         "name": "Echo Zero",
         "role": "Tech Whisperer",
         "socials": [
@@ -224,7 +224,7 @@
         ]
       },
       {
-        "photo": "#",
+        "photo": "src/assets/images/home/our-team/kairo-null.jpg",
         "name": "Kairo Null",
         "role": "Lore Engineer",
         "socials": [
@@ -251,7 +251,7 @@
         ]
       },
       {
-        "photo": "#",
+        "photo": "src/assets/images/home/our-team/dr-wex-omega.jpg",
         "name": "Dr. Wex Omega",
         "role": "Visual Disruptor",
         "socials": [
@@ -283,7 +283,7 @@
         ]
       },
       {
-        "photo": "#",
+        "photo": "src/assets/images/home/our-team/synthya-void.jpg",
         "name": "Synthya Void",
         "role": "UX Seer",
         "socials": [
@@ -295,7 +295,7 @@
         ]
       },
       {
-        "photo": "#",
+        "photo": "src/assets/images/home/our-team/mirlo-drift.jpg",
         "name": "Mirlo Drift",
         "role": "Community Catalyst",
         "socials": [
@@ -327,7 +327,7 @@
         ]
       },
       {
-        "photo": "#",
+        "photo": "src/assets/images/home/our-team/axon-rune.jpg",
         "name": "Axon Rune",
         "role": "Security Ghost",
         "socials": [
