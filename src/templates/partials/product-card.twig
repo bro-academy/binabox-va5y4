@@ -1,5 +1,8 @@
 <li class="product">
-	<img src="{{ product.image_src }}" alt="{{ product.image_alt }}" class="product__image">
+	<picture>
+		<source srcset="{{ product.image_src|replace({'home/catalog/':'','src/assets/images/':'src/assets/images/'}) }}" type="image/webp">
+		<img src="{{ product.image_src|replace({'?format=webp':'','home/catalog/':'','src/assets/images/':'src/assets/images/'}) }}" alt="{{ product.image_alt }}" class="product__image">
+	</picture>
 	{% if product.label %}
 		<span class="product__label label{% if product.label|lower == 'sold out' %} label--secondary{% endif %}">{{ product.label }}</span>
 	{% endif %}

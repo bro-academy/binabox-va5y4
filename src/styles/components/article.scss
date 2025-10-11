@@ -93,5 +93,18 @@
         color: var(--color-white-bg);
     }
 
+    &__hero-image {
+        height: 559.184326171875px;
+        width: 100%;
+        max-width: 1024px;
+    }
 
+    &__image {
+        width: 100%;
+        max-width: 500px;
+        height: 393.9394226074219px;
+        object-fit: cover;
+
+
+    }
 }

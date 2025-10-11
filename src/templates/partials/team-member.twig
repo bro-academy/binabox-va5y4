@@ -1,11 +1,11 @@
 <li class="employee">
-	<img src="{{ member.photo }}" alt="{{ member.name }}" class="employee__member-photo">
+	<img src="{{ member.photo|replace({'home/our-team/':'','src/assets/images/':'src/assets/images/'}) }}" alt="{{ member.name }}" class="employee__member-photo">
 	<h4 class="employee__member-name title title--h4">{{ member.name }}</h4>
 	<span class="employee__member-role">{{ member.role }}</span>
 	<div class="employee__member-socials">
 		{% for social in member.socials %}
 			<a href="{{ social.url }}" aria-label="{{ social.label }}" class="employee__social-link">
-				<img src="{{ social.icon }}" alt="{{ social.label }} icon" class="employee__social-icon">
+				<img src="{{ social.icon|replace({'src/assets/icons/':'src/assets/icons/'}) }}" alt="{{ social.label }} icon" class="employee__social-icon">
 			</a>
 		{% endfor %}
 	</div>
