@@ -1,13 +1,13 @@
 .hero {
 
     &__image {
-        width: 533.499267578125px;
+        max-width: 320px;
+        max-height: 384px;
+        width: 100%;
         height: 641.8035888671875px;
-        background-image: url('/src/assets/images/home/hero/binabox-cube.png?format=webp');
         background-size: contain;
         background-repeat: no-repeat;
-        background-position: right center;
-        margin: 0 auto;
+        background-position: center;
     }
 
 
