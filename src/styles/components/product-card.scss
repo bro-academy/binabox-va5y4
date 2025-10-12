@@ -1,4 +1,5 @@
 .product-card {
+
     &__image-container {
         position: relative;
     }
@@ -27,5 +28,10 @@
         background-color: rgba(255, 255, 255, 1);
         border: none;
         color: rgba(13, 13, 21, 1);
+    }
+
+    &__image {
+        height: 453px;
+        width: auto;
     }
 }
