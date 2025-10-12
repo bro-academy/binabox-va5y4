@@ -1,7 +1,11 @@
 .product {
 
     &__image {
-        width: 252.79998779296875px;
+        width: 100%;
+        max-width: 252.8px;
         height: 324px;
+        object-fit: cover;
+        display: block;
+
     }
 }
