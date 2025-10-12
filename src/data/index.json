@@ -26,34 +26,34 @@
     "products": [
       {
         "image_src": "src/assets/images/echo-of-bones.webp",
-        "image_alt": "Echo of Bones NFT artwork",
+        "image_alt": "Echo of Bones NFT artwork featuring a skeletal figure with glowing accents",
         "label": "New",
         "price": "$1990",
         "name": "Echo of Bones"
       },
       {
         "image_src": "src/assets/images/nyx-the-watcher.webp",
-        "image_alt": "Nyx the Watcher NFT character",
+        "image_alt": "Nyx the Watcher NFT artwork featuring a mysterious, shadowy figure with glowing eyes and intricate cybernetic details",
         "label": "New",
         "price": "$299.99",
         "name": "Nyx the Watcher"
       },
       {
         "image_src": "src/assets/images/blade-of-silence.webp",
-        "image_alt": "Blade of Silence NFT sword",
+        "image_alt": "Blade of Silence NFT artwork featuring a pair of scissors resting on dark, silky fabric",
         "label": "Sold out",
         "price": "$20",
         "name": "Blade of Silence"
       },
       {
         "image_src": "src/assets/images/data-core.webp",
-        "image_alt": "Data Core: Alpha NFT core",
+        "image_alt": "Data Core: Alpha NFT artwork featuring a glowing core with intricate designs",
         "price": "$1.000.000",
         "name": "Data Core: Alpha"
       },
       {
         "image_src": "src/assets/images/phantom-console.webp",
-        "image_alt": "Phantom Console NFT device",
+        "image_alt": "Phantom Console NFT artwork featuring a futuristic console with sleek design",
         "price": "$199.5",
         "name": "Phantom Console"
       }
@@ -66,7 +66,7 @@
       {
         "label": "NFT",
         "image_src": "src/assets/images/neural-drift.webp",
-        "image_alt": "Neural Drift NFT artwork",
+        "image_alt": "Neural Drift NFT artwork featuring abstract neural patterns",
         "title": "Neural Drift",
         "excerpt": "I woke up inside the void. My body stayed in the past - only thoughts were allowed throug...",
         "author_icon": "#",
@@ -78,8 +78,8 @@
       },
       {
         "label": "DROP",
-        "image_src": "src/assets/images/deadframe.webp",
-        "image_alt": "Deadframe NFT sword",
+        "image_src": "src/assets/images/echo-of-bones.webp",
+        "image_alt": "Deadframe NFT artwork featuring a skeletal figure with glowing accents",
         "title": "Deadframe",
         "excerpt": "He just stood there, waiting. Not for a person - for a signal. Like the memory of the network...",
         "author_icon": "#",
@@ -91,8 +91,8 @@
       },
       {
         "label": "NFT",
-        "image_src": "src/assets/images/glitch-panther.webp",
-        "image_alt": "Glitch Panther NFT cat",
+        "image_src": "src/assets/images/nyx-the-watcher.webp",
+        "image_alt": "Glitch Panther NFT artwork featuring a digital panther",
         "title": "Glitch Panther",
         "excerpt": "Cats always knew more than they showed. Especially the ones that vanish into the code.",
         "author_icon": "#",
@@ -105,7 +105,7 @@
       {
         "label": "RARE",
         "image_src": "src/assets/images/primal.webp",
-        "image_alt": "Primal.exe NFT gorilla",
+        "image_alt": "Primal.exe NFT artwork featuring a gorilla with algorithmic patterns",
         "title": "Primal.exe",
         "excerpt": "We tried to resurrect the past. What we got was rage compressed into an algorithm.",
         "author_icon": "#",
@@ -117,8 +117,8 @@
       },
       {
         "label": "ARTIFACT",
-        "image_src": "src/assets/images/retrocore.webp",
-        "image_alt": "Retrocore NFT console",
+        "image_src": "src/assets/images/phantom-console.webp",
+        "image_alt": "Retrocore NFT artwork featuring a vintage console",
         "title": "Retrocore",
         "excerpt": "This console comes from a game no one remembers how to play. But it's still powered on.",
         "author_icon": "#",
@@ -131,7 +131,7 @@
       {
         "label": "NFT",
         "image_src": "src/assets/images/white-protocol.webp",
-        "image_alt": "White Protocol NFT swan",
+        "image_alt": "White Protocol NFT artwork featuring a swan with a glowing aura",
         "title": "White Protocol",
         "excerpt": "At first it was a signal - clean, white, hypnotic. We didn't know it was alive.",
         "author_icon": "#",
