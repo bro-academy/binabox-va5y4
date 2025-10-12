@@ -1,6 +1,6 @@
 <article class="blog-card">
 	<span class="blog-card__label label">{{ blog.label }}</span>
-	<img src="{{ blog.image_src }}" alt="{{ blog.image_alt }}" class="blog-card__image">
+	<img src="{{ blog.image_src }}" alt="{{ blog.image_alt }}" class="blog-card__image{% if blog.is_primary %} blog-card__image--primary{% else %} blog-card__image--secondary{% endif %}">
 	<h2 class="blog-card__title title title--h2">{{ blog.title }}</h2>
 	<p class="blog-card__excerpt">{{ blog.excerpt }}</p>
 	<img src="{{ blog.author_icon }}" alt="Author icon" class="blog-card__author-icon">

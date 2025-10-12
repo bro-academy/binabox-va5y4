@@ -37,4 +37,14 @@
         display: block;
     }
 
+    &__image--primary {
+        aspect-ratio: 736 / 664;
+
+    }
+
+    &__image--secondary {
+        aspect-ratio: 736 / 198;
+
+    }
+
 }

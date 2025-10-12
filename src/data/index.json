@@ -74,7 +74,8 @@
         "author_uppercase": true,
         "date_iso": "2022-12-04",
         "date": "04 Dec 2022",
-        "read_more_url": "#"
+        "read_more_url": "#",
+        "is_primary": true
       },
       {
         "label": "DROP",
@@ -87,7 +88,8 @@
         "author_uppercase": false,
         "date_iso": "2022-12-06",
         "date": "06 Dec 2022",
-        "read_more_url": "#"
+        "read_more_url": "#",
+        "is_primary": false
       },
       {
         "label": "NFT",
@@ -100,7 +102,8 @@
         "author_uppercase": false,
         "date_iso": "2022-12-07",
         "date": "07 Dec 2022",
-        "read_more_url": "#"
+        "read_more_url": "#",
+        "is_primary": false
       },
       {
         "label": "RARE",
@@ -113,7 +116,8 @@
         "author_uppercase": false,
         "date_iso": "2022-12-08",
         "date": "08 Dec 2022",
-        "read_more_url": "#"
+        "read_more_url": "#",
+        "is_primary": false
       },
       {
         "label": "ARTIFACT",
@@ -126,7 +130,8 @@
         "author_uppercase": false,
         "date_iso": "2022-12-09",
         "date": "09 Dec 2022",
-        "read_more_url": "#"
+        "read_more_url": "#",
+        "is_primary": true
       },
       {
         "label": "NFT",
@@ -139,7 +144,8 @@
         "author_uppercase": false,
         "date_iso": "2022-06-20",
         "date": "20 Jun 2022",
-        "read_more_url": "#"
+        "read_more_url": "#",
+        "is_primary": false
       }
     ]
   },
