@@ -1,9 +1,21 @@
 {% macro picture(classes, webpSrc, pngSrc, jpgSrc, alt, width, height) %}
+	{% if pngSrc %}
+		{% set fallbackPngSrc = pngSrc %}
+	{% else %}
+		{% set fallbackPngSrc = jpgSrc %}
+	{% endif %}
+
+	{% if jpgSrc %}
+		{% set fallbackImgSrc = jpgSrc %}
+	{% else %}
+		{% set fallbackImgSrc = pngSrc %}
+	{% endif %}
+
 	<picture class="{{ classes }}">
-		<source srcset="{{ webpSrc }}" type="image/webp">
-		<source srcset="{{ pngSrc }}" type="image/png">
-		<source srcset="{{ jpgSrc }}" type="image/jpeg">
-		<img src="{{ jpgSrc }}" alt="{{ alt }}" width="{{ width }}" height="{{ height }}">
+		<source srcset="{{ webpSrc }}" type="image/webp" width="{{ width }}" height="{{ height }}">
+		<source srcset="{{ fallbackPngSrc }}" type="image/png" width="{{ width }}" height="{{ height }}">
+		<source srcset="{{ jpgSrc }}" type="image/jpeg" width="{{ width }}" height="{{ height }}">
+		<img src="{{ fallbackImgSrc }}" alt="{{ alt }}" width="{{ width }}" height="{{ height }}">
 	</picture>
 {% endmacro %}
 
