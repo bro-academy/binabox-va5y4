@@ -14,8 +14,10 @@
     ],
     "hero_button": "Connect Wallet",
     "hero_link": "Whitelist now",
-    "image_src": "src/assets/images/binabox-cube.webp",
-    "image_alt": "Binabox cube NFT hero image",
+    "image_webp": "binabox-cube.webp",
+    "image_png": "binabox-cube.png",
+    "image_jpg": "",
+    "image_alt": "Binabox cube illustration",
     "link_url": "#"
   },
   "catalog": {
