@@ -1,4 +1,4 @@
-{% import 'ui/picture.twig' as picture_macros %}
+{% import 'ui/picture.twig' as picture_macro %}
 
 <section class="hero">
 	<h1 class="hero__title title title--h1 title--primary">{{ index.title }}</h1>
@@ -11,12 +11,12 @@
 	</dl>
 	<button type="button" class="button hero__button">{{ index.hero_button }}</button>
 	<a href="{{ index.link_url }}" class="button button--secondary hero__link">{{ index.hero_link }}</a>
-	{{ picture_macros.picture(
+	{{ picture_macro.picture(
         'hero__image',
-        'src/assets/images/binabox-cube.webp',
-        'src/assets/images/binabox-cube.png',
-        '',
-        'Binabox cube illustration',
+        index.image_webp,
+        index.image_png,
+        index.image_jpg,
+        index.image_alt,
         '533.5',
         '641.8'
     ) }}

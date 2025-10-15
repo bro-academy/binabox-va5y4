@@ -1,5 +1,15 @@
+{% import 'ui/picture.twig' as picture_macro %}
+
 <li class="product">
-	<img src="{{ product.image_src }}" alt="{{ product.image_alt }}" class="product__image">
+	{{ picture_macro.picture(
+        'product__image',
+        product.image_webp_src,
+        product.image_png_src,
+        product.image_jpg_src,
+        product.image_alt,
+        '300',
+        '200'
+    ) }}
 	{% if product.label %}
 		<span class="product__label label{% if product.label|lower == 'sold out' %} label--secondary{% endif %}">{{ product.label }}</span>
 	{% endif %}
