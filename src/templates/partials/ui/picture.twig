@@ -1,0 +1,21 @@
+{% macro picture(classes, webpSrc, pngSrc, jpgSrc, alt, width, height) %}
+	<picture class="{{ classes }}">
+		<source srcset="{{ webpSrc }}" type="image/webp">
+		<source srcset="{{ pngSrc }}" type="image/png">
+		<source srcset="{{ jpgSrc }}" type="image/jpeg">
+		<img src="{{ jpgSrc }}" alt="{{ alt }}" width="{{ width }}" height="{{ height }}">
+	</picture>
+{% endmacro %}
+
+{# Example Usage: #}
+{#
+{{ picture(
+    classes='example-picture',
+    webpSrc='images/example-image.webp',
+    pngSrc='images/example-image.png',
+    jpgSrc='images/example-image.jpg',
+    alt='An example image',
+    width='300',
+    height='200'
+) }}
+#}
