@@ -18,6 +18,8 @@
     "image_png": "binabox-cube.png",
     "image_jpg": "",
     "image_alt": "Binabox cube illustration",
+    "image_width": "533.5",
+    "image_height": "641.8",
     "link_url": "#"
   },
   "catalog": {
@@ -27,35 +29,50 @@
     "see_all_url": "#",
     "products": [
       {
-        "image_src": "src/assets/images/echo-of-bones.webp",
+        "image_webp_src": "echo-of-bones.webp",
+        "image_jpg_src": "echo-of-bones.jpg",
         "image_alt": "Echo of Bones NFT artwork featuring a skeletal figure with glowing accents",
+        "image_width": "100%",
+        "image_height": "auto",
         "label": "New",
         "price": "$1990",
         "name": "Echo of Bones"
       },
       {
-        "image_src": "src/assets/images/nyx-the-watcher.webp",
+        "image_webp_src": "nyx-the-watcher.webp",
+        "image_jpg_src": "nyx-the-watcher.jpg",
         "image_alt": "Nyx the Watcher NFT artwork featuring a mysterious, shadowy figure with glowing eyes and intricate cybernetic details",
+        "image_width": "100%",
+        "image_height": "auto",
         "label": "New",
         "price": "$299.99",
         "name": "Nyx the Watcher"
       },
       {
-        "image_src": "src/assets/images/blade-of-silence.webp",
+        "image_webp_src": "blade-of-silence.webp",
+        "image_jpg_src": "blade-of-silence.jpg",
         "image_alt": "Blade of Silence NFT artwork featuring a pair of scissors resting on dark, silky fabric",
+        "image_width": "100%",
+        "image_height": "auto",
         "label": "Sold out",
         "price": "$20",
         "name": "Blade of Silence"
       },
       {
-        "image_src": "src/assets/images/data-core.webp",
+        "image_webp_src": "data-core.webp",
+        "image_jpg_src": "data-core.jpg",
         "image_alt": "Data Core: Alpha NFT artwork featuring a glowing core with intricate designs",
+        "image_width": "100%",
+        "image_height": "auto",
         "price": "$1.000.000",
         "name": "Data Core: Alpha"
       },
       {
-        "image_src": "src/assets/images/phantom-console.webp",
+        "image_webp_src": "phantom-console.webp",
+        "image_jpg_src": "phantom-console.jpg",
         "image_alt": "Phantom Console NFT artwork featuring a futuristic console with sleek design",
+        "image_width": "100%",
+        "image_height": "auto",
         "price": "$199.5",
         "name": "Phantom Console"
       }

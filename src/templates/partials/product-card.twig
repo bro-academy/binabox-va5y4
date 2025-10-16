@@ -7,8 +7,8 @@
         product.image_png_src,
         product.image_jpg_src,
         product.image_alt,
-        '300',
-        '200'
+        product.image_width,
+        product.image_height
     ) }}
 	{% if product.label %}
 		<span class="product__label label{% if product.label|lower == 'sold out' %} label--secondary{% endif %}">{{ product.label }}</span>
