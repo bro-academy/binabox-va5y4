@@ -94,16 +94,18 @@
     }
 
     &__hero-image {
-        height: 560px;
-        width: auto;
-        filter: hue-rotate(60deg) saturate(2) brightness(1);
+        img {
+
+            filter: hue-rotate(60deg) saturate(2) brightness(1);
+        }
     }
 
     &__image {
-        width: auto;
-        max-width: 500px;
-        height: 394px;
-        object-fit: cover;
-        filter: hue-rotate(60deg) saturate(2) brightness(1);
+
+        img {
+            width: auto;
+            object-fit: cover;
+            filter: hue-rotate(60deg) saturate(2) brightness(1);
+        }
     }
 }

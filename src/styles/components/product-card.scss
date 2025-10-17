@@ -31,7 +31,9 @@
     }
 
     &__image {
-        height: 453px;
-        width: auto;
+
+        img {
+            object-fit: cover;
+        }
     }
 }

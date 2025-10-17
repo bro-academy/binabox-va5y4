@@ -14,10 +14,9 @@
     }
 
     &__member-photo {
-        width: 148px;
-        height: 148px;
-        border-radius: 50%;
-        object-fit: cover;
-        display: block;
+        img {
+            border-radius: 50%;
+            object-fit: cover;
+        }
     }
 }
