@@ -29,8 +29,8 @@
     "see_all_url": "#",
     "products": [
       {
-        "image_webp_src": "echo-of-bones.webp",
-        "image_jpg_src": "echo-of-bones.jpg",
+        "image_webp": "echo-of-bones.webp",
+        "image_jpg": "echo-of-bones.jpg",
         "image_alt": "Echo of Bones NFT artwork featuring a skeletal figure with glowing accents",
         "image_width": "100%",
         "image_height": "auto",
@@ -39,8 +39,8 @@
         "name": "Echo of Bones"
       },
       {
-        "image_webp_src": "nyx-the-watcher.webp",
-        "image_jpg_src": "nyx-the-watcher.jpg",
+        "image_webp": "nyx-the-watcher.webp",
+        "image_jpg": "nyx-the-watcher.jpg",
         "image_alt": "Nyx the Watcher NFT artwork featuring a mysterious, shadowy figure with glowing eyes and intricate cybernetic details",
         "image_width": "100%",
         "image_height": "auto",
@@ -49,8 +49,8 @@
         "name": "Nyx the Watcher"
       },
       {
-        "image_webp_src": "blade-of-silence.webp",
-        "image_jpg_src": "blade-of-silence.jpg",
+        "image_webp": "blade-of-silence.webp",
+        "image_jpg": "blade-of-silence.jpg",
         "image_alt": "Blade of Silence NFT artwork featuring a pair of scissors resting on dark, silky fabric",
         "image_width": "100%",
         "image_height": "auto",
@@ -59,8 +59,8 @@
         "name": "Blade of Silence"
       },
       {
-        "image_webp_src": "data-core.webp",
-        "image_jpg_src": "data-core.jpg",
+        "image_webp": "data-core.webp",
+        "image_jpg": "data-core.jpg",
         "image_alt": "Data Core: Alpha NFT artwork featuring a glowing core with intricate designs",
         "image_width": "100%",
         "image_height": "auto",
@@ -68,8 +68,8 @@
         "name": "Data Core: Alpha"
       },
       {
-        "image_webp_src": "phantom-console.webp",
-        "image_jpg_src": "phantom-console.jpg",
+        "image_webp": "phantom-console.webp",
+        "image_jpg": "phantom-console.jpg",
         "image_alt": "Phantom Console NFT artwork featuring a futuristic console with sleek design",
         "image_width": "100%",
         "image_height": "auto",
@@ -84,7 +84,10 @@
     "articles": [
       {
         "label": "NFT",
-        "image_src": "src/assets/images/neural-drift.webp",
+        "image_webp": "neural-drift.webp",
+        "image_jpg": "neural-drift.jpg",
+        "image_width": "auto",
+        "image_height": "auto",
         "image_alt": "Neural Drift NFT artwork featuring abstract neural patterns",
         "title": "Neural Drift",
         "excerpt": "I woke up inside the void. My body stayed in the past - only thoughts were allowed throug...",
@@ -98,7 +101,10 @@
       },
       {
         "label": "DROP",
-        "image_src": "src/assets/images/echo-of-bones.webp",
+        "image_webp": "echo-of-bones.webp",
+        "image_jpg": "echo-of-bones.jpg",
+        "image_width": "auto",
+        "image_height": "auto",
         "image_alt": "Deadframe NFT artwork featuring a skeletal figure with glowing accents",
         "title": "Deadframe",
         "excerpt": "He just stood there, waiting. Not for a person - for a signal. Like the memory of the network...",
@@ -112,7 +118,10 @@
       },
       {
         "label": "NFT",
-        "image_src": "src/assets/images/nyx-the-watcher.webp",
+        "image_webp": "nyx-the-watcher.webp",
+        "image_jpg": "nyx-the-watcher.jpg",
+        "image_width": "auto",
+        "image_height": "auto",
         "image_alt": "Glitch Panther NFT artwork featuring a digital panther",
         "title": "Glitch Panther",
         "excerpt": "Cats always knew more than they showed. Especially the ones that vanish into the code.",
@@ -126,7 +135,10 @@
       },
       {
         "label": "RARE",
-        "image_src": "src/assets/images/primal.webp",
+        "image_webp": "primal.webp",
+        "image_jpg": "primal.jpg",
+        "image_width": "auto",
+        "image_height": "auto",
         "image_alt": "Primal.exe NFT artwork featuring a gorilla with algorithmic patterns",
         "title": "Primal.exe",
         "excerpt": "We tried to resurrect the past. What we got was rage compressed into an algorithm.",
@@ -140,7 +152,10 @@
       },
       {
         "label": "ARTIFACT",
-        "image_src": "src/assets/images/phantom-console.webp",
+        "image_webp": "phantom-console.webp",
+        "image_jpg": "phantom-console.jpg",
+        "image_width": "auto",
+        "image_height": "auto",
         "image_alt": "Retrocore NFT artwork featuring a vintage console",
         "title": "Retrocore",
         "excerpt": "This console comes from a game no one remembers how to play. But it's still powered on.",
@@ -154,7 +169,10 @@
       },
       {
         "label": "NFT",
-        "image_src": "src/assets/images/white-protocol.webp",
+        "image_webp": "white-protocol.webp",
+        "image_jpg": "white-protocol.jpg",
+        "image_width": "auto",
+        "image_height": "auto",
         "image_alt": "White Protocol NFT artwork featuring a swan with a glowing aura",
         "title": "White Protocol",
         "excerpt": "At first it was a signal - clean, white, hypnotic. We didn't know it was alive.",
@@ -195,7 +213,11 @@
     "title": "Our team",
     "members": [
       {
-        "photo": "src/assets/images/nova-riven.webp",
+        "image_webp": "nova-riven.webp",
+        "image_jpg": "nova-riven.jpg",
+        "image_alt": "Nova Riven portrait",
+        "image_width": "120px",
+        "image_height": "120px",
         "name": "Nova Riven",
         "role": "Creative Architect",
         "socials": [
@@ -222,7 +244,11 @@
         ]
       },
       {
-        "photo": "src/assets/images/echo-zero.webp",
+        "image_webp": "echo-zero.webp",
+        "image_jpg": "echo-zero.jpg",
+        "image_alt": "Echo Zero portrait",
+        "image_width": "120px",
+        "image_height": "120px",
         "name": "Echo Zero",
         "role": "Tech Whisperer",
         "socials": [
@@ -249,7 +275,11 @@
         ]
       },
       {
-        "photo": "src/assets/images/kairo-null.webp",
+        "image_webp": "kairo-null.webp",
+        "image_jpg": "kairo-null.jpg",
+        "image_alt": "Kairo Null portrait",
+        "image_width": "120px",
+        "image_height": "120px",
         "name": "Kairo Null",
         "role": "Lore Engineer",
         "socials": [
@@ -276,7 +306,11 @@
         ]
       },
       {
-        "photo": "src/assets/images/dr-wex-omega.webp",
+        "image_webp": "dr-wex-omega.webp",
+        "image_jpg": "dr-wex-omega.jpg",
+        "image_alt": "Dr. Wex Omega portrait",
+        "image_width": "120px",
+        "image_height": "120px",
         "name": "Dr. Wex Omega",
         "role": "Visual Disruptor",
         "socials": [
@@ -308,7 +342,11 @@
         ]
       },
       {
-        "photo": "src/assets/images/synthya-void.webp",
+        "image_webp": "synthya-void.webp",
+        "image_jpg": "synthya-void.jpg",
+        "image_alt": "Synthya Void portrait",
+        "image_width": "120px",
+        "image_height": "120px",
         "name": "Synthya Void",
         "role": "UX Seer",
         "socials": [
@@ -320,7 +358,11 @@
         ]
       },
       {
-        "photo": "src/assets/images/mirlo-drift.webp",
+        "image_webp": "mirlo-drift.webp",
+        "image_jpg": "mirlo-drift.jpg",
+        "image_alt": "Mirlo Drift portrait",
+        "image_width": "120px",
+        "image_height": "120px",
         "name": "Mirlo Drift",
         "role": "Community Catalyst",
         "socials": [
@@ -352,7 +394,11 @@
         ]
       },
       {
-        "photo": "src/assets/images/axon-rune.webp",
+        "image_webp": "axon-rune.webp",
+        "image_jpg": "axon-rune.jpg",
+        "image_alt": "Axon Rune portrait",
+        "image_width": "120px",
+        "image_height": "120px",
         "name": "Axon Rune",
         "role": "Security Ghost",
         "socials": [

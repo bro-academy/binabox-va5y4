@@ -86,9 +86,12 @@
         ]
     },
     "article": {
-        "hero_image": "src/assets/images/basilisk.webp",
-        "hero_image_alt": "A digital painting of a Basilisk NFT with emerald scales, set in a futuristic arena",
+        "image_webp": "basilisk.webp",
+        "image_jpg": "basilisk.jpg",
+        "image_alt": "A digital painting of a Basilisk NFT with emerald scales, set in a futuristic arena",
         "hero_caption": "A Basilisk enters the arena - its emerald scales shimmer with encoded rage.",
+        "image_width": "100%",
+        "image_height": "559.18px",
         "title": "The Basilisks NFT",
         "category": "Gaming",
         "author": "Tony Nguyen",
@@ -137,13 +140,19 @@
         },
         "figures": [
             {
-                "image": "src/assets/images/basilisk-secondary.webp",
-                "alt": "Close-up image of a Gen-3 Basilisk with glowing emerald eyes",
+                "image_webp": "basilisk-secondary.webp",
+                "image_jpg": "basilisk-secondary.jpg",
+                "image_width": "100%",
+                "image_height": "393.94px",
+                "image_alt": "Close-up image of a Gen-3 Basilisk with glowing emerald eyes",
                 "caption": "Close-up of a Gen-3 Basilisk. Eyes trained by code."
             },
             {
-                "image": "src/assets/images/basilisk-tertiary.webp",
-                "alt": "A bonded Basilisk and its summoner, side by side, glowing with digital energy.",
+                "image_webp": "basilisk-tertiary.webp",
+                "image_jpg": "basilisk-tertiary.jpg",
+                "image_width": "100%",
+                "image_height": "393.94px",
+                "image_alt": "A bonded Basilisk and its summoner, side by side, glowing with digital energy.",
                 "caption": "A bonded Basilisk with its summoner. Loyalty is minted — not earned."
             }
         ],
