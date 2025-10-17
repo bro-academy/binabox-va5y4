@@ -1,5 +1,13 @@
 <li class="employee">
-	<img src="{{ member.photo|replace({'home/our-team/':'','src/assets/images/':'src/assets/images/'}) }}" alt="{{ member.name }}" class="employee__member-photo">
+	{{ picture_macro.picture(
+		'employee__member-photo',
+		member.image_webp,
+		member.image_png,
+		member.image_jpg,
+		member.image_alt,
+		member.image_width,
+		member.image_height
+	) }}
 	<h4 class="employee__member-name title title--h4">{{ member.name }}</h4>
 	<span class="employee__member-role">{{ member.role }}</span>
 	<div class="employee__member-socials">

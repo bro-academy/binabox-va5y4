@@ -35,7 +35,15 @@
 		{% for product in catalog_products.items %}
 			<article class="product-card">
 				<div class="product-card__image-container">
-					<img src="{{ product.image }}" alt="{{ product.title }}" class="product-card__image">
+					{{ picture_macro.picture(
+						'product-card__image',
+						product.image_webp,
+						product.image_png,
+						product.image_jpg,
+						product.image_alt,
+						product.image_width,
+						product.image_height
+					) }}
 					<div class="product-card__hover-menu">
 						<button class="product-card__favourites">
 							<span>♡</span>
