@@ -3,12 +3,11 @@
 <li class="product">
 	{{ picture_macro.picture(
         'product__image',
-        product.image_webp,
-        product.image_png,
-        product.image_jpg,
-        product.image_alt,
+        product.image_src,
         product.image_width,
-        product.image_height
+        product.image_height,
+        product.image_alt,
+        "false"
     ) }}
 	{% if product.label %}
 		<span class="product__label label{% if product.label|lower == 'sold out' %} label--secondary{% endif %}">{{ product.label }}</span>

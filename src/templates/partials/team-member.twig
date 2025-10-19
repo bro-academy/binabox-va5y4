@@ -1,12 +1,11 @@
 <li class="employee">
 	{{ picture_macro.picture(
 		'employee__member-photo',
-		member.image_webp,
-		member.image_png,
-		member.image_jpg,
+		member.image_src,
 		member.image_alt,
 		member.image_width,
-		member.image_height
+		member.image_height,
+		"false"
 	) }}
 	<h4 class="employee__member-name title title--h4">{{ member.name }}</h4>
 	<span class="employee__member-role">{{ member.role }}</span>

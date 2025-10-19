@@ -11,11 +11,10 @@
 	<a href="{{ index.link_url }}" class="button button--secondary hero__link">{{ index.hero_link }}</a>
 	{{ picture_macro.picture(
         'hero__image',
-        index.image_webp,
-        index.image_png,
-        index.image_jpg,
-        index.image_alt,
+        index.image_src,
         index.image_width,
-        index.image_height
+        index.image_height,
+		index.image_alt,
+        "true"
     ) }}
 </section>

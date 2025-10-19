@@ -14,9 +14,7 @@
     ],
     "hero_button": "Connect Wallet",
     "hero_link": "Whitelist now",
-    "image_webp": "binabox-cube.webp",
-    "image_png": "binabox-cube.png",
-    "image_jpg": "",
+    "image_src": "binabox-cube",
     "image_alt": "Binabox cube illustration",
     "image_width": "533.5",
     "image_height": "641.8",
@@ -29,8 +27,7 @@
     "see_all_url": "#",
     "products": [
       {
-        "image_webp": "echo-of-bones.webp",
-        "image_jpg": "echo-of-bones.jpg",
+        "image_src": "echo-of-bones",
         "image_alt": "Echo of Bones NFT artwork featuring a skeletal figure with glowing accents",
         "image_width": "100%",
         "image_height": "auto",
@@ -39,8 +36,7 @@
         "name": "Echo of Bones"
       },
       {
-        "image_webp": "nyx-the-watcher.webp",
-        "image_jpg": "nyx-the-watcher.jpg",
+        "image_src": "nyx-the-watcher",
         "image_alt": "Nyx the Watcher NFT artwork featuring a mysterious, shadowy figure with glowing eyes and intricate cybernetic details",
         "image_width": "100%",
         "image_height": "auto",
@@ -49,8 +45,7 @@
         "name": "Nyx the Watcher"
       },
       {
-        "image_webp": "blade-of-silence.webp",
-        "image_jpg": "blade-of-silence.jpg",
+        "image_src": "blade-of-silence",
         "image_alt": "Blade of Silence NFT artwork featuring a pair of scissors resting on dark, silky fabric",
         "image_width": "100%",
         "image_height": "auto",
@@ -59,8 +54,7 @@
         "name": "Blade of Silence"
       },
       {
-        "image_webp": "data-core.webp",
-        "image_jpg": "data-core.jpg",
+        "image_src": "data-core",
         "image_alt": "Data Core: Alpha NFT artwork featuring a glowing core with intricate designs",
         "image_width": "100%",
         "image_height": "auto",
@@ -68,8 +62,7 @@
         "name": "Data Core: Alpha"
       },
       {
-        "image_webp": "phantom-console.webp",
-        "image_jpg": "phantom-console.jpg",
+        "image_src": "phantom-console",
         "image_alt": "Phantom Console NFT artwork featuring a futuristic console with sleek design",
         "image_width": "100%",
         "image_height": "auto",
@@ -213,8 +206,7 @@
     "title": "Our team",
     "members": [
       {
-        "image_webp": "nova-riven.webp",
-        "image_jpg": "nova-riven.jpg",
+        "image_src": "nova-riven",
         "image_alt": "Nova Riven portrait",
         "image_width": "120px",
         "image_height": "120px",
@@ -244,8 +236,7 @@
         ]
       },
       {
-        "image_webp": "echo-zero.webp",
-        "image_jpg": "echo-zero.jpg",
+        "image_src": "echo-zero",
         "image_alt": "Echo Zero portrait",
         "image_width": "120px",
         "image_height": "120px",
@@ -275,8 +266,7 @@
         ]
       },
       {
-        "image_webp": "kairo-null.webp",
-        "image_jpg": "kairo-null.jpg",
+        "image_src": "kairo-null",
         "image_alt": "Kairo Null portrait",
         "image_width": "120px",
         "image_height": "120px",
@@ -306,8 +296,7 @@
         ]
       },
       {
-        "image_webp": "dr-wex-omega.webp",
-        "image_jpg": "dr-wex-omega.jpg",
+        "image_src": "dr-wex-omega",
         "image_alt": "Dr. Wex Omega portrait",
         "image_width": "120px",
         "image_height": "120px",
@@ -342,8 +331,7 @@
         ]
       },
       {
-        "image_webp": "synthya-void.webp",
-        "image_jpg": "synthya-void.jpg",
+        "image_src": "synthya-void",
         "image_alt": "Synthya Void portrait",
         "image_width": "120px",
         "image_height": "120px",
@@ -358,8 +346,7 @@
         ]
       },
       {
-        "image_webp": "mirlo-drift.webp",
-        "image_jpg": "mirlo-drift.jpg",
+        "image_src": "mirlo-drift",
         "image_alt": "Mirlo Drift portrait",
         "image_width": "120px",
         "image_height": "120px",
@@ -394,8 +381,7 @@
         ]
       },
       {
-        "image_webp": "axon-rune.webp",
-        "image_jpg": "axon-rune.jpg",
+        "image_src": "axon-rune",
         "image_alt": "Axon Rune portrait",
         "image_width": "120px",
         "image_height": "120px",

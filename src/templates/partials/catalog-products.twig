@@ -37,12 +37,11 @@
 				<div class="product-card__image-container">
 					{{ picture_macro.picture(
 						'product-card__image',
-						product.image_webp,
-						product.image_png,
-						product.image_jpg,
-						product.image_alt,
+						product.image_src,
 						product.image_width,
-						product.image_height
+						product.image_height,
+						product.image_alt,
+						"false"
 					) }}
 					<div class="product-card__hover-menu">
 						<button class="product-card__favourites">

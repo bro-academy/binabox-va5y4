@@ -2,12 +2,11 @@
 	<figure class="article__hero">
 		{{ picture_macro.picture(
         'article__hero-image',
-        article.image_webp,
-        article.image_png,
-        article.image_jpg,
-        article.image_alt,
+        article.image_src,
         article.image_width,
-        article.image_height
+        article.image_height,
+		article.image_alt,
+        "false"
     ) }}
 		<figcaption class="article__hero-caption">{{ article.hero_caption }}</figcaption>
 	</figure>
@@ -39,12 +38,11 @@
 		<figure class="article__figure">
 			{{ picture_macro.picture(
         'article__image',
-        figure.image_webp,
-        figure.image_png,
-        figure.image_jpg,
-        figure.image_alt,
+        figure.image_src,
         figure.image_width,
-        figure.image_height
+        figure.image_height,
+		figure.image_alt,
+        "false"
     ) }}
 			<figcaption class="article__caption">{{ figure.caption }}</figcaption>
 		</figure>

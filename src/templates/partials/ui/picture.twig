@@ -1,21 +1,13 @@
-{% macro picture(classes, webpSrc, pngSrc, jpgSrc, alt, width, height) %}
-	{% if pngSrc %}
-		{% set fallbackPngSrc = 'src/assets/images/' ~ pngSrc %}
+{% macro picture(classes, src, width, height, alt, isPng) %}
+	{% if isPng %}
+		{% set fallBackFormat = 'image/png' %}
 	{% else %}
-		{% set fallbackPngSrc = 'src/assets/images/' ~ jpgSrc %}
-	{% endif %}
-
-	{% if jpgSrc %}
-		{% set fallbackImgSrc = 'src/assets/images/' ~ jpgSrc %}
-	{% else %}
-		{% set fallbackImgSrc = 'src/assets/images/' ~ pngSrc %}
+		{% set fallBackFormat = 'image/jpeg' %}
 	{% endif %}
 
 	<picture class="{{ classes }}">
-		<source srcset="src/assets/images/{{ webpSrc }}" type="image/webp" width="{{ width }}" height="{{ height }}">
-		<source srcset="{{ fallbackPngSrc }}" type="image/png" width="{{ width }}" height="{{ height }}">
-		<source srcset="src/assets/images/{{ jpgSrc }}" type="image/jpeg" width="{{ width }}" height="{{ height }}">
-		<img src="{{ fallbackImgSrc }}" alt="{{ alt }}" width="{{ width }}" height="{{ height }}">
+		<source srcset="src/assets/images/{{ src }}.webp" type="image/webp" width="{{ width }}" height="{{ height }}">
+		<img src="{{ src }}.{{fallBackFormat}}" alt="{{ alt }}" width="{{ width }}" height="{{ height }}">
 	</picture>
 {% endmacro %}
 
@@ -23,11 +15,10 @@
 {#
 {{ picture(
     classes='example-picture',
-    webpSrc='example-image.webp',
-    pngSrc='example-image.png',
-    jpgSrc='example-image.jpg',
-    alt='An example image',
+    src='example-image',
     width='300',
-    height='200'
+    height='200',
+    alt='An example image',
+    isPng=false
 ) }}
 #}
