@@ -1,8 +1,8 @@
 {% macro picture(classes, src, width, height, alt, isPng) %}
 	{% if isPng %}
-		{% set fallBackFormat = 'image/png' %}
+		{% set fallBackFormat = 'png' %}
 	{% else %}
-		{% set fallBackFormat = 'image/jpg' %}
+		{% set fallBackFormat = 'jpg' %}
 	{% endif %}
 
 	<picture class="{{ classes }}">
