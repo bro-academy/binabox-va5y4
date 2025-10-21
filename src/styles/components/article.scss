@@ -93,5 +93,19 @@
         color: var(--color-white-bg);
     }
 
+    &__hero-image {
+        img {
 
+            filter: hue-rotate(60deg) saturate(2) brightness(1);
+        }
+    }
+
+    &__image {
+
+        img {
+            width: auto;
+            object-fit: cover;
+            filter: hue-rotate(60deg) saturate(2) brightness(1);
+        }
+    }
 }

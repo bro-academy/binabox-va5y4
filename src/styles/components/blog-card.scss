@@ -3,7 +3,6 @@
     margin-bottom: var(--padding-xl);
     padding: var(--padding-xl);
 
-
     &__excerpt {
         font-size: var(--font-size-medium);
         line-height: var(--line-height-medium);
@@ -28,5 +27,11 @@
         color: var(--color-text-muted);
     }
 
+    &__image img {
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+        border-radius: var(--border-radius);
+    }
 
 }

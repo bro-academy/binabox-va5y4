@@ -14,8 +14,10 @@
     ],
     "hero_button": "Connect Wallet",
     "hero_link": "Whitelist now",
-    "image_src": "#",
-    "image_alt": "NFT box",
+    "image_src": "binabox-cube",
+    "image_alt": "Binabox cube illustration",
+    "image_width": "533.5",
+    "image_height": "641.8",
     "link_url": "#"
   },
   "catalog": {
@@ -25,35 +27,45 @@
     "see_all_url": "#",
     "products": [
       {
-        "image_src": "#",
-        "image_alt": "Echo of Bones picture",
+        "image_src": "echo-of-bones",
+        "image_alt": "Echo of Bones NFT artwork featuring a skeletal figure with glowing accents",
+        "image_width": "100%",
+        "image_height": "auto",
         "label": "New",
         "price": "$1990",
         "name": "Echo of Bones"
       },
       {
-        "image_src": "#",
-        "image_alt": "Nyx the Watcher picture",
+        "image_src": "nyx-the-watcher",
+        "image_alt": "Nyx the Watcher NFT artwork featuring a mysterious, shadowy figure with glowing eyes and intricate cybernetic details",
+        "image_width": "100%",
+        "image_height": "auto",
         "label": "New",
         "price": "$299.99",
         "name": "Nyx the Watcher"
       },
       {
-        "image_src": "#",
-        "image_alt": "Blade of Silence picture",
+        "image_src": "blade-of-silence",
+        "image_alt": "Blade of Silence NFT artwork featuring a pair of scissors resting on dark, silky fabric",
+        "image_width": "100%",
+        "image_height": "auto",
         "label": "Sold out",
         "price": "$20",
         "name": "Blade of Silence"
       },
       {
-        "image_src": "#",
-        "image_alt": "Data Core: Alpha picture",
+        "image_src": "data-core",
+        "image_alt": "Data Core: Alpha NFT artwork featuring a glowing core with intricate designs",
+        "image_width": "100%",
+        "image_height": "auto",
         "price": "$1.000.000",
         "name": "Data Core: Alpha"
       },
       {
-        "image_src": "#",
-        "image_alt": "Phantom Console picture",
+        "image_src": "phantom-console",
+        "image_alt": "Phantom Console NFT artwork featuring a futuristic console with sleek design",
+        "image_width": "100%",
+        "image_height": "auto",
         "price": "$199.5",
         "name": "Phantom Console"
       }
@@ -65,8 +77,10 @@
     "articles": [
       {
         "label": "NFT",
-        "image_src": "#",
-        "image_alt": "Neural Drift image",
+        "image_src": "neural-drift",
+        "image_width": "auto",
+        "image_height": "auto",
+        "image_alt": "Neural Drift NFT artwork featuring abstract neural patterns",
         "title": "Neural Drift",
         "excerpt": "I woke up inside the void. My body stayed in the past - only thoughts were allowed throug...",
         "author_icon": "#",
@@ -74,12 +88,15 @@
         "author_uppercase": true,
         "date_iso": "2022-12-04",
         "date": "04 Dec 2022",
-        "read_more_url": "#"
+        "read_more_url": "#",
+        "is_primary": true
       },
       {
         "label": "DROP",
-        "image_src": "#",
-        "image_alt": "Deadframe image",
+        "image_src": "echo-of-bones",
+        "image_width": "auto",
+        "image_height": "auto",
+        "image_alt": "Deadframe NFT artwork featuring a skeletal figure with glowing accents",
         "title": "Deadframe",
         "excerpt": "He just stood there, waiting. Not for a person - for a signal. Like the memory of the network...",
         "author_icon": "#",
@@ -87,12 +104,15 @@
         "author_uppercase": false,
         "date_iso": "2022-12-06",
         "date": "06 Dec 2022",
-        "read_more_url": "#"
+        "read_more_url": "#",
+        "is_primary": false
       },
       {
         "label": "NFT",
-        "image_src": "#",
-        "image_alt": "Glitch Panther image",
+        "image_src": "nyx-the-watcher",
+        "image_width": "auto",
+        "image_height": "auto",
+        "image_alt": "Glitch Panther NFT artwork featuring a digital panther",
         "title": "Glitch Panther",
         "excerpt": "Cats always knew more than they showed. Especially the ones that vanish into the code.",
         "author_icon": "#",
@@ -100,12 +120,15 @@
         "author_uppercase": false,
         "date_iso": "2022-12-07",
         "date": "07 Dec 2022",
-        "read_more_url": "#"
+        "read_more_url": "#",
+        "is_primary": false
       },
       {
         "label": "RARE",
-        "image_src": "#",
-        "image_alt": "Primal.exe image",
+        "image_src": "primal",
+        "image_width": "auto",
+        "image_height": "auto",
+        "image_alt": "Primal.exe NFT artwork featuring a gorilla with algorithmic patterns",
         "title": "Primal.exe",
         "excerpt": "We tried to resurrect the past. What we got was rage compressed into an algorithm.",
         "author_icon": "#",
@@ -113,12 +136,15 @@
         "author_uppercase": false,
         "date_iso": "2022-12-08",
         "date": "08 Dec 2022",
-        "read_more_url": "#"
+        "read_more_url": "#",
+        "is_primary": false
       },
       {
         "label": "ARTIFACT",
-        "image_src": "#",
-        "image_alt": "Retrocore image",
+        "image_src": "phantom-console",
+        "image_width": "auto",
+        "image_height": "auto",
+        "image_alt": "Retrocore NFT artwork featuring a vintage console",
         "title": "Retrocore",
         "excerpt": "This console comes from a game no one remembers how to play. But it's still powered on.",
         "author_icon": "#",
@@ -126,12 +152,15 @@
         "author_uppercase": false,
         "date_iso": "2022-12-09",
         "date": "09 Dec 2022",
-        "read_more_url": "#"
+        "read_more_url": "#",
+        "is_primary": true
       },
       {
         "label": "NFT",
-        "image_src": "#",
-        "image_alt": "White Protocol image",
+        "image_src": "white-protocol",
+        "image_width": "auto",
+        "image_height": "auto",
+        "image_alt": "White Protocol NFT artwork featuring a swan with a glowing aura",
         "title": "White Protocol",
         "excerpt": "At first it was a signal - clean, white, hypnotic. We didn't know it was alive.",
         "author_icon": "#",
@@ -139,7 +168,8 @@
         "author_uppercase": false,
         "date_iso": "2022-06-20",
         "date": "20 Jun 2022",
-        "read_more_url": "#"
+        "read_more_url": "#",
+        "is_primary": false
       }
     ]
   },
@@ -170,7 +200,10 @@
     "title": "Our team",
     "members": [
       {
-        "photo": "#",
+        "image_src": "nova-riven",
+        "image_alt": "Nova Riven portrait",
+        "image_width": "120px",
+        "image_height": "120px",
         "name": "Nova Riven",
         "role": "Creative Architect",
         "socials": [
@@ -197,7 +230,10 @@
         ]
       },
       {
-        "photo": "#",
+        "image_src": "echo-zero",
+        "image_alt": "Echo Zero portrait",
+        "image_width": "120px",
+        "image_height": "120px",
         "name": "Echo Zero",
         "role": "Tech Whisperer",
         "socials": [
@@ -224,7 +260,10 @@
         ]
       },
       {
-        "photo": "#",
+        "image_src": "kairo-null",
+        "image_alt": "Kairo Null portrait",
+        "image_width": "120px",
+        "image_height": "120px",
         "name": "Kairo Null",
         "role": "Lore Engineer",
         "socials": [
@@ -251,7 +290,10 @@
         ]
       },
       {
-        "photo": "#",
+        "image_src": "dr-wex-omega",
+        "image_alt": "Dr. Wex Omega portrait",
+        "image_width": "120px",
+        "image_height": "120px",
         "name": "Dr. Wex Omega",
         "role": "Visual Disruptor",
         "socials": [
@@ -283,7 +325,10 @@
         ]
       },
       {
-        "photo": "#",
+        "image_src": "synthya-void",
+        "image_alt": "Synthya Void portrait",
+        "image_width": "120px",
+        "image_height": "120px",
         "name": "Synthya Void",
         "role": "UX Seer",
         "socials": [
@@ -295,7 +340,10 @@
         ]
       },
       {
-        "photo": "#",
+        "image_src": "mirlo-drift",
+        "image_alt": "Mirlo Drift portrait",
+        "image_width": "120px",
+        "image_height": "120px",
         "name": "Mirlo Drift",
         "role": "Community Catalyst",
         "socials": [
@@ -327,7 +375,10 @@
         ]
       },
       {
-        "photo": "#",
+        "image_src": "axon-rune",
+        "image_alt": "Axon Rune portrait",
+        "image_width": "120px",
+        "image_height": "120px",
         "name": "Axon Rune",
         "role": "Security Ghost",
         "socials": [

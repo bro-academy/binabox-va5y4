@@ -1,0 +1,24 @@
+{% macro picture(classes, src, width, height, alt, isPng) %}
+	{% if isPng %}
+		{% set fallBackFormat = 'png' %}
+	{% else %}
+		{% set fallBackFormat = 'jpg' %}
+	{% endif %}
+
+	<picture class="{{ classes }}">
+		<source srcset="src/assets/images/{{ src }}.webp" type="image/webp" width="{{ width }}" height="{{ height }}">
+		<img src="src/assets/images/{{ src }}.{{fallBackFormat}}" alt="{{ alt }}" width="{{ width }}" height="{{ height }}">
+	</picture>
+{% endmacro %}
+
+{# Example Usage: #}
+{#
+{{ picture(
+    classes='example-picture',
+    src='example-image',
+    width='300',
+    height='200',
+    alt='An example image',
+    isPng=false
+) }}
+#}

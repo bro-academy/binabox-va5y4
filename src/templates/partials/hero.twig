@@ -9,5 +9,12 @@
 	</dl>
 	<button type="button" class="button hero__button">{{ index.hero_button }}</button>
 	<a href="{{ index.link_url }}" class="button button--secondary hero__link">{{ index.hero_link }}</a>
-	<img src="{{ index.image_src }}" alt="{{ index.image_alt }}" class="hero__image">
+	{{ picture_macro.picture(
+        'hero__image',
+        index.image_src,
+        index.image_width,
+        index.image_height,
+		index.image_alt,
+        "true"
+    ) }}
 </section>

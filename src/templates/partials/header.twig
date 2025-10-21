@@ -1,3 +1,5 @@
+{% from '/ui/icon.twig' import icon %}
+
 <header class="header">
 	<a href="{{ header.home_url }}" class="link logo header__logo-link">
 		<img src="{{ header.logo_url }}" alt="{{ header.logo_alt }}" class="logo header__logo-image">
@@ -36,7 +38,8 @@
 			<img src="{{ header.discord_icon }}" alt="{{ header.discord_alt }}" class="header__discord-icon">
 			{{ header.discord_label }}
 		</a>
-		<button type="button" class="button header__login-button">
+		<button
+			type="button" class="button header__login-button">
 			<img src="{{ header.login_icon }}" alt="{{ header.login_alt }}" class="header__login-icon">
 			{{ header.login_label }}
 		</button>

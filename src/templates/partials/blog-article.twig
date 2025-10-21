@@ -1,6 +1,13 @@
 <article class="article">
 	<figure class="article__hero">
-		<img src="{{ article.hero_image }}" alt="{{ article.hero_image_alt }}" class="article__hero-image">
+		{{ picture_macro.picture(
+        'article__hero-image',
+        article.image_src,
+        article.image_width,
+        article.image_height,
+		article.image_alt,
+        false
+    ) }}
 		<figcaption class="article__hero-caption">{{ article.hero_caption }}</figcaption>
 	</figure>
 	<header class="article__header">
@@ -29,7 +36,14 @@
 	{% include './blog-article-quote.twig' with { quote: article.quote } %}
 	{% for figure in article.figures %}
 		<figure class="article__figure">
-			<img src="{{ figure.image }}" alt="{{ figure.alt }}" class="article__image">
+			{{ picture_macro.picture(
+        'article__image',
+        figure.image_src,
+        figure.image_width,
+        figure.image_height,
+		figure.image_alt,
+        false
+    ) }}
 			<figcaption class="article__caption">{{ figure.caption }}</figcaption>
 		</figure>
 	{% endfor %}
