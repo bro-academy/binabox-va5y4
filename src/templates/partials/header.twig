@@ -2,8 +2,8 @@
 
 <header class="header">
 	<a href="{{ header.home_url }}" class="link logo header__logo-link">
-    {{ icon('logo header__logo-image', 'binabox-logo-blue', 188, 42) }}
-</a>
+		<img src="/src/assets/icons/binabox-logo.svg" alt="Binabox logo" class="logo header__logo-image" width="188" height="42"/>
+	</a>
 	<nav class="header__nav">
 		<ul class="navigation">
 			{% for item in header.navigation_items %}
@@ -39,8 +39,7 @@
 			{{ icon('header__discord-icon', 'discord', 22, 16) }}
 			{{ header.discord_label }}
 		</a>
-		<button
-			type="button" class="button header__login-button">
+		<button type="button" class="button header__login-button">
 			{{ icon('header__login-icon', 'login', 24, 24) }}
 			{{ header.login_label }}
 		</button>

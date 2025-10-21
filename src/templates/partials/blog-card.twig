@@ -1,3 +1,5 @@
+{% from '/ui/icon.twig' import icon %}
+
 <article class="blog-card">
 	<span class="blog-card__label label">{{ blog.label }}</span>
 	{{ picture_macro.picture(
@@ -10,9 +12,10 @@
 	) }}
 	<h2 class="blog-card__title title title--h2">{{ blog.title }}</h2>
 	<p class="blog-card__excerpt">{{ blog.excerpt }}</p>
-	<img src="{{ blog.author_icon }}" alt="Author icon" class="blog-card__author-icon">
+	{{ icon('blog-card__author-icon', 'author-icon', '16', '16') }}
 	<span class="blog-card__author{% if blog.author_uppercase %} blog-card__author--uppercase{% endif %}">{{ blog.author }}</span>
 	<span class="blog-card__separator separator"></span>
 	<time class="blog-card__date" datetime="{{ blog.date_iso }}">{{ blog.date }}</time>
-	<a href="{{ blog.read_more_url }}" class="button button--secondary blog-card__read-more">Read more &gt;</a>
+	<a href="{{ blog.read_more_url }}" class="button button--secondary blog-card__read-more">Read more
+		{{ icon('blog-card__read-more-icon', 'right-arrow', '8', '14') }}</a>
 </article>

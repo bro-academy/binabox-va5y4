@@ -6,8 +6,12 @@
 		<div class="catalog__divider separator separator__catalog"></div>
 		<a href="{{ catalog.see_all_url }}" class="button button--secondary catalog__see-all">See all</a>
 		<span class="catalog__separator separator"></span>
-		<button type="button" aria-label="Previous catalog item" class="button button--secondary catalog__nav-button">&lt;</button>
-		<button type="button" aria-label="Next catalog item" class="button button--secondary catalog__nav-button">&gt;</button>
+		<button type="button" aria-label="Previous catalog item" class="button button--secondary catalog__nav-button">
+			{{ icon('catalog__nav-icon', 'left-arrow', 8, 14) }}
+		</button>
+		<button type="button" aria-label="Next catalog item" class="button button--secondary catalog__nav-button">
+			{{ icon('catalog__nav-icon', 'right-arrow', 8, 14) }}
+		</button>
 	</div>
 	<ul class="catalog__list">
 		{% for product in catalog.products %}

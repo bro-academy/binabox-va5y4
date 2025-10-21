@@ -19,4 +19,12 @@
             object-fit: cover;
         }
     }
+
+    &__social-icon {
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: rgba(56, 146, 243, 1);
+        }
+    }
 }

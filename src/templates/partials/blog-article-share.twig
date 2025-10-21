@@ -1,8 +1,10 @@
+{% from '/ui/icon.twig' import icon %}
+
 <section class="article__share">
 	<span class="article__share-title">Share:</span>
 	{% for share in article.shares %}
 		<a href="{{ share.url }}" class="button button--secondary article__share-link">
-			<img src="{{ share.icon }}" alt="{{ share.label }} icon" class="article__share-icon">
+			{{ icon('article__share-icon', share.icon, 24, 24) }}
 		</a>
 	{% endfor %}
 </section>

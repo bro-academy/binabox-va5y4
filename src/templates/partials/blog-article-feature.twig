@@ -1,4 +1,4 @@
 <li class="article__feature">
-	<img src="{{ feature.icon }}" alt="{{ feature.icon_alt }}" class="article__feature-icon">
+	{{ icon_macro.icon('article__feature-icon', "binabox-icon", '24', '24') }}
 	<p class="article__feature-text">{{ feature.text }}</p>
 </li>

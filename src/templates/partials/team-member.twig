@@ -12,7 +12,7 @@
 	<div class="employee__member-socials">
 		{% for social in member.socials %}
 			<a href="{{ social.url }}" aria-label="{{ social.label }}" class="employee__social-link">
-				<img src="{{ social.icon|replace({'src/assets/icons/':'src/assets/icons/'}) }}" alt="{{ social.label }} icon" class="employee__social-icon">
+				{{ icon_macro.icon('employee__social-icon', social.icon, '40', '40') }}
 			</a>
 		{% endfor %}
 	</div>
