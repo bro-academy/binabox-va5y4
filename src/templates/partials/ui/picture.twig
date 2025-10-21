@@ -1,13 +1,13 @@
 {% macro picture(classes, src, width, height, alt, isPng) %}
 	{% if isPng %}
-		{% set fallBackFormat = 'image/png' %}
+		{% set fallBackFormat = 'png' %}
 	{% else %}
-		{% set fallBackFormat = 'image/jpeg' %}
+		{% set fallBackFormat = 'jpg' %}
 	{% endif %}
 
 	<picture class="{{ classes }}">
 		<source srcset="src/assets/images/{{ src }}.webp" type="image/webp" width="{{ width }}" height="{{ height }}">
-		<img src="{{ src }}.{{fallBackFormat}}" alt="{{ alt }}" width="{{ width }}" height="{{ height }}">
+		<img src="src/assets/images/{{ src }}.{{fallBackFormat}}" alt="{{ alt }}" width="{{ width }}" height="{{ height }}">
 	</picture>
 {% endmacro %}
 
