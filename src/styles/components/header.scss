@@ -1,13 +1,16 @@
 .header {
-    display: flex;
-    flex-direction: row;
     background-color: var(--color-bg-main);
-    justify-content: space-between;
-    padding: 32px;
-    width: 100%;
-    box-sizing: border-box;
-    align-items: center;
-    height: auto;
+
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        padding: 0 32px;
+    }
 
 
 
