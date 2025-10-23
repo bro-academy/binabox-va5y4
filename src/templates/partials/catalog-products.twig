@@ -1,3 +1,5 @@
+{% from '/ui/icon.twig' import icon %}
+
 <section class="catalog-products">
 	<h2 class="catalog-products__title">{{ catalog_products.title }}</h2>
 
@@ -24,7 +26,7 @@
 
 	<div class="catalog-products__tags">
 		{% for tag in catalog_products.tags %}
-			<button class="catalog-products__tag" name="tag" value="{{ tag }}">{{ tag }}</button>
+			<button class="catalog-products__tag" name="tag" value="{{ tag }}">{{ tag }}{{ icon('article__close-icon', 'close', 16, 16) }}</button>
 		{% endfor %}
 		<div class="catalog-products__clear-all-wrapper">
 			<button class="catalog-products__clear-all" type="button">Clear all</button>
@@ -45,7 +47,7 @@
 					) }}
 					<div class="product-card__hover-menu">
 						<button class="product-card__favourites">
-							<span>♡</span>
+							<span>{{ icon('product-card__favourites-icon', 'favourites', 24, 24) }}</span>
 							Favourites</button>
 						<button class="product-card__buy button">Buy</button>
 					</div>
