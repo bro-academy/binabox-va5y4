@@ -113,24 +113,4 @@
             background: transparent;
         }
     }
-
-    &--secondary.catalog__nav-button {
-        svg.icon {
-            /* Paths in sprite use fill="currentColor" so drive via color */
-            color: currentColor;
-            fill: currentColor;
-            /* fallback */
-            transition: color 0.3s ease, fill 0.3s ease;
-        }
-
-        &:hover {
-            background-color: var(--color-marina-800);
-
-            svg.icon {
-                color: rgba(13, 13, 13, 1);
-                fill: currentColor;
-                /* keep in sync */
-            }
-        }
-    }
 }
