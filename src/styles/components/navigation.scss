@@ -26,4 +26,9 @@
             border-bottom: var(--border-width) solid var(--color-marina-800);
         }
     }
+
+    &__icon {
+        transform: translate(2px, 8px);
+
+    }
 }
