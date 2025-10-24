@@ -34,3 +34,11 @@ a {
     color: inherit;
 
 }
+
+.container {
+    max-width: var(--width-article);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 64px;
+    box-sizing: border-box;
+}

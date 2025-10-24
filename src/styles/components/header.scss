@@ -1,16 +1,12 @@
 .header {
     background-color: var(--color-bg-main);
-
-
-    .container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-        height: auto;
-        box-sizing: border-box;
-        padding: 0 32px;
-    }
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    padding: 0 32px;
+    box-sizing: border-box;
 
 
 
