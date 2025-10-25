@@ -2,7 +2,7 @@
 
 <header class="header">
 	<a href="{{ header.home_url }}" class="link logo header__logo-link">
-		<img src="{{ header.logo_url }}" alt="{{ header.logo_alt }}" class="logo header__logo-image">
+		<img src="/src/assets/icons/binabox-logo.svg" alt="Binabox logo" class="logo header__logo-image" width="188" height="42"/>
 	</a>
 	<nav class="header__nav">
 		<ul class="navigation">
@@ -17,7 +17,8 @@
 				{% set page_label = page_map[current_page]|default(current_page)|lower|replace({' ': ''}) %}
 				{% set item_key = item.label|lower|replace({' ': ''}) %}
 				<li class="navigation__item">
-					<a href="{{ item.url }}" class="link navigation__link{% if item_key == page_label %} navigation__link--active{% endif %}">{{ item.label }}</a>
+					<a href="{{ item.url }}" class="link navigation__link{% if item_key == page_label %} navigation__link--active{% endif %}">{{ item.label }}
+						{{ icon('navigation__icon', "nav-arrow", 24, 24) }}</a>
 				</li>
 			{% endfor %}
 		</ul>
@@ -28,19 +29,18 @@
 			<div class="header__search-wrapper">
 				<input type="search" id="search" name="search" placeholder="{{ header.search_placeholder }}" class="header__search">
 				<span class="header__search-icon">
-					<img src="#" alt="Search Icon">
+					{{ icon('header__search-icon', 'search', 24, 24) }}
 				</span>
 				<button type="submit" class="visually-hidden">{{ header.search_submit_label|default('Search') }}</button>
 			</div>
 		</form>
 		<span class="header__separator separator"></span>
 		<a href="{{ header.discord_url }}" class="button button--secondary header__discord-link">
-			<img src="{{ header.discord_icon }}" alt="{{ header.discord_alt }}" class="header__discord-icon">
+			{{ icon('header__discord-icon', 'discord', 24, 24) }}
 			{{ header.discord_label }}
 		</a>
-		<button
-			type="button" class="button header__login-button">
-			<img src="{{ header.login_icon }}" alt="{{ header.login_alt }}" class="header__login-icon">
+		<button type="button" class="button header__login-button">
+			{{ icon('header__login-icon', 'login', 24, 24) }}
 			{{ header.login_label }}
 		</button>
 	</div>

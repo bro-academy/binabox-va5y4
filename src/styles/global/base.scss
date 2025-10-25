@@ -21,6 +21,14 @@ body {
     max-width: 1728px;
 }
 
+/* Add vector background on all pages except the index */
+body:not(.index-page) {
+    background-image: url('/src/assets/icons/hero-radial.svg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: var(--gradient-radial-size);
+}
+
 
 ul {
     list-style: none;
@@ -29,5 +37,5 @@ ul {
 a {
     text-decoration: none;
     color: inherit;
-
+    display: inline-block;
 }
