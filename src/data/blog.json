@@ -186,17 +186,17 @@
             {
                 "url": "#",
                 "label": "Twitter",
-                "icon": "#"
+                "icon": "twitter"
             },
             {
                 "url": "#",
                 "label": "Facebook",
-                "icon": "#"
+                "icon": "facebook"
             },
             {
                 "url": "#",
                 "label": "Instagram",
-                "icon": "#"
+                "icon": "instagram"
             }
         ]
     }

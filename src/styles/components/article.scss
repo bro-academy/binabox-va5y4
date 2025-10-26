@@ -36,6 +36,12 @@
         color: var(--color-white-bg);
     }
 
+    /* Icons rendered from the sprite inherit currentColor; set explicit blue */
+    &__feature-icon {
+        color: var(--color-marina-800);
+        /* rgba(2, 101, 220, 1) */
+    }
+
     &__quote-text {
         font-size: var(--font-size-heading-3);
         line-height: var(--line-height-heading-3);

@@ -19,4 +19,18 @@
             object-fit: cover;
         }
     }
+
+    &__social-icon {
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: rgba(56, 146, 243, 1);
+        }
+
+        &:focus {
+            color: rgba(56, 146, 243, 0.8);
+            outline: 2px solid var(--color-marina-hover);
+            outline-offset: 2px;
+        }
+    }
 }

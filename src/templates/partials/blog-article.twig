@@ -14,10 +14,10 @@
 		<h2 class="article__title title title--h2" id="{{ article.title|replace({' ': '-'})|lower }}">{{ article.title }}</h2>
 		<span class="button article__category">{{ article.category }}</span>
 		<span class="article__author">
-			<img src="{{ article.author_avatar }}" alt="Author profile picture" class="article__author-avatar">
+			{{ icon_macro.icon('article__author-avatar', 'author-icon', '16', '16') }}
 			<a href="{{ article.author_url }}" class="article__author-link">{{ article.author }}</a>
 		</span>
-		<img src="{{ article.date_icon }}" alt="Date icon" class="article__date-icon">
+		{{ icon_macro.icon('article__date-icon', 'date-icon', '16', '16') }}
 		<time datetime="{{ article.date_iso }}" class="article__date">{{ article.date }}</time>
 	</header>
 	{% for paragraph in article.paragraphs %}
