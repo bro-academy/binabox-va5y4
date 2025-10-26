@@ -33,7 +33,16 @@
         color: var(--color-text-muted);
     }
 
+    &__wrapper {
+        width: 100%;
+        height: auto;
+        gap: 32px;
+    }
 
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
 
 
 }

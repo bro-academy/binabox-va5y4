@@ -5,7 +5,8 @@
 	{% include '../partials/head.twig' %}
 	<body {% if current_page == 'index' %} class="index-page" {% endif %}>
 		{% include '../partials/header.twig' %}
-		{% block content %}{% endblock %}
-		{% include '../partials/footer.twig' %}
-	</body>
-</html>
+		<div class="container"> {% block content %}{% endblock %}
+			</div>
+			{% include '../partials/footer.twig' %}</body>
+	</html>
+</div></body></html>
