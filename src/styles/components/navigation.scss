@@ -1,26 +1,21 @@
 .navigation {
     display: flex;
     flex-direction: row;
-    width: fit-content;
-    height: fit-content;
-    padding: 0;
-    gap: 0;
-}
-
-.navigation {
-    display: flex;
-    gap: var(--gap-lg);
+    width: auto;
+    height: auto;
 
     &__link {
         font-weight: var(--font-weight-semibold);
         font-size: var(--font-size-medium);
         line-height: 1.2;
-        padding-bottom: var(--border-width);
+        padding: 8px 20px;
         border: 0;
         border-width: 0;
         border-style: none;
         border-color: transparent;
         border-bottom: 0;
+
+
 
         &--active {
             border-bottom: var(--border-width) solid var(--color-marina-800);
