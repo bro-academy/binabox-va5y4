@@ -21,6 +21,8 @@
     }
 
     &__social-icon {
+        padding: 12px;
+        gap: 8px;
         transition: color 0.3s ease;
 
         &:hover {
@@ -32,5 +34,10 @@
             outline: 2px solid var(--color-marina-hover);
             outline-offset: 2px;
         }
+    }
+
+    &__member-socials {
+        display: flex;
+        gap: 8px;
     }
 }

@@ -2,12 +2,13 @@
 
     display: flex;
     flex-direction: column;
-    padding-top: 64px;
+    padding: 64px;
+    gap: 40px;
 
     &__header {
         display: flex;
         flex-direction: row;
-        gap: 0 32px;
+        gap: 32px;
         align-items: center;
         margin-bottom: 24px;
         width: 95%;
@@ -36,5 +37,10 @@
                 /* keep in sync */
             }
         }
+    }
+
+    &__list {
+        gap: 24px;
+        display: grid;
     }
 }

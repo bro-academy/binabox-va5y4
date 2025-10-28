@@ -1,7 +1,6 @@
 .blog-card {
     background-color: var(--color-bg-alt2);
-    margin-bottom: var(--padding-xl);
-    padding: var(--padding-xl);
+    gap: 32px;
 
     &__excerpt {
         font-size: var(--font-size-medium);
@@ -27,11 +26,25 @@
         color: var(--color-text-muted);
     }
 
-    &__image img {
-        object-fit: cover;
-        width: 100%;
-        height: auto;
-        border-radius: var(--border-radius);
+    &__image {
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: auto;
+            border-radius: var(--border-radius);
+        }
+
+        &--primary img {
+            height: 400px;
+        }
+
+        &--secondary img {
+            height: 200px;
+        }
     }
 
+    // Make cards with primary images span 2 rows
+    &:has(.blog-card__image--primary) {
+        grid-row: span 2;
+    }
 }

@@ -3,7 +3,7 @@
 <article class="blog-card">
 	<span class="blog-card__label label">{{ blog.label }}</span>
 	{{ picture_macro.picture(
-		'blog-card__image{% if blog.is_primary %} blog-card__image--primary{% else %} blog-card__image--secondary{% endif %}',
+		'blog-card__image',
 		blog.image_src,
 		blog.image_width,
 		blog.image_height,
