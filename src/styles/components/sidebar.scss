@@ -8,7 +8,31 @@
         line-height: var(--line-height-small);
     }
 
-    &__tag {
-        display: inline-block;
+    &__item {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+        height: auto;
+    }
+
+    &__tags {
+        display: flex;
+        flex-direction: column;
+        padding: 24px;
+        gap: 16px;
+        max-height: 184px;
+        max-width: 328px;
+    }
+
+    &__tags-list {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
     }
 }
