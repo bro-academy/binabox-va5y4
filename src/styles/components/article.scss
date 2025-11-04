@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
+    max-width: 1024px;
 
     &__hero-caption {
         font-weight: var(--font-weight-medium);
@@ -126,5 +127,20 @@
 
     &__header-wrapper {
         margin-bottom: 2em;
+    }
+
+    &__feature {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: -3em;
+    }
+
+    &__features {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: fit-content;
+        height: fit-content;
     }
 }
