@@ -11,8 +11,10 @@
 		<figcaption class="article__hero-caption">{{ article.hero_caption }}</figcaption>
 	</figure>
 	<header class="article__header">
-		<h2 class="article__title title title--h2" id="{{ article.title|replace({' ': '-'})|lower }}">{{ article.title }}</h2>
-		<span class="button article__category">{{ article.category }}</span>
+		<div class="article__header-wrapper">
+			<h2 class="article__title title title--h2" id="{{ article.title|replace({' ': '-'})|lower }}">{{ article.title }}</h2>
+			<span class="button article__category">{{ article.category }}</span>
+		</div>
 		<span class="article__author">
 			{{ icon_macro.icon('article__author-avatar', 'author-icon', '16', '16') }}
 			<a href="{{ article.author_url }}" class="article__author-link">{{ article.author }}</a>

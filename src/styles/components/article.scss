@@ -1,9 +1,15 @@
 .article {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
     &__hero-caption {
         font-weight: var(--font-weight-medium);
         font-size: var(--font-size-medium);
         line-height: var(--line-height-medium);
         color: var(--color-white-bg);
+        transform: translate(20px, -55px);
+
     }
 
 
@@ -23,12 +29,14 @@
     &__text {
         font-size: var(--font-size-large);
         color: var(--color-white-bg);
+        margin-bottom: -3em;
     }
 
     &__list {
         font-size: var(--font-size-large);
         color: var(--color-white-bg);
         list-style: disc;
+        margin-top: 3em;
     }
 
     &__feature-text {
@@ -76,6 +84,7 @@
         font-size: var(--font-size-medium);
         line-height: var(--line-height-medium);
         color: var(--color-white-bg);
+        transform: translate(20px, -55px);
     }
 
     &__subtitle {
@@ -113,5 +122,9 @@
             object-fit: cover;
             filter: hue-rotate(60deg) saturate(2) brightness(1);
         }
+    }
+
+    &__header-wrapper {
+        margin-bottom: 2em;
     }
 }

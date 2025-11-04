@@ -1,4 +1,10 @@
 .sidebar {
+    display: flex;
+    gap: 21px;
+    flex-direction: column;
+    max-width: 328px;
+    min-height: 384px;
+
     &__title {
         font-family: var(--font-family-secondary);
     }
@@ -22,17 +28,29 @@
     }
 
     &__tags {
-        display: flex;
-        flex-direction: column;
-        padding: 24px;
-        gap: 16px;
-        max-height: 184px;
-        max-width: 328px;
+        background-color: rgba(29, 28, 40, 1);
     }
 
     &__tags-list {
         display: flex;
         flex-direction: row;
         gap: 8px;
+        flex-wrap: wrap;
+
     }
+
+    &__tag {
+        height: 32px;
+        min-width: 50px;
+        padding: 6px 12px;
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__categories {
+        background-color: rgba(29, 28, 40, 1);
+    }
+
 }
