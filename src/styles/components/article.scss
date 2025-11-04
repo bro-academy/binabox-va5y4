@@ -4,6 +4,22 @@
     gap: 32px;
     max-width: 1024px;
 
+    // Add gap between paragraphs
+    p+p {
+        margin-top: 3em;
+    }
+
+    // Remove gap between paragraphs with .no-gap class
+    p.no-gap+p,
+    p+p.no-gap {
+        margin-top: 0;
+    }
+
+    // Remove gap between consecutive .article__text paragraphs
+    .article__text+.article__text {
+        margin-top: 1em;
+    }
+
     &__hero-caption {
         font-weight: var(--font-weight-medium);
         font-size: var(--font-size-medium);
@@ -89,8 +105,7 @@
     }
 
     &__subtitle {
-        letter-spacing: 0;
-        font-family: var(--font-family-secondary);
+        margin-bottom: -1em;
     }
 
     &__link {
@@ -142,5 +157,37 @@
         gap: 8px;
         width: fit-content;
         height: fit-content;
+    }
+
+    &__tags {
+        margin-top: 3em;
+        gap: 12px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__tag {
+        min-width: 50px;
+        height: 32px;
+    }
+
+    &__share {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+    }
+
+    &__footer {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 4em;
+
+        /* Ensure footer children don't keep extra top margin and stay on one line */
+        >.article__tags,
+        >.article__share {
+            margin-top: 3em;
+        }
     }
 }

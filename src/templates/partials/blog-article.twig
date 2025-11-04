@@ -53,9 +53,10 @@
 		<h3 class="article__subtitle title title--h3" id="{{ subtitle|replace({' ': '-'})|lower }}">{{ subtitle }}</h3>
 		{% for paragraph in article.subparagraphs[idx] %}
 			<p class="article__text">{{ paragraph|raw }}</p>
-			<br>
 		{% endfor %}
 	{% endfor %}
-	{% include './blog-article-tags.twig' with { article: article } %}
-	{% include './blog-article-share.twig' with { article: article } %}
+	<div class="article__footer">
+		{% include './blog-article-tags.twig' with { article: article } %}
+		{% include './blog-article-share.twig' with { article: article } %}
+	</div>
 </article>
