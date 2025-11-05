@@ -1,6 +1,6 @@
 .footer {
     background-color: var(--color-footer-bg);
-
+    padding: 64px 64px 32px;
 
     &__description {
         line-height: var(--line-height-small);
@@ -30,5 +30,43 @@
         &:hover {
             color: rgba(56, 146, 243, 1);
         }
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    &__nav-wrapper {
+        display: flex;
+        gap: 64px;
+        align-items: flex-start;
+    }
+
+    &__nav {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__nav-columns {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        gap: 24px 48px;
+    }
+
+    &__nav-list {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__nav-title {
+        display: block;
+        width: 100%;
     }
 }
