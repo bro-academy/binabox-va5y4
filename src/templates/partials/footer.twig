@@ -30,12 +30,14 @@
 			</nav>
 		</div>
 	</div>
-	<p class="footer__copyright">{{ footer.copyright }}</p>
-	<address class="footer__socials">
-		{% for social in footer.socials %}
-			<a href="{{ social.href }}" aria-label="{{ social.label }}" class="footer__social-link">
-				{{ icon('footer__social-icon', social.label|lower, '24', '24') }}
-			</a>
-		{% endfor %}
-	</address>
+	<div class="footer__bottom">
+		<p class="footer__copyright">{{ footer.copyright }}</p>
+		<address class="footer__socials">
+			{% for social in footer.socials %}
+				<a href="{{ social.href }}" aria-label="{{ social.label }}" class="footer__social-link">
+					{{ icon('footer__social-icon', social.label|lower, '24', '24') }}
+				</a>
+			{% endfor %}
+		</address>
+	</div>
 </footer>
