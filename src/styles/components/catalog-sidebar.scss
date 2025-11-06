@@ -1,9 +1,11 @@
 .catalog-sidebar {
     &__fieldset {
         border: 0;
-        padding: 0;
-        margin: 0;
-        min-inline-size: 0;
+        padding: 24px;
+        background-color: rgba(29, 28, 40, 1);
+        backdrop-filter: blur(20px);
+        max-width: 320px;
+        max-height: fit-content;
     }
 
     &__form {
@@ -16,6 +18,7 @@
         margin-bottom: 1.5rem;
         border: none;
         padding: 0;
+        position: relative;
     }
 
     &__title {
@@ -23,6 +26,41 @@
         font-weight: 600;
         margin-bottom: 0.5rem;
         cursor: pointer;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        padding-right: 32px;
+
+        &::-webkit-details-marker {
+            display: none;
+        }
+
+        /* Circle border */
+        &::before {
+            content: '+';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(245, 248, 251, 1);
+            font-size: 18px;
+            line-height: 1;
+            font-weight: 400;
+        }
+    }
+
+    /* Change plus to minus when open */
+    &__group[open] &__title::before {
+        content: '−';
     }
 
     &__list {

@@ -19,6 +19,7 @@
 @import "./label.scss";
 @import "./link.scss";
 @import "./navigation.scss";
+@import "./page-header.scss";
 @import "./product-card.scss";
 @import "./product.scss";
 @import "./radio.scss";
