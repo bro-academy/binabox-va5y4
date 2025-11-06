@@ -32,6 +32,9 @@
         justify-content: space-between;
         position: relative;
         padding-right: 32px;
+        border-bottom: 1px solid rgba(191, 197, 238, 0.12);
+        padding-bottom: 16px;
+        margin-bottom: 16px;
 
         &::-webkit-details-marker {
             display: none;
