@@ -1,4 +1,7 @@
 .catalog-sidebar {
+    max-width: 320px;
+    max-height: 1142px;
+
     &__fieldset {
         border: 0;
         padding: 24px;
@@ -11,11 +14,11 @@
     &__form {
         display: flex;
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 21px;
     }
 
     &__group {
-        margin-bottom: 1.5rem;
+        margin-bottom: 21px;
         border: none;
         padding: 0;
         position: relative;
@@ -80,8 +83,4 @@
         margin-bottom: 0.5rem;
     }
 
-    &__apply-btn {
-        margin-top: 1rem;
-        align-self: flex-start;
-    }
 }

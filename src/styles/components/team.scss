@@ -1,0 +1,17 @@
+.team {
+    &__list {
+        display: flex;
+        max-width: 1600px;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    &__member {
+        width: 320px; // Fixed width for each card
+    }
+
+    &__title {
+        text-align: center;
+    }
+}
