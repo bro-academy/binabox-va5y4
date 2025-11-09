@@ -4,10 +4,61 @@
   gap: 24px;
 
   &__image {
-    width: 100%;
-    max-width: 252.8px;
-    height: 324px;
-    object-fit: cover;
-    display: block;
+    position: relative;
+
+    img {
+      width: 100%;
+      max-width: 252.8px;
+      height: 324px;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Only position the base `.label` here so the project's label styles
+       (defined in components/label.scss) remain intact. */
+    .label {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      z-index: 10;
+    }
+
+    /* Reinforce the secondary label appearance on product pages */
+    .label--secondary {
+      background-color: var(--color-label-secondary-bg);
+      color: var(--color-label-secondary-text);
+    }
+
+    /* stronger specificity for sold-out badge on product pages */
+    .product__media .label.label--secondary,
+    .product__image .label.label--secondary,
+    .product .label.label--secondary {
+      background-color: var(--color-label-secondary-bg) !important;
+      color: var(--color-label-secondary-text) !important;
+    }
+  }
+
+  &__media {
+    position: relative;
+
+    /* Keep visuals from `components/label.scss` — only position here. */
+    .label {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      z-index: 10;
+    }
+
+    .label--secondary {
+      background-color: var(--color-label-secondary-bg);
+      color: var(--color-label-secondary-text);
+    }
+
+    .product__media .label.label--secondary,
+    .product__image .label.label--secondary,
+    .product .label.label--secondary {
+      background-color: var(--color-label-secondary-bg) !important;
+      color: var(--color-label-secondary-text) !important;
+    }
   }
 }

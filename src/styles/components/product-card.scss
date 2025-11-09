@@ -1,6 +1,22 @@
 .product-card {
   &__image-container {
     position: relative;
+
+    /* Position the generic .label inside the image container so the brand/style
+       from `components/label.scss` is preserved. Only positioning is applied here. */
+    .label {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      z-index: 10;
+    }
+
+    /* Ensure 'label--secondary' (e.g. sold out) keeps the project's red styling
+       even if other rules are present. Scoped here for specificity. */
+    .label--secondary {
+      background-color: var(--color-label-secondary-bg);
+      color: var(--color-label-secondary-text);
+    }
   }
 
   &__hover-menu {

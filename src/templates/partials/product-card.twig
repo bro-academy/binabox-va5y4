@@ -1,25 +1,27 @@
 {% import 'ui/picture.twig' as picture_macro %}
 
 <li class='product'>
-  <a href='{{ product.link }}'>
-    {{
-      picture_macro.picture(
-      'product__image',
-      product.image_src,
-      product.image_width,
-      product.image_height,
-      product.image_alt,
-      false
-      )
-    }}
-  </a>
-  {% if product.label %}
-    <span class='product__label label{% if product.label|lower == 'sold out' %} label--secondary{% endif %}'>
-      {{- product.label -}}
-    </span>
-  {% endif %}
-  {% if product.price %}
-    <span class='product__price'>{{ product.price }}</span>
-  {% endif %}
-  <span class='product__name'>{{ product.name }}</span>
+	<a href='{{ product.link }}'>
+		<div class="product__media">
+			{{
+				picture_macro.picture(
+				'product__image',
+				product.image_src,
+				product.image_width,
+				product.image_height,
+				product.image_alt,
+				false
+				)
+			}}
+			{% if product.label %}
+				<span class='product__label label{% if product.label|trim|lower == 'sold out' %} label--secondary{% endif %}'>
+					{{- product.label -}}
+				</span>
+			{% endif %}
+		</div>
+	</a>
+	{% if product.price %}
+		<span class='product__price'>{{ product.price }}</span>
+	{% endif %}
+	<span class='product__name'>{{ product.name }}</span>
 </li>

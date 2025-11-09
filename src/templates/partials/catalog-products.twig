@@ -60,9 +60,11 @@
             <button class='product-card__buy button'>Buy</button>
           </div>
         </div>
-        <span class='product-card__label label{% if product.label|lower == 'sold out' %} label--secondary{% endif %}'>
-          {{- product.label -}}
-        </span>
+        {% if product.label %}
+          <span class='product-card__label label{% if product.label|trim|lower == 'sold out' %} label--secondary{% endif %}'>
+            {{- product.label -}}
+          </span>
+        {% endif %}
         <h2 class='title title--h2 product-card__price'>{{ product.price }}</h2>
         <p class='product-card__title'>{{ product.title }}</p>
       </article>
