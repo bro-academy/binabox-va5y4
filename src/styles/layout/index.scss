@@ -1,3 +1,7 @@
 body.index-page {
-    background-image: radial-gradient(var(--gradient-radial-size) at 0% 0%, var(--gradient-radial-from) 0%, var(--gradient-radial-to) 100%) !important;
+  background-image: radial-gradient(
+    var(--gradient-radial-size) at 0% 0%,
+    var(--gradient-radial-from) 0%,
+    var(--gradient-radial-to) 100%
+  ) !important;
 }

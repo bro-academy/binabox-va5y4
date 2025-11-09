@@ -1,4 +1,21 @@
-.blog {
+/* Make the sidebar sticky on blog pages so it stays visible while scrolling */
+.blog__content-wrapper .sidebar {
+    position: sticky;
+    top: 64px;
+    align-self: flex-start;
+    flex: 0 0 328px;
+    margin-top: 0;
+    height: fit-content;
+    z-index: 2;
+}
+
+/* Content wrapper to create two-column layout: sidebar (left) + article (right) */
+.blog__content-wrapper {
+    display: flex;
+    gap: 64px;
     padding: 64px;
-    gap: 40px;
+    align-items: flex-start;
+    position: relative;
+    overflow: visible;
+    margin-top: 10em;
 }

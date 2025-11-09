@@ -1,193 +1,195 @@
 .article {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 1024px;
+
+  // Add gap between paragraphs
+  p+p {
+    margin-top: 3em;
+  }
+
+  // Remove gap between paragraphs with .no-gap class
+  p.no-gap+p,
+  p+p.no-gap {
+    margin-top: 0;
+  }
+
+  // Remove gap between consecutive .article__text paragraphs
+
+  /* Article text block (define base styles before more specific selectors) */
+  &__text {
+    font-size: var(--font-size-large);
+    color: var(--color-white-bg);
+    margin-bottom: -3em;
+  }
+
+  /* Remove gap between consecutive .article__text paragraphs */
+  .article__text+.article__text {
+    margin-top: 1em;
+  }
+
+  &__hero {
+    margin: 0;
+  }
+
+  &__hero-caption {
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-medium);
+    line-height: var(--line-height-medium);
+    color: var(--color-white-bg);
+    transform: translate(20px, -55px);
+  }
+
+  &__author-link {
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    color: var(--color-text-muted);
+  }
+
+  &__date {
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-small);
+    color: var(--color-text-muted);
+  }
+
+  &__list {
+    font-size: var(--font-size-large);
+    color: var(--color-white-bg);
+    list-style: disc;
+    margin-top: 3em;
+  }
+
+  &__feature-text {
+    font-size: var(--font-size-large);
+    color: var(--color-white-bg);
+  }
+
+  /* Icons rendered from the sprite inherit currentColor; set explicit blue */
+  &__feature-icon {
+    color: var(--color-marina-800);
+
+    /* rgba(2, 101, 220, 1) */
+  }
+
+  &__quote-text {
+    font-size: var(--font-size-heading-3);
+    line-height: var(--line-height-heading-3);
+    color: var(--color-white-bg);
+    font-family: var(--font-family-secondary);
+    text-shadow: 0 var(--shadow-offset) var(--shadow-offset) rgb(0 0 0 / 0.25);
+    -webkit-text-stroke: var(--border-width-sm) var(--color-black);
+  }
+
+  &__quote {
+    background-color: var(--color-marina-1200);
+    border-radius: var(--radius-lg);
+    padding: var(--padding-xl);
+    width: var(--width-article);
+    height: var(--height-article);
+  }
+
+  &__quote-rating {
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-small);
+    color: var(--color-text-muted);
+  }
+
+  &__quote-source {
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-small);
+    color: var(--color-white-bg);
+  }
+
+  &__caption {
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-medium);
+    line-height: var(--line-height-medium);
+    color: var(--color-white-bg);
+    transform: translate(20px, -55px);
+  }
+
+  &__subtitle {
+    margin-bottom: -1em;
+  }
+
+  &__link {
+    color: var(--color-link-accent);
+    font-weight: var(--font-weight-semibold);
+  }
+
+  &__tags-title {
+    line-height: var(--line-height-medium);
+    color: var(--color-white-bg);
+  }
+
+  &__share-title {
+    line-height: var(--line-height-medium);
+    color: var(--color-white-bg);
+  }
+
+  &__hero-image {
+    img {
+      filter: hue-rotate(60deg) saturate(2) brightness(1);
+    }
+  }
+
+  &__image {
+    img {
+      width: auto;
+      object-fit: cover;
+      filter: hue-rotate(60deg) saturate(2) brightness(1);
+    }
+  }
+
+  &__header-wrapper {
+    margin-bottom: 2em;
+  }
+
+  &__feature {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: -3em;
+  }
+
+  &__features {
     display: flex;
     flex-direction: column;
-    gap: 32px;
-    max-width: 1024px;
+    gap: 8px;
+    width: fit-content;
+    height: fit-content;
+  }
 
-    // Add gap between paragraphs
-    p+p {
-        margin-top: 3em;
+  &__tags {
+    margin-top: 3em;
+    gap: 12px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__tag {
+    min-width: 50px;
+    height: 32px;
+  }
+
+  &__share {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+
+  &__footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4em;
+
+    /* Ensure footer children don't keep extra top margin and stay on one line */
+    >.article__tags,
+    >.article__share {
+      margin-top: 3em;
     }
-
-    // Remove gap between paragraphs with .no-gap class
-    p.no-gap+p,
-    p+p.no-gap {
-        margin-top: 0;
-    }
-
-    // Remove gap between consecutive .article__text paragraphs
-    .article__text+.article__text {
-        margin-top: 1em;
-    }
-
-    &__hero-caption {
-        font-weight: var(--font-weight-medium);
-        font-size: var(--font-size-medium);
-        line-height: var(--line-height-medium);
-        color: var(--color-white-bg);
-        transform: translate(20px, -55px);
-
-    }
-
-
-
-    &__author-link {
-        font-size: var(--font-size-base);
-        line-height: var(--line-height-base);
-        color: var(--color-text-muted);
-    }
-
-    &__date {
-        font-weight: var(--font-weight-semibold);
-        line-height: var(--line-height-small);
-        color: var(--color-text-muted);
-    }
-
-    &__text {
-        font-size: var(--font-size-large);
-        color: var(--color-white-bg);
-        margin-bottom: -3em;
-    }
-
-    &__list {
-        font-size: var(--font-size-large);
-        color: var(--color-white-bg);
-        list-style: disc;
-        margin-top: 3em;
-    }
-
-    &__feature-text {
-        font-size: var(--font-size-large);
-        color: var(--color-white-bg);
-    }
-
-    /* Icons rendered from the sprite inherit currentColor; set explicit blue */
-    &__feature-icon {
-        color: var(--color-marina-800);
-        /* rgba(2, 101, 220, 1) */
-    }
-
-    &__quote-text {
-        font-size: var(--font-size-heading-3);
-        line-height: var(--line-height-heading-3);
-        color: var(--color-white-bg);
-        font-family: var(--font-family-secondary);
-        text-shadow: 0 var(--shadow-offset) var(--shadow-offset) rgba(0, 0, 0, 0.25);
-        -webkit-text-stroke: var(--border-width-sm) var(--color-black);
-    }
-
-    &__quote {
-        background-color: var(--color-marina-1200);
-        border-radius: var(--radius-lg);
-        padding: var(--padding-xl);
-        width: var(--width-article);
-        height: var(--height-article);
-    }
-
-    &__quote-rating {
-        font-weight: var(--font-weight-semibold);
-        line-height: var(--line-height-small);
-        color: var(--color-text-muted);
-    }
-
-    &__quote-source {
-        font-weight: var(--font-weight-semibold);
-        line-height: var(--line-height-small);
-        color: var(--color-white-bg);
-    }
-
-    &__caption {
-        font-weight: var(--font-weight-medium);
-        font-size: var(--font-size-medium);
-        line-height: var(--line-height-medium);
-        color: var(--color-white-bg);
-        transform: translate(20px, -55px);
-    }
-
-    &__subtitle {
-        margin-bottom: -1em;
-    }
-
-    &__link {
-        color: var(--color-link-accent);
-        font-weight: var(--font-weight-semibold);
-    }
-
-    &__tags-title {
-        line-height: var(--line-height-medium);
-        color: var(--color-white-bg);
-    }
-
-
-    &__share-title {
-        line-height: var(--line-height-medium);
-        color: var(--color-white-bg);
-    }
-
-    &__hero-image {
-        img {
-
-            filter: hue-rotate(60deg) saturate(2) brightness(1);
-        }
-    }
-
-    &__image {
-
-        img {
-            width: auto;
-            object-fit: cover;
-            filter: hue-rotate(60deg) saturate(2) brightness(1);
-        }
-    }
-
-    &__header-wrapper {
-        margin-bottom: 2em;
-    }
-
-    &__feature {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin-bottom: -3em;
-    }
-
-    &__features {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-        width: fit-content;
-        height: fit-content;
-    }
-
-    &__tags {
-        margin-top: 3em;
-        gap: 12px;
-        display: flex;
-        align-items: center;
-    }
-
-    &__tag {
-        min-width: 50px;
-        height: 32px;
-    }
-
-    &__share {
-        display: flex;
-        gap: 12px;
-        align-items: center;
-    }
-
-    &__footer {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 4em;
-
-        /* Ensure footer children don't keep extra top margin and stay on one line */
-        >.article__tags,
-        >.article__share {
-            margin-top: 3em;
-        }
-    }
+  }
 }

@@ -1,27 +1,28 @@
 .header {
-    position: sticky;
+    /* Use a fixed header so it stays visible while scrolling */
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 100;
     background-color: var(--color-bg-main);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    height: auto;
-    padding: 32px;
+    height: var(--header-height);
+    padding: 0 32px;
+    /* horizontal padding only; vertical space is controlled by --header-height */
     box-sizing: border-box;
     align-items: center;
-
-
 
     &__actions {
         display: flex;
         flex-direction: row;
         gap: 16px;
-        height: auto;
+        height: 48px;
         width: auto;
         align-items: center;
-
     }
 
     &__search {
@@ -29,9 +30,11 @@
         border: var(--border-width) solid var(--color-separator-strong);
         color: var(--color-text-subtle);
         font-size: var(--font-size-base);
-        line-height: 48px;
+        height: var(--search-input-height);
+        line-height: var(--search-input-height);
         padding-left: 38px; // increased left padding for placeholder
-
+        width: 188px;
+        height: 48px;
     }
 
     &__search-icon {

@@ -1,26 +1,28 @@
-<section class="hero">
-	<div class="hero__container">
-		<h1 class="hero__title title title--h1 title--primary">{{ index.title }}</h1>
-		<p class="hero__description">{{ index.description }}</p>
-		<dl class="hero__stats">
-			{% for item in index.stats %}
-				<div class="hero__stats-item">
-					<dt class="hero__stats-number">{{ item.number }}</dt>
-					<dd class="hero__stats-label">{{ item.label }}</dd>
-				</div>
-			{% endfor %}
-		</dl>
-		<div class="hero__buttons">
-			<button type="button" class="button hero__button">{{ index.hero_button }}</button>
-			<a href="{{ index.link_url }}" class="button button--secondary hero__link">{{ index.hero_link }}</a>
-		</div>
-	</div>
-	{{ picture_macro.picture(
-        'hero__image',
-        index.image_src,
-        index.image_width,
-        index.image_height,
-		index.image_alt,
-        "true"
-    ) }}
+<section class='hero'>
+  <div class='hero__container'>
+    <h1 class='hero__title title title--h1 title--primary'>{{ index.title }}</h1>
+    <p class='hero__description'>{{ index.description }}</p>
+    <dl class='hero__stats'>
+      {% for item in index.stats %}
+        <div class='hero__stats-item'>
+          <dt class='hero__stats-number'>{{ item.number }}</dt>
+          <dd class='hero__stats-label'>{{ item.label }}</dd>
+        </div>
+      {% endfor %}
+    </dl>
+    <div class='hero__buttons'>
+      <button type='button' class='button hero__button'>{{ index.hero_button }}</button>
+      <a href='{{ index.link_url }}' class='button button--secondary hero__link'>{{ index.hero_link }}</a>
+    </div>
+  </div>
+  {{
+    picture_macro.picture(
+    'hero__image',
+    index.image_src,
+    index.image_width,
+    index.image_height,
+    index.image_alt,
+    "true"
+    )
+  }}
 </section>

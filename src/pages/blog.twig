@@ -2,9 +2,11 @@
 {% extends 'src/templates/layouts/base.twig' %}
 
 {% block content %}
-	<main class="main">
-		{% include 'src/templates/partials/blog-header.twig' %}
-		{% include 'src/templates/partials/sidebar.twig' %}
-		{% include 'src/templates/partials/blog-article.twig' %}
-	</main>
+  <main class='main'>
+    {% include 'src/templates/partials/blog-header.twig' %}
+    <div class="blog__content-wrapper">
+      {% include 'src/templates/partials/sidebar.twig' %}
+      {% include 'src/templates/partials/blog-article.twig' %}
+    </div>
+  </main>
 {% endblock %}

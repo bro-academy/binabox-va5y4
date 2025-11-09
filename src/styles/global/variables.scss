@@ -14,36 +14,40 @@
     --font-size-heading-3: 28px;
     --font-size-heading-4: 24px;
     --font-size-heading-5: 20px;
-
     --font-size-heading-1-line: 62px;
     --font-size-heading-2-line: 48px;
     --font-size-heading-3-line: 36px;
     --font-size-heading-4-line: 32px;
     --font-size-heading-5-line: 26px;
+    --line-height-base: 2;
 
-    --line-height-base: 2.0;
     /* 28px/14px = 2.0 */
     --line-height-small: 1.33;
+
     /* 16px/12px */
     --line-height-medium: 1.5;
+
     /* 24px/16px */
     --line-height-large: 1.56;
+
     /* 28px/18px */
     --line-height-heading-1: 1.19;
+
     /* 62px/52px */
     --line-height-heading-3: 1.29;
+
     /* 36px/28px */
     --line-height-heading-4: 1.33;
+
     /* 32px/24px */
 
     --line-height-form-label: 20px;
 
     /* Font Families & Weights */
-    --font-family-primary: 'Poppins', arial, sans-serif;
-    --font-family-secondary: 'Bakbak One', arial, sans-serif;
+    --font-family-primary: "Poppins", arial, sans-serif;
+    --font-family-secondary: "Bakbak One", arial, sans-serif;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
-
 
     /* Colors */
     --color-black: rgb(0 0 0 / 1);
@@ -80,17 +84,15 @@
     --button-tertiary-border-hover: rgb(56 146 243 / 1);
     --button-tertiary-outline-focus: rgb(56 146 243 / 1);
     --button-tertiary-text-disabled: rgb(204 204 204 / 1);
-    --color-marina-hover: rgb(56 146 243 / 1);
-    --color-marina-active: rgb(0 84 182 / 1);
+
+    /* keep unique color tokens; remove duplicates */
     --color-white-active: rgb(229 236 251 / 0.36);
-    --color-link-accent: rgb(120 187 250 / 1);
     --color-error: rgb(255 0 0 / 1);
     --color-success: rgb(0 128 0 / 1);
     --color-focus-shadow: rgb(2 101 220 / 0.1);
     --color-footer-bg: rgb(26 25 37 / 1);
     --color-label-secondary-bg: rgb(234 56 41 / 1);
     --color-label-secondary-text: rgb(245 248 251 / 1);
-
 
     /* Shadows & Gradients */
     --shadow-blur: 13px;
@@ -116,6 +118,9 @@
     --radio-size: 18px;
     --textarea-height: 160px;
 
+    /* Header sizing for fixed/sticky headers */
+    --header-height: 96px;
+
     /* Padding */
     --padding-xs: 6px 12px;
     --padding-sm: 8px 10px;
@@ -124,6 +129,7 @@
     --padding-xl: 16px;
     --padding-xxl: 8px 20px;
     --padding-form: 10px 12px;
+
     /* Search input specific sizes */
     --search-icon-size: 20px;
     --search-input-height: 40px;
@@ -138,5 +144,4 @@
     --margin-medium: 10px;
     --margin-large: 30px;
     --margin-xl: 40px;
-
 }

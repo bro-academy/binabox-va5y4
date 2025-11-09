@@ -1,31 +1,31 @@
 .breadcrumb-link {
-    font-weight: var(--font-weight-semibold);
-    line-height: var(--line-height-small);
-    color: var(--color-text-main);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-small);
+  color: var(--color-text-main);
 
-    &--active {
-        color: var(--color-text-subtle);
-    }
+  &--active {
+    color: var(--color-text-subtle);
+  }
 }
 
 .breadcrumb-list {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .breadcrumb-item {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .separator {
-    color: var(--color-text-subtle);
-    display: inline-block;
-    line-height: 1;
-    user-select: none;
+  color: var(--color-text-subtle);
+  display: inline-block;
+  line-height: 1;
+  user-select: none;
 }

@@ -1,13 +1,18 @@
 {% import '../partials/ui/picture.twig' as picture_macro %}
 {% import '../partials/ui/icon.twig' as icon_macro %}
 
-<!DOCTYPE html>
+<!doctype html>
 <html>
-	{% include '../partials/head.twig' %}
-	<body {% if current_page == 'index' %} class="index-page" {% endif %}>
-		{% include '../partials/header.twig' %}
-		<div class="container"> {% block content %}{% endblock %}
-			</div>
-			{% include '../partials/footer.twig' %}</body>
-	</html>
-</div></body></html>
+  {% include '../partials/head.twig' %}
+  <body
+    {% if current_page == 'index' %}
+      class='index-page'
+    {% endif %}
+  >
+    {% include '../partials/header.twig' %}
+    <div class='container'>
+      {% block content %}{% endblock %}
+    </div>
+  {% include '../partials/footer.twig' %}
+  </body>
+</html>

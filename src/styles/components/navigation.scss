@@ -1,29 +1,26 @@
 .navigation {
-    display: flex;
-    flex-direction: row;
-    width: auto;
-    height: auto;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height: auto;
 
-    &__link {
-        font-weight: var(--font-weight-semibold);
-        font-size: var(--font-size-medium);
-        line-height: 1.2;
-        padding: 8px 20px;
-        border: 0;
-        border-width: 0;
-        border-style: none;
-        border-color: transparent;
-        border-bottom: 0;
+  &__link {
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-medium);
+    line-height: 1.2;
+    padding: 8px 20px;
+    border: 0;
+    border-width: 0;
+    border-style: none;
+    border-color: transparent;
+    border-bottom: 0;
 
-
-
-        &--active {
-            border-bottom: var(--border-width) solid var(--color-marina-800);
-        }
+    &--active {
+      border-bottom: var(--border-width) solid var(--color-marina-800);
     }
+  }
 
-    &__icon {
-        transform: translate(2px, 8px);
-
-    }
+  &__icon {
+    transform: translate(2px, 8px);
+  }
 }

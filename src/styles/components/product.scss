@@ -1,14 +1,13 @@
 .product {
+  background-color: rgb(29 28 40 / 1);
+  padding: 24px;
+  gap: 24px;
 
-    background-color: rgba(29, 28, 40, 1);
-    padding: 24px;
-    gap: 24px;
-
-    &__image {
-        width: 100%;
-        max-width: 252.8px;
-        height: 324px;
-        object-fit: cover;
-        display: block;
-    }
+  &__image {
+    width: 100%;
+    max-width: 252.8px;
+    height: 324px;
+    object-fit: cover;
+    display: block;
+  }
 }

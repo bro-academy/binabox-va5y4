@@ -1,103 +1,72 @@
 .blog {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
-    padding: 24px;
-    background-color: var(--color-bg-main);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  padding: 24px;
+  background-color: var(--color-bg-main);
 }
 
 .blog__title {
-    grid-column: 1 / -1;
-    margin-bottom: 24px;
+  grid-column: 1 / -1;
+  margin-bottom: 24px;
 }
 
+/* Blog card block - consolidated to avoid duplicate selectors */
 .blog-card {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--color-bg-alt2);
-}
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-bg-alt2);
+  min-height: 280px;
 
-.blog-card__image {
+  &__image {
     width: 100%;
-    height: 200px;
+    height: 180px;
 
     &--primary {
-        min-height: 664px;
+      min-height: 664px;
     }
-}
 
-.blog-card__image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 
-.blog-card__content {
-    padding: 20px;
+  &__content {
     display: flex;
     flex-direction: column;
     gap: 12px;
-}
+    padding: 16px;
+  }
 
-.blog-card__meta {
+  &__title {
+    margin: 0;
+    color: var(--color-text-main);
+  }
+
+  &__excerpt {
+    margin: 0;
+    color: var(--color-text-muted);
+    font-size: var(--font-size-medium);
+  }
+
+  &__meta {
     display: flex;
     align-items: center;
     gap: 8px;
     margin-top: auto;
-}
+  }
 
+  &__label {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 1;
+  }
 
-.blog-card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--color-bg-alt2);
-    min-height: 280px;
-
-    &__image {
-        width: 100%;
-        height: 180px;
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    }
-
-    &__content {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        padding: 16px;
-    }
-
-    &__title {
-        margin: 0;
-        color: var(--color-text-main);
-    }
-
-    &__excerpt {
-        margin: 0;
-        color: var(--color-text-muted);
-        font-size: var(--font-size-medium);
-    }
-
-    &__meta {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        margin-top: auto;
-    }
-
-    &__label {
-        position: absolute;
-        top: 16px;
-        right: 16px;
-        z-index: 1;
-    }
-
-    &__read-more {
-        align-self: flex-start;
-    }
+  &__read-more {
+    align-self: flex-start;
+  }
 }

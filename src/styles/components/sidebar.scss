@@ -1,56 +1,63 @@
 .sidebar {
+  display: flex;
+  gap: 21px;
+  flex-direction: column;
+  /* Allow pages to control sidebar positioning via CSS variables.
+    Defaults keep the sidebar in-flow. Pages can set `--sidebar-position: sticky`
+    and `--sidebar-top` to pin it under the header. `--sidebar-z` lets pages
+    control stacking when sticky. */
+  position: var(--sidebar-position, relative);
+  top: 64px;
+  z-index: var(--sidebar-z, 50);
+
+  /* (removed JS fallback) */
+  max-width: 328px;
+  min-height: 384px;
+
+  &__title {
+    font-family: var(--font-family-secondary);
+  }
+
+  &__link {
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-small);
+  }
+
+  &__item {
     display: flex;
-    gap: 21px;
+    flex-direction: row;
+  }
+
+  &__list {
+    display: flex;
     flex-direction: column;
-    max-width: 328px;
-    min-height: 384px;
+    gap: 8px;
+    width: 100%;
+    height: auto;
+  }
 
-    &__title {
-        font-family: var(--font-family-secondary);
-    }
+  &__tags {
+    background-color: rgb(29 28 40 / 1);
+  }
 
-    &__link {
-        font-weight: var(--font-weight-semibold);
-        line-height: var(--line-height-small);
-    }
+  &__tags-list {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
 
-    &__item {
-        display: flex;
-        flex-direction: row;
-    }
+  &__tag {
+    height: 32px;
+    min-width: 50px;
+    padding: 6px 12px;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+  }
 
-    &__list {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-        width: 100%;
-        height: auto;
-    }
-
-    &__tags {
-        background-color: rgba(29, 28, 40, 1);
-    }
-
-    &__tags-list {
-        display: flex;
-        flex-direction: row;
-        gap: 8px;
-        flex-wrap: wrap;
-
-    }
-
-    &__tag {
-        height: 32px;
-        min-width: 50px;
-        padding: 6px 12px;
-        flex-wrap: wrap;
-        gap: 16px;
-        justify-content: center;
-        align-items: center;
-    }
-
-    &__categories {
-        background-color: rgba(29, 28, 40, 1);
-    }
-
+  &__categories {
+    background-color: rgb(29 28 40 / 1);
+  }
 }

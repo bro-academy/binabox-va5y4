@@ -1,17 +1,16 @@
 .separator {
-    width: var(--width-xs);
-    height: var(--height-xs);
-    background: var(--color-separator-strong);
-    margin: var(--margin-xs);
-    border-radius: var(--radius-xs);
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+  width: var(--width-xs);
+  height: var(--height-xs);
+  background: var(--color-separator-strong);
+  margin: var(--margin-xs);
+  border-radius: var(--radius-xs);
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 
-    &__catalog {
-        width: 1167px;
-        height: 2px;
-        border-radius: 2px;
-
-    }
+  &__catalog {
+    width: 1167px;
+    height: 2px;
+    border-radius: 2px;
+  }
 }

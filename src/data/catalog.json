@@ -1,157 +1,153 @@
 {
-    "catalog_header": {
-        "title": "Explore catalog",
-        "breadcrumbs": [
-            {
-                "url": "/",
-                "label": "Home"
-            },
-            {
-                "url": "#catalog",
-                "label": "Catalog"
-            }
-        ]
+  "catalog_header": {
+    "title": "Explore catalog",
+    "breadcrumbs": [
+      {
+        "url": "/",
+        "label": "Home"
+      },
+      {
+        "url": "#catalog",
+        "label": "Catalog"
+      }
+    ]
+  },
+  "catalog_products": {
+    "title": "All items",
+    "sort_options": [
+      {
+        "value": "newest",
+        "label": "Newest"
+      },
+      {
+        "value": "most-popular",
+        "label": "Most Popular"
+      },
+      {
+        "value": "price-asc",
+        "label": "Increasing in price"
+      },
+      {
+        "value": "price-desc",
+        "label": "Lowering the price"
+      }
+    ],
+    "search": {
+      "placeholder": "Search NFT",
+      "aria_label": "Search NFT Products"
     },
-    "catalog_products": {
-        "title": "All items",
-        "sort_options": [
-            {
-                "value": "newest",
-                "label": "Newest"
-            },
-            {
-                "value": "most-popular",
-                "label": "Most Popular"
-            },
-            {
-                "value": "price-asc",
-                "label": "Increasing in price"
-            },
-            {
-                "value": "price-desc",
-                "label": "Lowering the price"
-            }
-        ],
-        "search": {
-            "placeholder": "Search NFT",
-            "aria_label": "Search NFT Products"
-        },
-        "tags": [
-            "NFT",
-            "ICO",
-            "Crypto"
-        ],
-        "items": [
-            {
-                "image_src": "neural-drift",
-                "image_alt": "Neural Drift NFT artwork",
-                "image_width": "336px",
-                "image_height": "453.6px",
-                "label": "New",
-                "title": "Name Product",
-                "price": "$199",
-                "link": "#"
-            },
-            {
-                "image_src": "neural-drift",
-                "image_alt": "Neural Drift NFT artwork",
-                "image_width": "336px",
-                "image_height": "453.6px",
-                "label": "Popular",
-                "title": "Name Product",
-                "price": "$199",
-                "link": "#"
-            },
-            {
-                "image_src": "neural-drift",
-                "image_alt": "Neural Drift NFT artwork",
-                "image_width": "336px",
-                "image_height": "453.6px",
-                "label": "Sold out",
-                "title": "Name Product",
-                "price": "$199",
-                "link": "#"
-            },
-            {
-                "image_src": "neural-drift",
-                "image_alt": "Neural Drift NFT artwork",
-                "image_width": "336px",
-                "image_height": "453.6px",
-                "label": "New",
-                "title": "Name Product",
-                "price": "$199",
-                "link": "#"
-            },
-            {
-                "image_src": "neural-drift",
-                "image_alt": "Neural Drift NFT artwork",
-                "image_width": "336px",
-                "image_height": "453.6px",
-                "label": "New",
-                "title": "Name Product",
-                "price": "$199",
-                "link": "#"
-            },
-            {
-                "image_src": "neural-drift",
-                "image_alt": "Neural Drift NFT artwork",
-                "image_width": "336px",
-                "image_height": "453.6px",
-                "label": "New",
-                "title": "Name Product",
-                "price": "$199",
-                "link": "#"
-            },
-            {
-                "image_src": "neural-drift",
-                "image_alt": "Neural Drift NFT artwork",
-                "image_width": "336px",
-                "image_height": "453.6px",
-                "label": "New",
-                "title": "Name Product",
-                "price": "$199",
-                "link": "#"
-            },
-            {
-                "image_src": "neural-drift",
-                "image_alt": "Neural Drift NFT artwork",
-                "image_width": "336px",
-                "image_height": "453.6px",
-                "label": "New",
-                "title": "Name Product",
-                "price": "$199",
-                "link": "#"
-            },
-            {
-                "image_src": "neural-drift",
-                "image_alt": "Neural Drift NFT artwork",
-                "image_width": "336px",
-                "image_height": "453.6px",
-                "label": "New",
-                "title": "Name Product",
-                "price": "$199",
-                "link": "#"
-            },
-            {
-                "image_src": "neural-drift",
-                "image_alt": "Neural Drift NFT artwork",
-                "image_width": "336px",
-                "image_height": "453.6px",
-                "label": "New",
-                "title": "Name Product",
-                "price": "$199",
-                "link": "#"
-            },
-            {
-                "image_src": "neural-drift",
-                "image_alt": "Neural Drift NFT artwork",
-                "image_width": "336px",
-                "image_height": "453.6px",
-                "label": "New",
-                "title": "Name Product",
-                "price": "$199",
-                "link": "#"
-            }
-        ]
-    }
+    "tags": ["NFT", "ICO", "Crypto"],
+    "items": [
+      {
+        "image_src": "neural-drift",
+        "image_alt": "Neural Drift NFT artwork",
+        "image_width": "336px",
+        "image_height": "453.6px",
+        "label": "New",
+        "title": "Name Product",
+        "price": "$199",
+        "link": "#"
+      },
+      {
+        "image_src": "neural-drift",
+        "image_alt": "Neural Drift NFT artwork",
+        "image_width": "336px",
+        "image_height": "453.6px",
+        "label": "Popular",
+        "title": "Name Product",
+        "price": "$199",
+        "link": "#"
+      },
+      {
+        "image_src": "neural-drift",
+        "image_alt": "Neural Drift NFT artwork",
+        "image_width": "336px",
+        "image_height": "453.6px",
+        "label": "Sold out",
+        "title": "Name Product",
+        "price": "$199",
+        "link": "#"
+      },
+      {
+        "image_src": "neural-drift",
+        "image_alt": "Neural Drift NFT artwork",
+        "image_width": "336px",
+        "image_height": "453.6px",
+        "label": "New",
+        "title": "Name Product",
+        "price": "$199",
+        "link": "#"
+      },
+      {
+        "image_src": "neural-drift",
+        "image_alt": "Neural Drift NFT artwork",
+        "image_width": "336px",
+        "image_height": "453.6px",
+        "label": "New",
+        "title": "Name Product",
+        "price": "$199",
+        "link": "#"
+      },
+      {
+        "image_src": "neural-drift",
+        "image_alt": "Neural Drift NFT artwork",
+        "image_width": "336px",
+        "image_height": "453.6px",
+        "label": "New",
+        "title": "Name Product",
+        "price": "$199",
+        "link": "#"
+      },
+      {
+        "image_src": "neural-drift",
+        "image_alt": "Neural Drift NFT artwork",
+        "image_width": "336px",
+        "image_height": "453.6px",
+        "label": "New",
+        "title": "Name Product",
+        "price": "$199",
+        "link": "#"
+      },
+      {
+        "image_src": "neural-drift",
+        "image_alt": "Neural Drift NFT artwork",
+        "image_width": "336px",
+        "image_height": "453.6px",
+        "label": "New",
+        "title": "Name Product",
+        "price": "$199",
+        "link": "#"
+      },
+      {
+        "image_src": "neural-drift",
+        "image_alt": "Neural Drift NFT artwork",
+        "image_width": "336px",
+        "image_height": "453.6px",
+        "label": "New",
+        "title": "Name Product",
+        "price": "$199",
+        "link": "#"
+      },
+      {
+        "image_src": "neural-drift",
+        "image_alt": "Neural Drift NFT artwork",
+        "image_width": "336px",
+        "image_height": "453.6px",
+        "label": "New",
+        "title": "Name Product",
+        "price": "$199",
+        "link": "#"
+      },
+      {
+        "image_src": "neural-drift",
+        "image_alt": "Neural Drift NFT artwork",
+        "image_width": "336px",
+        "image_height": "453.6px",
+        "label": "New",
+        "title": "Name Product",
+        "price": "$199",
+        "link": "#"
+      }
+    ]
+  }
 }

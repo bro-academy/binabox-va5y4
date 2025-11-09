@@ -1,8 +1,8 @@
 @mixin title {
-    font-family: var(--font-family-secondary);
-    color: var(--color-white-bg);
+  font-family: var(--font-family-secondary);
+  color: var(--color-white-bg);
 
-    &--primary {
-        color: var(--color-text-main);
-    }
+  &--primary {
+    color: var(--color-text-main);
+  }
 }
