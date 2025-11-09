@@ -1,4 +1,7 @@
 .header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
     background-color: var(--color-bg-main);
     display: flex;
     flex-direction: row;
