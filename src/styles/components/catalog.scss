@@ -50,6 +50,13 @@
     padding: 64px;
     margin: 10em;
   }
+
+  &__actions {
+    display: flex;
+    flex-shrink: 0;
+    gap: 16px;
+    align-items: center;
+  }
 }
 
 /* Make catalog sidebar sticky so it remains visible while scrolling, and stops at
