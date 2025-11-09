@@ -1,52 +1,62 @@
 .catalog {
+  display: flex;
+  flex-direction: column;
+  padding: 64px;
+  gap: 40px;
 
+  &__header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 32px;
+    margin-bottom: 24px;
+    width: 95%;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__nav-button {
+    svg.icon {
+      /* Paths in sprite use fill="currentColor" so drive via color */
+      color: currentColor;
+      fill: currentColor;
+
+      /* fallback */
+      transition:
+        color 0.3s ease,
+        fill 0.3s ease;
+    }
+
+    &.button--secondary:hover {
+      background-color: var(--color-marina-800);
+
+      svg.icon {
+        color: rgb(13 13 13 / 1);
+        fill: currentColor;
+
+        /* keep in sync */
+      }
+    }
+  }
+
+  &__list {
+    gap: 24px;
+    display: grid;
+  }
+
+  &__content-wrapper {
+    display: flex;
+    gap: 64px;
     padding: 64px;
-    gap: 40px;
+    margin: 10em;
+  }
+}
 
-    &__header {
-        display: flex;
-        flex-direction: row;
-        gap: 32px;
-        align-items: center;
-        margin-bottom: 24px;
-        width: 95%;
-        height: auto;
-        align-items: center;
-        justify-content: space-between;
-
-
-    }
-
-    &__nav-button {
-        svg.icon {
-            /* Paths in sprite use fill="currentColor" so drive via color */
-            color: currentColor;
-            fill: currentColor;
-            /* fallback */
-            transition: color 0.3s ease, fill 0.3s ease;
-        }
-
-        &.button--secondary:hover {
-            background-color: var(--color-marina-800);
-
-            svg.icon {
-                color: rgba(13, 13, 13, 1);
-                fill: currentColor;
-                /* keep in sync */
-            }
-        }
-    }
-
-    &__list {
-        gap: 24px;
-        display: grid;
-    }
-
-    &__content-wrapper {
-        display: flex;
-        gap: 64px;
-        padding: 64px;
-    }
+/* Make catalog sidebar sticky so it remains visible while scrolling, and stops at
+   the end of the catalog content (the content wrapper is the containing block). */
+.catalog .catalog-sidebar {
+  --sidebar-position: sticky;
+  /* Use the same variable-based top consumed by the component */
+  --sidebar-top: calc(var(--header-height) + 24px);
+  align-self: flex-start;
 }
