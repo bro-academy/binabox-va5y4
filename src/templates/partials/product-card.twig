@@ -14,7 +14,7 @@
 				)
 			}}
 			{% if product.label %}
-				<span class='product__label label{% if product.label|trim|lower == 'sold out' %} label--secondary{% endif %}'>
+				<span class='product__label label{% if product.label|trim|lower == ' sold out' %} label--secondary{% endif %}'>
 					{{- product.label -}}
 				</span>
 			{% endif %}
