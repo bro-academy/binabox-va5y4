@@ -61,4 +61,25 @@
       color: var(--color-label-secondary-text) !important;
     }
   }
+
+  &__price {
+    font-family: var(--font-family-secondary);
+    font-size: var(--font-size-heading-2);
+    line-height: var(--font-size-heading-4-line);
+    letter-spacing: var(--letter-spacing-heading);
+  }
+
+  &__name {
+    font-size: var(--font-size-heading-5);
+    line-height: var(--font-size-heading-6-line);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-muted);
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 24px;
+  }
 }

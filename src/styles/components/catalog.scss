@@ -41,9 +41,19 @@
 
   &__list {
     gap: 24px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    width: 100%;
 
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    &>* {
+      flex: 0 0 280px;
+    }
   }
 
   &__content-wrapper {
