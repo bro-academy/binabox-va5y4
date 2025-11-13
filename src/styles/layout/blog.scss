@@ -19,3 +19,9 @@
     overflow: visible;
     margin-top: 10em;
 }
+
+.blog {
+    &__title {
+        text-align: center;
+    }
+}
