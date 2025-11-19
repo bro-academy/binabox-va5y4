@@ -20,46 +20,6 @@
 
     }
 
-    &__search {
-        background-color: inherit;
-        border: var(--border-width) solid var(--color-separator-strong);
-        color: var(--color-text-subtle);
-        font-size: var(--font-size-base);
-        // min-height: 48px;
-        padding-left: 44px; // increased left padding for placeholder
-        padding-right: 12px;
-        padding-top: 14px;
-        padding-bottom: 14px;
-
-    }
-
-    &__search-icon {
-        position: absolute;
-        // left: 5px;
-        // top: 50%;
-        // transform: translateY(-50%);
-        padding-left: 12px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: var(--search-icon-size);
-        height: var(--search-icon-size);
-        pointer-events: none;
-
-        img,
-        svg {
-            width: 100%;
-            height: 100%;
-            display: block;
-        }
-    }
-
-    &__search-wrapper {
-        position: relative;
-        display: inline-flex; // keep wrapper inline so it doesn't expand
-        align-items: center;
-        flex: 0 1 auto; // allow wrapper to shrink
-    }
 
     &__discord-icon,
     &__login-icon {

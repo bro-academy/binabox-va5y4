@@ -1,9 +1,9 @@
 {% from '/ui/icon.twig' import icon %}
 
 <form action="/search" method="get" class="search-form">
-	<div class="search-form__wrapper">
-		<input type="search" id="search" name="product" placeholder="{{ placeholder }}" aria-label="{{ aria_label }}" class="search-form__input">
-		<span class="search-form__icon">
+	<div class="search-input__wrapper">
+		<input type="search" id="search" name="product" placeholder="{{ placeholder }}" aria-label="{{ aria_label }}" class="search-input">
+		<span class="search-input__icon">
 			{{ icon('search-form__icon', 'search', 24, 24) }}
 		</span>
 	</div>
