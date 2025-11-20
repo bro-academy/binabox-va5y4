@@ -6,6 +6,10 @@
     padding: 64px 164px;
     align-items: center;
 
+    &__title {
+        margin: 0;
+    }
+
     &__image {
 
         background-size: contain;
@@ -23,7 +27,7 @@
         font-size: var(--font-size-heading-5);
         line-height: var(--line-height-large);
         font-weight: var(--font-weight-medium);
-        margin-top: -30px;
+        // margin-top: -30px;
     }
 
     &__stats-number {

@@ -1,23 +1,19 @@
 .article {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    // gap: 32px;
     max-width: 1024px;
 
-    // Add gap between paragraphs
-    p+p {
-        margin-top: 3em;
-    }
+    &__meta {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
 
-    // Remove gap between paragraphs with .no-gap class
-    p.no-gap+p,
-    p+p.no-gap {
-        margin-top: 0;
-    }
-
-    // Remove gap between consecutive .article__text paragraphs
-    .article__text+.article__text {
-        margin-top: 1em;
+        .article__separator {
+            margin: 0;
+        }
     }
 
     &__hero-caption {
@@ -37,6 +33,12 @@
         color: var(--color-text-muted);
     }
 
+    &__author {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
     &__date {
         font-weight: var(--font-weight-semibold);
         line-height: var(--line-height-small);
@@ -46,14 +48,16 @@
     &__text {
         font-size: var(--font-size-large);
         color: var(--color-white-bg);
-        margin-bottom: -3em;
+        // margin-bottom: -3em;
+        margin: 0;
+        padding: 0;
     }
 
     &__list {
         font-size: var(--font-size-large);
         color: var(--color-white-bg);
         list-style: disc;
-        margin-top: 3em;
+        // margin-top: 3em;
     }
 
     &__feature-text {
@@ -84,6 +88,11 @@
         height: var(--height-article);
     }
 
+    &__quote-figures {
+        display: flex;
+        flex-direction: row;
+    }
+
     &__quote-rating {
         font-weight: var(--font-weight-semibold);
         line-height: var(--line-height-small);
@@ -105,7 +114,9 @@
     }
 
     &__subtitle {
-        margin-bottom: -1em;
+        padding-top: 32px;
+        padding-bottom: 16px;
+        margin: 0;
     }
 
     &__link {
@@ -148,15 +159,20 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin-bottom: -3em;
+        // margin-bottom: -3em;
+        gap: 8px;
+        line-height: 0;
     }
 
     &__features {
         display: flex;
         flex-direction: column;
-        gap: 8px;
-        width: fit-content;
-        height: fit-content;
+        // gap: 8px;
+        // width: fit-content;
+        // height: fit-content;
+        padding-bottom: 32px;
+        padding-left: 0;
+        margin: 0;
     }
 
     &__tags {

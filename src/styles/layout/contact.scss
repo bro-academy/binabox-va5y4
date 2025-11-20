@@ -32,15 +32,18 @@
         color: rgba(239, 245, 250, 0.82);
         font-size: 16px;
         line-height: 24px;
+        margin: 0;
     }
 
     &__icon {
-        margin-top: 24px;
-        margin-bottom: 16px;
+        // margin-top: 24px;
+        // margin-bottom: 16px;
+        padding-bottom: 24px;
     }
 
     &__title {
-        margin-bottom: -10px;
+        // margin-bottom: -10px;
+        margin: 0;
     }
 
 }
