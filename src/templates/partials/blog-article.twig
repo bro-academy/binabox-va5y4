@@ -38,7 +38,9 @@
 			{% include './blog-article-feature.twig' with { feature: feature } %}
 		{% endfor %}
 	</ul>
-	{% include './blog-article-quote.twig' with { quote: article.quote } %}
+	<div class="article__quote-block">
+		{% include './blog-article-quote.twig' with { quote: article.quote } %}
+	</div>
 	<div class="article__quote-figures">
 		{% for figure in article.figures %}
 			<figure class="article__figure">

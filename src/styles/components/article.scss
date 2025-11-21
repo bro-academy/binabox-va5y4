@@ -73,25 +73,28 @@
 
     &__quote-text {
         font-size: var(--font-size-heading-3);
-        line-height: var(--line-height-heading-3);
+        line-height: 36px;
         color: var(--color-white-bg);
         font-family: var(--font-family-secondary);
         text-shadow: 0 var(--shadow-offset) var(--shadow-offset) rgba(0, 0, 0, 0.25);
         -webkit-text-stroke: var(--border-width-sm) var(--color-black);
+        margin: 0;
     }
 
     &__quote {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         background-color: var(--color-marina-1200);
         border-radius: var(--radius-lg);
-        padding: var(--padding-xl);
-        width: var(--width-article);
-        height: var(--height-article);
+        /* height: var(--height-article); */
+        margin: 0;
+        padding: 16px;
+        gap: 8px;
+        /* max-width: 984px; */
     }
 
-    &__quote-figures {
-        display: flex;
-        flex-direction: row;
-    }
+
 
     &__quote-rating {
         font-weight: var(--font-weight-semibold);
@@ -205,5 +208,11 @@
         >.article__share {
             margin-top: 3em;
         }
+    }
+
+    &__quote-footer {
+        display: flex;
+        align-items: center;
+        gap: 12px;
     }
 }
