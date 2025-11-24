@@ -27,7 +27,7 @@
         font-size: var(--font-size-heading-5);
         line-height: var(--line-height-large);
         font-weight: var(--font-weight-medium);
-        // margin-top: -30px;
+        margin: 0;
     }
 
     &__stats-number {
@@ -53,8 +53,14 @@
     &__container {
         display: flex;
         flex-direction: column;
+        gap: 32px;
     }
 
+    &__header {
+        display: flex;
+        gap: 8px;
+        flex-direction: column;
+    }
 
     &__container-row {
         display: flex;
@@ -66,12 +72,13 @@
         flex-direction: row;
         align-items: center;
         gap: 64px;
+        margin: 0;
     }
 
     &__buttons {
         display: flex;
         flex-direction: row;
         gap: 16px;
-        margin-top: 24px;
+        margin: 0;
     }
 }

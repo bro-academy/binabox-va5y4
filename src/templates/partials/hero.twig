@@ -1,7 +1,9 @@
 <section class="hero">
 	<div class="hero__container">
-		<h1 class="hero__title title title--h1 title--primary">{{ index.title }}</h1>
-		<p class="hero__description">{{ index.description }}</p>
+		<div class="hero__header">
+			<h1 class="hero__title title title--h1 title--primary">{{ index.title }}</h1>
+			<p class="hero__description">{{ index.description }}</p>
+		</div>
 		<dl class="hero__stats">
 			{% for item in index.stats %}
 				<div class="hero__stats-item">
