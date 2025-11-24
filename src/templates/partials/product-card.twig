@@ -10,12 +10,12 @@
 			product.image_alt,
 			false
 		) }}
+		{% if product.label %}
+			<span class="product__label label{% if product.label|lower == 'sold out' %} label--secondary{% endif %}">{{ product.label }}</span>
+		{% endif %}
+		{% if product.price %}
+			<span class="product__price">{{ product.price }}</span>
+		{% endif %}
+		<span class="product__name">{{ product.name }}</span>
 	</a>
-	{% if product.label %}
-		<span class="product__label label{% if product.label|lower == 'sold out' %} label--secondary{% endif %}">{{ product.label }}</span>
-	{% endif %}
-	{% if product.price %}
-		<span class="product__price">{{ product.price }}</span>
-	{% endif %}
-	<span class="product__name">{{ product.name }}</span>
 </li>
