@@ -1,8 +1,6 @@
 .blog {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
-    padding: 24px;
     background-color: var(--color-bg-main);
 }
 
@@ -15,11 +13,13 @@
     display: flex;
     flex-direction: column;
     background-color: var(--color-bg-alt2);
+    padding: 24px;
 }
 
 .blog-card__image {
     width: 100%;
     height: 200px;
+    position: relative;
 
     &--primary {
         min-height: 664px;
@@ -33,10 +33,10 @@
 }
 
 .blog-card__content {
-    padding: 20px;
+
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 16px;
 }
 
 .blog-card__meta {
@@ -85,15 +85,13 @@
 
     &__meta {
         display: flex;
-        align-items: center;
-        gap: 8px;
-        margin-top: auto;
+        align-self: flex-start;
     }
 
     &__label {
         position: absolute;
-        top: 16px;
-        right: 16px;
+        top: 40px;
+        right: 40px;
         z-index: 1;
     }
 

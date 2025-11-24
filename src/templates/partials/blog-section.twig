@@ -18,8 +18,6 @@
 			) }}
 		</div>
 		<div class="blog-card__content">
-			<h3 class="blog-card__title">{{ blog.title }}</h3>
-			<p class="blog-card__excerpt">{{ blog.excerpt }}</p>
 			<div class="blog-card__meta">
 				{% if blog.author_icon %}
 					{{ icon_macro.icon('blog-card__author-icon', 'author-icon', '16', '16') }}
@@ -30,6 +28,9 @@
 				<span class="separator"></span>
 				<time class="blog-card__date" datetime="{{ blog.date_iso }}">{{ blog.date }}</time>
 			</div>
+			<h3 class="blog-card__title">{{ blog.title }}</h3>
+			<p class="blog-card__excerpt">{{ blog.excerpt }}</p>
+
 			<a href="{{ blog.read_more_url }}" class="button button--secondary blog-card__read-more">
 				Read more
 				{{ icon_macro.icon('blog-card__read-more-icon', 'right-arrow', '24', '24') }}
@@ -54,8 +55,6 @@
 				) }}
 			</div>
 			<div class="blog-card__content">
-				<h3 class="blog-card__title">{{ blog.title }}</h3>
-				<p class="blog-card__excerpt">{{ blog.excerpt }}</p>
 				<div class="blog-card__meta">
 					{% if blog.author_icon %}
 						{{ icon_macro.icon('blog-card__author-icon', 'author-icon', '16', '16') }}
@@ -66,6 +65,9 @@
 					<span class="separator"></span>
 					<time class="blog-card__date" datetime="{{ blog.date_iso }}">{{ blog.date }}</time>
 				</div>
+				<h3 class="blog-card__title">{{ blog.title }}</h3>
+				<p class="blog-card__excerpt">{{ blog.excerpt }}</p>
+
 				<a href="{{ blog.read_more_url }}" class="button button--secondary blog-card__read-more">
 					Read more
 					{{ icon_macro.icon('blog-card__read-more-icon', 'right-arrow', '24', '24') }}
@@ -92,8 +94,6 @@
 			) }}
 		</div>
 		<div class="blog-card__content">
-			<h3 class="blog-card__title">{{ blog.title }}</h3>
-			<p class="blog-card__excerpt">{{ blog.excerpt }}</p>
 			<div class="blog-card__meta">
 				{% if blog.author_icon %}
 					{{ icon_macro.icon('blog-card__author-icon', 'author-icon', '16', '16') }}
@@ -104,6 +104,9 @@
 				<span class="separator"></span>
 				<time class="blog-card__date" datetime="{{ blog.date_iso }}">{{ blog.date }}</time>
 			</div>
+			<h3 class="blog-card__title">{{ blog.title }}</h3>
+			<p class="blog-card__excerpt">{{ blog.excerpt }}</p>
+
 			<a href="{{ blog.read_more_url }}" class="button button--secondary blog-card__read-more">
 				Read more
 				{{ icon_macro.icon('blog-card__read-more-icon', 'right-arrow', '24', '24') }}
