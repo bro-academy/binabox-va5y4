@@ -1,14 +1,25 @@
 .product {
 
-    background-color: rgba(29, 28, 40, 1);
+    display: flex;
+    background-color: rgb(29, 28, 40);
     padding: 24px;
-    gap: 24px;
+    max-width: 300px;
+    justify-content: center;
 
-    &__image {
-        width: 100%;
-        max-width: 252.8px;
-        height: 324px;
-        object-fit: cover;
-        display: block;
+    &__link {
+        position: relative;
     }
+
+    &__label {
+        position: absolute;
+        z-index: 1;
+        top: 16px;
+        right: 16px;
+
+    }
+
+    // &__image {
+    //     max-width: 252.8px;
+    //     max-height: 324px;
+    // }
 }

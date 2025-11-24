@@ -1,7 +1,7 @@
 {% import 'ui/picture.twig' as picture_macro %}
 
 <li class="product">
-	<a href="{{ product.link }}">
+	<a class="product__link" href="{{ product.link }}">
 		{{ picture_macro.picture(
 			'product__image',
 			product.image_src,
