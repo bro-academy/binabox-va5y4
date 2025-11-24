@@ -8,6 +8,9 @@
 
     &__link {
         position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
     }
 
     &__label {
@@ -16,6 +19,18 @@
         top: 16px;
         right: 16px;
 
+    }
+
+    &__name {
+        color: var(--color-text-subtle);
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
     }
 
     // &__image {
