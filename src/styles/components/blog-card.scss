@@ -97,5 +97,9 @@
 
     &__read-more {
         align-self: flex-start;
+        padding: 8px 20px !important;
+        display: flex;
+        gap: 8px;
+
     }
 }
