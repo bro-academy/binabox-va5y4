@@ -13,6 +13,7 @@
 	{{ icon('blog-card__author-icon', 'author-icon', '16', '16') }}
 	<span class="blog-card__author{% if blog.author_uppercase %} blog-card__author--uppercase{% endif %}">{{ blog.author }}</span>
 	<span class="blog-card__separator separator"></span>
+	{{ icon('blog-card__date-icon', 'date-icon', '16', '16') }}
 	<time class="blog-card__date" datetime="{{ blog.date_iso }}">{{ blog.date }}</time>
 	<h2 class="blog-card__title title title--h2">{{ blog.title }}</h2>
 	<p class="blog-card__excerpt">{{ blog.excerpt }}</p>

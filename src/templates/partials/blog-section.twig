@@ -1,3 +1,5 @@
+{% from '/ui/icon.twig' import icon %}
+
 <section class="blog">
 	<h2 class="blog__title title title--h2">{{ blog_section.title }}</h2>
 
@@ -20,12 +22,13 @@
 		<div class="blog-card__content">
 			<div class="blog-card__meta">
 				{% if blog.author_icon %}
-					{{ icon_macro.icon('blog-card__author-icon', 'author-icon', '16', '16') }}
+					{{ icon('blog-card__author-icon', 'author-icon', '16', '16') }}
 				{% endif %}
 				<span class="blog-card__author{% if blog.author_uppercase %} blog-card__author--uppercase{% endif %}">
 					{{ blog.author }}
 				</span>
 				<span class="separator"></span>
+				{{ icon('blog-card__date-icon', 'date-icon', '16', '16') }}
 				<time class="blog-card__date" datetime="{{ blog.date_iso }}">{{ blog.date }}</time>
 			</div>
 			<h3 class="blog-card__title">{{ blog.title }}</h3>
@@ -33,7 +36,7 @@
 
 			<a href="{{ blog.read_more_url }}" class="button button--secondary blog-card__read-more">
 				Read more
-				{{ icon_macro.icon('blog-card__read-more-icon', 'right-arrow', '24', '24') }}
+				{{ icon('blog-card__read-more-icon', 'right-arrow', '24', '24') }}
 			</a>
 		</div>
 	</article>
@@ -57,20 +60,21 @@
 			<div class="blog-card__content">
 				<div class="blog-card__meta">
 					{% if blog.author_icon %}
-						{{ icon_macro.icon('blog-card__author-icon', 'author-icon', '16', '16') }}
+						{{ icon('blog-card__author-icon', 'author-icon', '16', '16') }}
 					{% endif %}
-					<span class="blog-card__author{% if blog.author_uppercase %} blog-card__author--uppercase{% endif %}">
-						{{ blog.author }}
-					</span>
-					<span class="separator"></span>
-					<time class="blog-card__date" datetime="{{ blog.date_iso }}">{{ blog.date }}</time>
+				<span class="blog-card__author{% if blog.author_uppercase %} blog-card__author--uppercase{% endif %}">
+					{{ blog.author }}
+				</span>
+				<span class="separator"></span>
+				{{ icon('blog-card__date-icon', 'date-icon', '16', '16') }}
+				<time class="blog-card__date" datetime="{{ blog.date_iso }}">{{ blog.date }}</time>
 				</div>
 				<h3 class="blog-card__title">{{ blog.title }}</h3>
 				<p class="blog-card__excerpt">{{ blog.excerpt }}</p>
 
 				<a href="{{ blog.read_more_url }}" class="button button--secondary blog-card__read-more">
 					Read more
-					{{ icon_macro.icon('blog-card__read-more-icon', 'right-arrow', '24', '24') }}
+					{{ icon('blog-card__read-more-icon', 'right-arrow', '24', '24') }}
 				</a>
 			</div>
 		</article>
@@ -96,12 +100,13 @@
 		<div class="blog-card__content">
 			<div class="blog-card__meta">
 				{% if blog.author_icon %}
-					{{ icon_macro.icon('blog-card__author-icon', 'author-icon', '16', '16') }}
+					{{ icon('blog-card__author-icon', 'author-icon', '16', '16') }}
 				{% endif %}
 				<span class="blog-card__author{% if blog.author_uppercase %} blog-card__author--uppercase{% endif %}">
 					{{ blog.author }}
 				</span>
 				<span class="separator"></span>
+				{{ icon('blog-card__date-icon', 'date-icon', '16', '16') }}
 				<time class="blog-card__date" datetime="{{ blog.date_iso }}">{{ blog.date }}</time>
 			</div>
 			<h3 class="blog-card__title">{{ blog.title }}</h3>
@@ -109,7 +114,7 @@
 
 			<a href="{{ blog.read_more_url }}" class="button button--secondary blog-card__read-more">
 				Read more
-				{{ icon_macro.icon('blog-card__read-more-icon', 'right-arrow', '24', '24') }}
+				{{ icon('blog-card__read-more-icon', 'right-arrow', '24', '24') }}
 			</a>
 		</div>
 	</article>
