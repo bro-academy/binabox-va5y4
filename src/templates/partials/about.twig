@@ -1,6 +1,8 @@
 <section class="about">
-	<h2 class="about__title title title--h2">{{ about.title }}</h2>
-	<p class="about__description">{{ about.description }}</p>
+	<div class="about__header">
+		<h2 class="about__title title title--h2">{{ about.title }}</h2>
+		<p class="about__description">{{ about.description }}</p>
+	</div>
 	<ol class="about__features">
 		{% for feature in about.features %}
 			{% include './about-feature.twig' with { feature: feature } %}
