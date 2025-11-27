@@ -1,22 +1,33 @@
 .faq {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
     &__item {
         background-color: var(--color-bg-alt2);
-        padding: var(--padding-xl);
         display: flex;
         flex-direction: column;
-        margin-bottom: var(--padding-xl);
+        justify-content: center;
+        padding: 24px;
+        gap: 0;
     }
 
     &__question {
         font-size: var(--font-size-heading-4);
         line-height: var(--line-height-heading-4);
         font-family: var(--font-family-secondary);
+        margin: 0;
 
+    }
+
+    &__item[open] &__question {
+        padding-bottom: 16px;
     }
 
     &__answer {
         font-size: var(--font-size-medium);
         line-height: var(--line-height-medium);
+        margin: 0;
     }
 
     &__link {
