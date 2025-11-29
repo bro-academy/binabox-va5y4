@@ -16,18 +16,15 @@
         flex-direction: row;
         gap: 32px;
         align-items: center;
-        margin-bottom: 24px;
-        width: 95%;
         height: auto;
-        align-items: center;
         justify-content: space-between;
 
 
     }
 
     &__nav-button {
-
-        max-width: 48px;
+        height: 48px !important;
+        width: 48px !important;
 
 
         svg.icon {
@@ -52,11 +49,19 @@
     &__list {
         gap: 24px;
         display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(242px, 1fr));
+        margin: 0;
+        padding: 0;
     }
 
     &__content-wrapper {
         display: flex;
         gap: 64px;
         padding: 64px;
+    }
+
+    &__nav-icon {
+        display: flex;
+        justify-self: center;
     }
 }
