@@ -1,7 +1,7 @@
 {% import 'ui/picture.twig' as picture_macro %}
 
 <li class="product">
-	<a href="{{ product.link }}">
+	<a class="product__link" href="{{ product.link }}">
 		{{ picture_macro.picture(
 			'product__image',
 			product.image_src,
@@ -10,12 +10,14 @@
 			product.image_alt,
 			false
 		) }}
+		{% if product.label %}
+			<span class="product__label label{% if product.label|lower == 'sold out' %} label--secondary{% endif %}">{{ product.label }}</span>
+		{% endif %}
+		<div class="product__info">
+			{% if product.price %}
+				<span class="product__price title title--h2">{{ product.price }}</span>
+			{% endif %}
+			<span class="product__name">{{ product.name }}</span>
+		</div>
 	</a>
-	{% if product.label %}
-		<span class="product__label label{% if product.label|lower == 'sold out' %} label--secondary{% endif %}">{{ product.label }}</span>
-	{% endif %}
-	{% if product.price %}
-		<span class="product__price">{{ product.price }}</span>
-	{% endif %}
-	<span class="product__name">{{ product.name }}</span>
 </li>

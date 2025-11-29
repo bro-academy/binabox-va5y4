@@ -1,27 +1,45 @@
 {% from '/ui/icon.twig' import icon %}
 
 <footer class="footer">
-	<section class="footer__brand">
-		<a href="{{ footer.logo.href }}" class="link logo footer__logo-link">
-			<img src="/src/assets/icons/binabox-logo-blue.svg" alt="Binabox logo" class="logo footer__logo-image" width="188" height="42"/>
-			<p class="footer__description">{{ footer.description }}</p>
+	<div class="footer__container">
+		<section class="footer__brand">
+			<a href="{{ footer.logo.href }}" class="link logo footer__logo-link">
+				<img src="/src/assets/icons/binabox-logo-blue.svg" alt="Binabox logo" class="logo footer__logo-image" width="188" height="42"/>
+				<p class="footer__description">{{ footer.description }}</p>
+			</a>
 		</section>
-		<nav class="footer__nav">
-			<span class="footer__nav-title">{{ footer.nav.title }}</span>
-			<ul class="footer__nav-list">
-				{% for item in footer.nav.items %}
-					<li class="footer__nav-item">
-						<a href="{{ item.href }}" class="link footer__nav-link">{{ item.text }}</a>
-					</li>
+		<div class="footer__nav-wrapper">
+			<nav class="footer__nav">
+				<span class="footer__nav-title">{{ footer.nav.title }}</span>
+				<div class="footer__nav-columns">
+					<ul class="footer__nav-list">
+						{% for item in footer.nav.items|slice(0, 4) %}
+							<li class="footer__nav-item">
+								<a href="{{ item.href }}" class="link footer__nav-link">{{ item.text }}</a>
+							</li>
+						{% endfor %}
+					</ul>
+					<ul class="footer__nav-list">
+						{% for item in footer.nav.items|slice(4, 4) %}
+							<li class="footer__nav-item">
+								<a href="{{ item.href }}" class="link footer__nav-link">{{ item.text }}</a>
+							</li>
+						{% endfor %}
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<div class="footer__bottom">
+		<div class="footer__bottom-container">
+			<p class="footer__copyright">{{ footer.copyright }}</p>
+			<address class="footer__socials">
+				{% for social in footer.socials %}
+					<a href="{{ social.href }}" aria-label="{{ social.label }}" class="footer__social-link">
+						{{ icon('footer__social-icon', social.label|lower, '24', '24') }}
+					</a>
 				{% endfor %}
-			</ul>
-		</nav>
-		<p class="footer__copyright">{{ footer.copyright }}</p>
-		<address class="footer__socials">
-			{% for social in footer.socials %}
-				<a href="{{ social.href }}" aria-label="{{ social.label }}" class="footer__social-link">
-					{{ icon('footer__social-icon', social.label|lower, '24', '24') }}
-				</a>
-			{% endfor %}
-		</address>
-	</footer>
+			</address>
+		</div>
+	</div>
+</footer>

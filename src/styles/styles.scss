@@ -9,7 +9,9 @@
 @use './components/catalog';
 @use './components/blog-card';
 @use './components/about';
+@use './components/search-input';
 @use './components/employee';
+@use './components/team';
 @use './components/faq';
 @use './components/footer';
 @use './components/breadcrumb';
@@ -30,9 +32,9 @@
 @use './components/dropdown';
 @use './components/contact-form';
 @use './components/product';
+@use './components/page-header';
 
 // Layout
 @use './layout/index';
 @use './layout/blog';
 @use './layout/contact';
-@use './layout/catalog-page';

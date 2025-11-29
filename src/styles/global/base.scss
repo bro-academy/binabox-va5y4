@@ -18,11 +18,19 @@ body {
     font-size: var(--font-size-base);
     font-weight: 400;
     line-height: var(--line-height-base);
-    max-width: 1728px;
 }
 
-/* Add vector background on all pages except the index */
+/* Apply radial background to all pages except index */
 body:not(.index-page) {
+    background-image: url('/src/assets/icons/hero-radial.svg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: var(--gradient-radial-size);
+}
+
+/* Radial background that can be applied to any div */
+.radial-bg {
+    position: relative;
     background-image: url('/src/assets/icons/hero-radial.svg');
     background-repeat: no-repeat;
     background-position: center top;
@@ -38,4 +46,11 @@ a {
     text-decoration: none;
     color: inherit;
     display: inline-block;
+}
+
+.container {
+    max-width: 1728px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 64px;
 }

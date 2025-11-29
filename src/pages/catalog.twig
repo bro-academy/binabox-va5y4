@@ -4,7 +4,9 @@
 {% block content %}
 	<main class="main">
 		{% include 'src/templates/partials/catalog-header.twig' %}
-		{% include 'src/templates/partials/catalog-sidebar.twig' %}
-		{% include 'src/templates/partials/catalog-products.twig' %}
+		<div class="catalog__content-wrapper">
+			{% include 'src/templates/partials/catalog-sidebar.twig' %}
+			{% include 'src/templates/partials/catalog-products.twig' %}
+		</div>
 	</main>
 {% endblock %}

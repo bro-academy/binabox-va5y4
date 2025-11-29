@@ -1,7 +1,121 @@
+{% from '/ui/icon.twig' import icon %}
+
 <section class="blog">
 	<h2 class="blog__title title title--h2">{{ blog_section.title }}</h2>
-	{% for blog in blog_section.articles %}
-		{% include './blog-card.twig' with { blog: blog } %}
+
+	{# Neural Drift - First primary card #}
+	<article class="blog-card blog-card--primary">
+		{% set blog = blog_section.articles|first %}
+		{% if blog.label %}
+			<span class="blog-card__label label">{{ blog.label }}</span>
+		{% endif %}
+		<div class="blog-card__image blog-card__image--primary">
+			{{ picture_macro.picture(
+				'blog-card__image',
+				blog.image_src,
+				blog.image_width,
+				blog.image_height,
+				blog.image_alt,
+				false
+			) }}
+		</div>
+		<div class="blog-card__content">
+			<div class="blog-card__meta">
+				{% if blog.author_icon %}
+					{{ icon('blog-card__author-icon', 'author-icon', '16', '16') }}
+				{% endif %}
+				<span class="blog-card__author{% if blog.author_uppercase %} blog-card__author--uppercase{% endif %}">
+					{{ blog.author }}
+				</span>
+				<span class="separator"></span>
+				{{ icon('blog-card__date-icon', 'date-icon', '16', '16') }}
+				<time class="blog-card__date" datetime="{{ blog.date_iso }}">{{ blog.date }}</time>
+			</div>
+			<h3 class="blog-card__title">{{ blog.title }}</h3>
+			<p class="blog-card__excerpt">{{ blog.excerpt }}</p>
+
+			<a href="{{ blog.read_more_url }}" class="button button--secondary blog-card__read-more">
+				Read more
+				{{ icon('blog-card__read-more-icon', 'right-arrow', '24', '24') }}
+			</a>
+		</div>
+	</article>
+
+	{# Middle cards (2-5) #}
+	{% for blog in blog_section.articles[1:5] %}
+		<article class="blog-card">
+			{% if blog.label %}
+				<span class="blog-card__label label">{{ blog.label }}</span>
+			{% endif %}
+			<div class="blog-card__image">
+				{{ picture_macro.picture(
+					'blog-card__image',
+					blog.image_src,
+					blog.image_width,
+					blog.image_height,
+					blog.image_alt,
+					false
+				) }}
+			</div>
+			<div class="blog-card__content">
+				<div class="blog-card__meta">
+					{% if blog.author_icon %}
+						{{ icon('blog-card__author-icon', 'author-icon', '16', '16') }}
+					{% endif %}
+				<span class="blog-card__author{% if blog.author_uppercase %} blog-card__author--uppercase{% endif %}">
+					{{ blog.author }}
+				</span>
+				<span class="separator"></span>
+				{{ icon('blog-card__date-icon', 'date-icon', '16', '16') }}
+				<time class="blog-card__date" datetime="{{ blog.date_iso }}">{{ blog.date }}</time>
+				</div>
+				<h3 class="blog-card__title">{{ blog.title }}</h3>
+				<p class="blog-card__excerpt">{{ blog.excerpt }}</p>
+
+				<a href="{{ blog.read_more_url }}" class="button button--secondary blog-card__read-more">
+					Read more
+					{{ icon('blog-card__read-more-icon', 'right-arrow', '24', '24') }}
+				</a>
+			</div>
+		</article>
 	{% endfor %}
-	<a href="{{ blog_section.read_more_url }}" class="button button--secondary blog-card__read-more-main read-more">Read more</a>
+
+	{# Retrocore - Last primary card #}
+	<article class="blog-card blog-card--primary">
+		{% set blog = blog_section.articles[4] %}
+		{# Retrocore is at index 4 #}
+		{% if blog.label %}
+			<span class="blog-card__label label">{{ blog.label }}</span>
+		{% endif %}
+		<div class="blog-card__image blog-card__image--primary">
+			{{ picture_macro.picture(
+				'blog-card__image',
+				blog.image_src,
+				blog.image_width,
+				blog.image_height,
+				blog.image_alt,
+				false
+			) }}
+		</div>
+		<div class="blog-card__content">
+			<div class="blog-card__meta">
+				{% if blog.author_icon %}
+					{{ icon('blog-card__author-icon', 'author-icon', '16', '16') }}
+				{% endif %}
+				<span class="blog-card__author{% if blog.author_uppercase %} blog-card__author--uppercase{% endif %}">
+					{{ blog.author }}
+				</span>
+				<span class="separator"></span>
+				{{ icon('blog-card__date-icon', 'date-icon', '16', '16') }}
+				<time class="blog-card__date" datetime="{{ blog.date_iso }}">{{ blog.date }}</time>
+			</div>
+			<h3 class="blog-card__title">{{ blog.title }}</h3>
+			<p class="blog-card__excerpt">{{ blog.excerpt }}</p>
+
+			<a href="{{ blog.read_more_url }}" class="button button--secondary blog-card__read-more">
+				Read more
+				{{ icon('blog-card__read-more-icon', 'right-arrow', '24', '24') }}
+			</a>
+		</div>
+	</article>
 </section>

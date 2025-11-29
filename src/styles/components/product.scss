@@ -1,11 +1,38 @@
 .product {
 
-    &__image {
-        width: 100%;
-        max-width: 252.8px;
-        height: 324px;
-        object-fit: cover;
-        display: block;
+    display: flex;
+    background-color: rgb(29, 28, 40);
+    padding: 24px;
+
+    &__link {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__label {
+        position: absolute;
+        z-index: 1;
+        top: 16px;
+        right: 16px;
 
     }
+
+    &__name {
+        color: var(--color-text-subtle);
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    // &__image {
+    //     max-width: 252.8px;
+    //     max-height: 324px;
+    // }
 }

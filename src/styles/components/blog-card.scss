@@ -1,37 +1,110 @@
+.blog {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--color-bg-main);
+}
+
+.blog__title {
+    grid-column: 1 / -1;
+    margin-bottom: 24px;
+}
+
 .blog-card {
+    display: flex;
+    flex-direction: column;
     background-color: var(--color-bg-alt2);
-    margin-bottom: var(--padding-xl);
-    padding: var(--padding-xl);
+    padding: 24px;
+}
 
-    &__excerpt {
-        font-size: var(--font-size-medium);
-        line-height: var(--line-height-medium);
-        color: var(--color-text-muted);
-    }
+.blog-card__image {
+    width: 100%;
+    height: 200px;
+    position: relative;
 
-    &__author {
-        font-weight: var(--font-weight-semibold);
-        font-size: var(--font-size-medium);
-        line-height: var(--line-height-medium);
-        color: var(--color-text-muted);
+    &--primary {
+        min-height: 664px;
     }
+}
+
+.blog-card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog-card__content {
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.blog-card__meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: auto;
+}
+
+
+.blog-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-bg-alt2);
+    min-height: 280px;
 
     &__author--uppercase {
         text-transform: uppercase;
     }
 
-    &__date {
-        font-weight: var(--font-weight-semibold);
-        font-size: var(--font-size-medium);
-        line-height: var(--line-height-medium);
-        color: var(--color-text-muted);
-    }
-
-    &__image img {
-        object-fit: cover;
+    &__image {
         width: 100%;
-        height: auto;
-        border-radius: var(--border-radius);
+        height: 180px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
 
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 16px;
+    }
+
+    &__title {
+        margin: 0;
+        color: var(--color-text-main);
+    }
+
+    &__excerpt {
+        margin: 0;
+        color: var(--color-text-muted);
+        font-size: var(--font-size-medium);
+    }
+
+    &__meta {
+        display: flex;
+        align-self: flex-start;
+        align-items: center;
+    }
+
+    &__label {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        z-index: 1;
+    }
+
+    &__read-more {
+        align-self: flex-start;
+        padding: 8px 20px !important;
+        display: flex;
+        gap: 8px;
+
+    }
 }

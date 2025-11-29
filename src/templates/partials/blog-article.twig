@@ -11,14 +11,19 @@
 		<figcaption class="article__hero-caption">{{ article.hero_caption }}</figcaption>
 	</figure>
 	<header class="article__header">
-		<h2 class="article__title title title--h2" id="{{ article.title|replace({' ': '-'})|lower }}">{{ article.title }}</h2>
-		<span class="button article__category">{{ article.category }}</span>
-		<span class="article__author">
-			{{ icon_macro.icon('article__author-avatar', 'author-icon', '16', '16') }}
-			<a href="{{ article.author_url }}" class="article__author-link">{{ article.author }}</a>
-		</span>
-		{{ icon_macro.icon('article__date-icon', 'date-icon', '16', '16') }}
-		<time datetime="{{ article.date_iso }}" class="article__date">{{ article.date }}</time>
+		<div class="article__header-wrapper">
+			<h2 class="article__title title title--h2" id="{{ article.title|replace({' ': '-'})|lower }}">{{ article.title }}</h2>
+			<span class="button article__category">{{ article.category }}</span>
+		</div>
+		<div class="article__meta">
+			<span class="article__author">
+				{{ icon_macro.icon('article__author-avatar', 'author-icon', '16', '16') }}
+				<a href="{{ article.author_url }}" class="article__author-link">{{ article.author }}</a>
+			</span>
+			<span class="article__separator separator"></span>
+			{{ icon_macro.icon('article__date-icon', 'date-icon', '16', '16') }}
+			<time datetime="{{ article.date_iso }}" class="article__date">{{ article.date }}</time>
+		</div>
 	</header>
 	{% for paragraph in article.paragraphs %}
 		<p class="article__text">{{ paragraph }}</p>
@@ -33,26 +38,34 @@
 			{% include './blog-article-feature.twig' with { feature: feature } %}
 		{% endfor %}
 	</ul>
-	{% include './blog-article-quote.twig' with { quote: article.quote } %}
-	{% for figure in article.figures %}
-		<figure class="article__figure">
-			{{ picture_macro.picture(
-        'article__image',
-        figure.image_src,
-        figure.image_width,
-        figure.image_height,
-		figure.image_alt,
-        false
-    ) }}
-			<figcaption class="article__caption">{{ figure.caption }}</figcaption>
-		</figure>
-	{% endfor %}
+	<div class="article__quote-block">
+		{% include './blog-article-quote.twig' with { quote: article.quote } %}
+	</div>
+	<div class="article__quote-figures">
+		{% for figure in article.figures %}
+			<figure class="article__figure">
+				{{ picture_macro.picture(
+			'article__image',
+			figure.image_src,
+			figure.image_width,
+			figure.image_height,
+			figure.image_alt,
+			false
+		) }}
+				<figcaption class="article__caption">{{ figure.caption }}</figcaption>
+			</figure>
+		{% endfor %}
+	</div>
 	{% for idx, subtitle in article.subtitles %}
 		<h3 class="article__subtitle title title--h3" id="{{ subtitle|replace({' ': '-'})|lower }}">{{ subtitle }}</h3>
 		{% for paragraph in article.subparagraphs[idx] %}
 			<p class="article__text">{{ paragraph|raw }}</p>
+			{% if subtitle == 'NFTs are digital assets that represent real-world objects' %}<br/>
+			{% endif %}
 		{% endfor %}
 	{% endfor %}
-	{% include './blog-article-tags.twig' with { article: article } %}
-	{% include './blog-article-share.twig' with { article: article } %}
+	<div class="article__footer">
+		{% include './blog-article-tags.twig' with { article: article } %}
+		{% include './blog-article-share.twig' with { article: article } %}
+	</div>
 </article>
